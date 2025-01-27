@@ -1,0 +1,45 @@
+.card {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    padding-left: 1em;
+    padding-top: 1em;
+    background-color: rgba(232, 232, 232, 0.538);
+    color: black;
+    border-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    margin-top: 2em;
+    margin-left: 2em;
+    height: 12em;
+    width: 12em;
+  }
+
+  .card div:first-child {
+    font-weight: bold;
+  }
+
+  .card div:nth-child(2) {
+    margin-top: 5em;
+  }
+
+  .xlsButton {
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+  }
+  
+  .ml1 {
+    margin-left: 1em;
+  }
+
+  .img2424 {
+    width:24px; 
+    height:24px;
+  }
+
+  .fwbold {
+    font-weight: bold;
+  }
+  
+  
