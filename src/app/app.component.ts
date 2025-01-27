@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { KENDO_BUTTONS } from "@progress/kendo-angular-buttons";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, KENDO_BUTTONS],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
