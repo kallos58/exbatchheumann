@@ -1,0 +1,109 @@
+
+<div>
+    <mat-form-field style="width: 25%;">
+        <mat-label>SAP Mat. No.</mat-label>
+        <input [(ngModel)]="data.entry.SAP_Material_Number" matInput disabled/>
+    </mat-form-field>
+    <mat-form-field style="width: 25%;">
+        <mat-label>MA No.</mat-label>
+        <input [(ngModel)]="data.entry.MA_No_" matInput disabled/>
+    </mat-form-field>
+    <mat-form-field style="width: 25%;">
+        <mat-label>FP Batch No.</mat-label>
+        <input [(ngModel)]="data.entry.FP_Batch_no__" matInput/>
+    </mat-form-field>
+    <mat-form-field style="width: 25%;">
+        <mat-label>Bulk Batch No.</mat-label>
+        <input [(ngModel)]="data.entry.Bulk_Batch_no_" matInput/>
+    </mat-form-field>
+</div>
+<div>
+    <mat-form-field style="width: 100%;">
+        <mat-label>SAP Mat. No.</mat-label>
+        <input [(ngModel)]="data.entry.SAP_Material_Number" matInput disabled/>
+    </mat-form-field>
+</div>
+<div>
+    <mat-tab-group>
+        <mat-tab label="Warehouse">
+            <div>
+                <mat-form-field style="width: 20%;">
+                    <mat-label>Company</mat-label>
+                    <input [(ngModel)]="data.entry.Company" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 12%;">
+                    <mat-label>Pack size</mat-label>
+                    <input [(ngModel)]="data.entry.Pack_size" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 28%;">
+                    <mat-label>NTIN</mat-label>
+                    <input [(ngModel)]="data.entry.NTIN" matInput/>
+                </mat-form-field>
+                <mat-form-field style="width: 20%;">
+                    <mat-label>Manuf. date</mat-label>
+                    <input [(ngModel)]="data.entry.Manufacturing_date" matInput/>
+                </mat-form-field>
+                <mat-form-field style="width: 20%;">
+                    <mat-label>Expiry date</mat-label>
+                    <input [(ngModel)]="data.entry.Expiry_date" matInput/>
+                </mat-form-field>
+            </div> 
+            <div>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>API Manufacturer</mat-label>
+                    <input [(ngModel)]="data.entry.API_Manufacturer" matInput disabled/>
+                </mat-form-field>
+            </div>   
+            <div>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Manufacturer</mat-label>
+                    <input [(ngModel)]="data.entry.Manufacturer" matInput disabled/>
+                </mat-form-field>
+            </div>  
+            <div>
+                <mat-form-field>
+                    <mat-label>Favorite food</mat-label>
+                    <mat-select>
+                      @for (food of foods; track food) {
+                        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+                      }
+                    </mat-select>
+                  </mat-form-field>
+                <mat-form-field style="width: 33%;">
+                    <mat-label>Rel. / blocking site</mat-label>
+                    <input [(ngModel)]="data.entry.Release__Blocking_Site" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 33%;">
+                    <mat-label>Sample rel. date</mat-label>
+                    <input [(ngModel)]="data.entry.Sample_Receipt_date" matInput/>
+                </mat-form-field>
+               
+            </div> 
+            <div>
+                <mat-form-field  style="width: 33%;">
+                    <mat-label>EU / Non EU</mat-label>
+                    <mat-select>
+                      @for (eu of eus; track eu) {
+                        <mat-option [value]="eu">{{eu}}</mat-option>
+                      }
+                    </mat-select>
+                  </mat-form-field>
+                <mat-form-field style="width: 33%;">
+                    <mat-label>Rel. / blocking site</mat-label>
+                    <input [(ngModel)]="data.entry.Release__Blocking_Site" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 33%;">
+                    <mat-label>Sample rel. date</mat-label>
+                    <input [(ngModel)]="data.entry.Sample_Receipt_date" matInput/>
+                </mat-form-field>
+               
+            </div> 
+        </mat-tab>
+        <mat-tab label="BRR Process"> Content 2 </mat-tab>
+        <mat-tab label="BRR Status"> Content 3 </mat-tab>
+        <mat-tab label="QR Process"> Content 3 </mat-tab>
+      </mat-tab-group>
+</div>
+<button (click)="dialogRef.close()">OK</button>
+<button (click)="save()">Save</button>
+

@@ -1,24 +1,45 @@
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    
-  }
-  
-  .flex-container > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    height: 2em;
-    font-size: 30px;
-  }
+.table-container {
+  height: 90%;
+  width: 97%;
+  margin-top: 0.5em;
+  margin-left: 0.75em;
+  overflow: auto;
+}
 
-  .header {
-    height: 2em;
-    background-color: DodgerBlue;
-  }
+.border-shadow {
+  box-shadow: 5px 5px 5px lightgray;
+  background-color: transparent;
+}
 
-  .table {
-    height: 12em;
-    background-color: yellow;
-  }
+.mat-mdc-row:nth-child(odd) {
+  background-color: lightgray !important;
+}
+
+.mat-mdc-row:nth-child(even) {
+  background-color: #F8F8F8 !important;
+}
+
+.mat-mdc-row:hover{
+  background-color: rgba(166, 218, 166, 0.1) !important;
+}
+
+.mat-mdc-header-cell {
+  background-color: beige !important;
+  border-right: 1px solid lightgray;
+}
+
+.mat-mdc-cell {
+  border-right: 1px solid lightgray;
+}
+
+.linklabel {
+  color: blue;
+  text-decoration: underline;
+}
+
+.linklabel:hover {
+  cursor: pointer;
+}
+
+
+

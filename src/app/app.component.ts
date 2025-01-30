@@ -17,4 +17,7 @@ export class AppComponent {
     this.router.navigate(['/']);
   }
 
+  goDia() {
+    this.router.navigate(['/dialog']);
+  }
 }
