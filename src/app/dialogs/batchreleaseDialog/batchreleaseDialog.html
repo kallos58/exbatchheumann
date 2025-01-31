@@ -1,9 +1,4 @@
-<div class="bgBlue">
-    <mat-form-field  style="width: 100%;">
-        <mat-label>MA Name</mat-label>
-        <input [(ngModel)]="data.entry.MA_name_" matInput disabled/>
-    </mat-form-field>
-</div>
+
 <div>
     <mat-form-field style="width: 25%;">
         <mat-label>SAP Mat. No.</mat-label>
@@ -22,7 +17,12 @@
         <input [(ngModel)]="data.entry.Bulk_Batch_no_" matInput/>
     </mat-form-field>
 </div>
-
+<div>
+    <mat-form-field style="width: 100%;">
+        <mat-label>SAP Mat. No.</mat-label>
+        <input [(ngModel)]="data.entry.MA_name_" matInput/>
+    </mat-form-field>
+</div>
 <div>
     <mat-tab-group>
         <mat-tab label="Warehouse">
@@ -39,11 +39,10 @@
                     <mat-label>NTIN</mat-label>
                     <input [(ngModel)]="data.entry.NTIN" matInput/>
                 </mat-form-field>
-                <mat-form-field style="width: 15%;">
-                    <mat-label  style="width: 8em;">Manufacturing</mat-label>
+                <mat-form-field style="width: 20%;">
+                    <mat-label>Manuf. date</mat-label>
                     <input [(ngModel)]="data.entry.Manufacturing_date" matInput/>
                 </mat-form-field>
-                
                 <mat-form-field style="width: 20%;">
                     <mat-label>Expiry date</mat-label>
                     <input [(ngModel)]="data.entry.Expiry_date" matInput/>
@@ -62,15 +61,15 @@
                 </mat-form-field>
             </div>  
             <div>
-                <mat-form-field  style="width: 33%;">
+                <mat-form-field>
                     <mat-label>Cars</mat-label>
-                    <select [(ngModel)]="data.entry.EU__Non_EU" matNativeControl>
-                        <option 
-                            *ngFor="let eu of eus">{{eu}}
-                        </option>
-                    </select>
+                        <select [(ngModel)]="data.entry.EU__Non_EU" matNativeControl>
+                            <option 
+                                *ngFor="let eu of eus">{{eu}}
+                            </option>
+                        </select>
                 </mat-form-field>
-                <mat-form-field style="width: 34%;">
+                <mat-form-field style="width: 33%;">
                     <mat-label>Rel. / blocking site</mat-label>
                     <input [(ngModel)]="data.entry.Release__Blocking_Site" matInput />
                 </mat-form-field>
@@ -83,11 +82,11 @@
             <div>
                 <mat-form-field>
                     <mat-label>EU / Non-EU</mat-label>
-                    <select [(ngModel)]="data.entry.EU__Non_EU" matNativeControl>
-                        <option 
-                            *ngFor="let eu of eus">{{eu}}
-                        </option>
-                    </select>
+                        <select [(ngModel)]="data.entry.EU__Non_EU" matNativeControl>
+                            <option 
+                                *ngFor="let eu of eus">{{eu}}
+                            </option>
+                        </select>
                 </mat-form-field>
                 <mat-form-field style="width: 33%;">
                     <mat-label>Rel. / blocking site</mat-label>

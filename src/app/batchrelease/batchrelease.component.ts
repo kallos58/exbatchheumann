@@ -5,7 +5,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 
-import { Component, OnInit, inject, model, signal} from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, TemplateRef, ViewChild, inject, model, signal} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {
@@ -18,11 +18,10 @@ import {
   MatDialogTitle,
 } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import { DIALOG_DATA, DialogRef } from "@angular/cdk/dialog";
 import {Dialog, DialogModule} from '@angular/cdk/dialog';
-
+import { CdkDialog } from './cdk-dialog'
 @Component({
   selector: 'app-batchrelease',
   imports: [
@@ -38,9 +37,9 @@ import {Dialog, DialogModule} from '@angular/cdk/dialog';
 export class BatchreleaseComponent implements OnInit {
   displayedColumns: string[] = ['SAP_Material_Number', 'FP_Batch_no__', 'Bulk_Batch_no_', 'MA_name_', 'Company'];
   dataSource: any = [];
-  
-  readonly dialog = inject(Dialog);;
-
+  readonly dialog = inject(Dialog);
+  DialogRef: DialogRef<CdkDialog> | undefined;
+  currentItem: any = [];
   constructor() {}
  
   async ngOnInit() {
@@ -58,8 +57,6 @@ export class BatchreleaseComponent implements OnInit {
       .fetchAll()
       .then((response: any) => {
         this.dataSource = response.resources;
-
-        console.log(this.dataSource);
       }) 
     } catch(error) {
       console.log(error);
@@ -68,43 +65,28 @@ export class BatchreleaseComponent implements OnInit {
   }
 
   openDialog(e: any) {
-    this.dialog.open(CdkDialogDataExampleDialog, {
+    const dialog = this.dialog.open(CdkDialog, {
+      disableClose: true,
       width: '48em',
       data: {
         entry: e,
         currentEu: "EU"
       },
     });
+    dialog.closed.subscribe(async data => {
+      this.currentItem = data;
+      const endpoint = "https://schruefer.documents.azure.com:443/";
+      const key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
+      const client = new Cosmos.CosmosClient({endpoint: endpoint, key: key});
+      const database = "Heumann";
+      const db = client.database(database);
+      const container = db.container("Batch_Release");
+      await container
+        .item(this.currentItem.id, this.currentItem.id)
+        .replace(this.currentItem);
+    });
   }
 
-  getRecord(e: any) {
-    debugger;
-  }
+  
 }
 
-@Component({
-  selector: 'cdk-dialog-data-example-dialog',
-  templateUrl: 'cdk-dialog.html',
-  styleUrl: './cdk-dialog.css',
-  imports: [
-    MatTableModule, 
-    MatGridListModule, 
-    MatIconModule, 
-    CommonModule, MatTabsModule, MatSelectModule,
-    MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, DialogModule]
-})
-export class CdkDialogDataExampleDialog {
-  data = inject(DIALOG_DATA);
-  eus = ["EU","Non-EU","Non-TPL","Non-EU-TPL"];
-  dialogRef = inject(DialogRef);
-  foods: any = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'},
-  ];
-  save() {
-    debugger;
-    this.dialogRef.close();
-  }
-
-}
