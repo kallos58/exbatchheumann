@@ -1,0 +1,23 @@
+<div class="titleDiv">Set Manufacturing date</div>
+<div style="margin-top: 1em;">
+    <mat-form-field  style="width: 8em;">
+        <mat-label>Select a month</mat-label>
+        <select [(ngModel)]="dmonth" matNativeControl>
+            <option 
+                *ngFor="let m of months">{{m}}
+            </option>
+        </select>
+    </mat-form-field>
+    <mat-form-field  style="width: 8em;">
+        <mat-label>Select a year</mat-label>
+        <select [(ngModel)]="dyear" matNativeControl>
+            <option 
+                *ngFor="let y of years">{{y}}
+            </option>
+        </select>
+    </mat-form-field>
+</div>
+<div class="example-button-row">
+    <button mat-raised-button (click)="close()">Cancel</button>
+    <button mat-raised-button (click)="save()">OK</button>
+</div>

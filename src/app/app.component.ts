@@ -17,7 +17,9 @@ export class AppComponent {
     this.router.navigate(['/']);
   }
 
-  goDia() {
-    this.router.navigate(['/dialog']);
+  goDp() {
+    this.router.navigate(['/datepicker']);
   }
+
+  
 }

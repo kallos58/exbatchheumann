@@ -6,30 +6,33 @@
     
     <ng-container matColumnDef="SAP_Material_Number" sticky>
       <th mat-header-cell *matHeaderCellDef> SAP Mat.No. </th>
-      <td mat-cell *matCellDef="let element"> {{element.SAP_Material_Number}} </td>
+      <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedLeft': element.id=== currentId }"> {{element.SAP_Material_Number}} </td>
     </ng-container>
   
     <ng-container matColumnDef="FP_Batch_no__">
       <th mat-header-cell *matHeaderCellDef> FP Batch </th>
-      <td mat-cell *matCellDef="let element"> {{element.FP_Batch_no__}} </td>
+      <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.FP_Batch_no__}} </td>
     </ng-container>
   
     <ng-container matColumnDef="Bulk_Batch_no_">
       <th mat-header-cell *matHeaderCellDef> Bulk Batch </th>
-      <td mat-cell *matCellDef="let element"> {{element.Bulk_Batch_no_}} </td>
+      <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.Bulk_Batch_no_}} </td>
     </ng-container>
   
     <ng-container matColumnDef="MA_name_">
       <th mat-header-cell *matHeaderCellDef> MA Name <span style="cursor: pointer;">&hellip;</span></th>
-      <td mat-cell *matCellDef="let element"> {{element.MA_name_}} </td>
+      <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.MA_name_}} </td>
     </ng-container>
     <ng-container matColumnDef="Company">
       <th mat-header-cell *matHeaderCellDef> Action </th>
-      <td mat-cell *matCellDef="let element"><label (click)="openDialog(element)"
-        class="linklabel">Details</label></td> 
+      <td mat-cell *matCellDef="let element" [ngClass]="{ 'selectedRight': element.id=== currentId }">
+        <label (click)="openDialog(element)"
+        class="linklabel">Details</label>
+      </td> 
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns; "></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns; " ></tr>
   </table>
 </div>
 
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -7,6 +7,10 @@ import {MatDatepicker, MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSelectModule} from '@angular/material/select';
+
+
 @NgModule({
   imports: [ 
     MatGridListModule,
@@ -17,7 +21,9 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatInputModule,
     MatDatepicker, 
     MatDatepickerModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTooltipModule,
+    MatSelectModule
   ],
   exports: [
     MatGridListModule,
@@ -28,7 +34,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatInputModule,
     MatDatepicker, 
     MatDatepickerModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSelectModule
   ]    
 })
 

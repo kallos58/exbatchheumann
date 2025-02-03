@@ -41,5 +41,19 @@
   cursor: pointer;
 }
 
+.selectedRight {
+  border-right : 3px gray solid !important;
+  border-top : 2px gray solid !important;
+  border-bottom : 3px gray solid !important;
+}
 
+.selectedMiddle {
+  border-top : 2px gray solid !important;
+  border-bottom : 3px gray solid !important;
+}
 
+.selectedLeft {
+  border-left : 3px gray solid !important;
+  border-top : 2px gray solid !important;
+  border-bottom : 3px gray solid !important;
+}

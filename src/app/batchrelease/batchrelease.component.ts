@@ -24,6 +24,7 @@ export class BatchreleaseComponent implements OnInit {
   readonly dialog = inject(Dialog);
   DialogRef: DialogRef<CdkDialog> | undefined;
   currentItem: any = [];
+  currentId: string = "";
   endpoint = "https://schruefer.documents.azure.com:443/";
   key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
   client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
@@ -102,9 +103,12 @@ export class BatchreleaseComponent implements OnInit {
       console.log(error);
     }    
   }
+  setSelected(e: any) {
+    this.currentId = e.id;
+  }
 
   openDialog(e: any) {
-    debugger;
+    this.currentId = e.id;
     const dialog = this.dialog.open(CdkDialog, {
       disableClose: true,
       width: '48em',
@@ -117,6 +121,7 @@ export class BatchreleaseComponent implements OnInit {
       },
     });
     dialog.closed.subscribe(async data => {
+      debugger;
       this.currentItem = data;
       const endpoint = "https://schruefer.documents.azure.com:443/";
       const key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
