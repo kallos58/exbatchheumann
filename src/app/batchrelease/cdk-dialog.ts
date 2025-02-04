@@ -39,6 +39,7 @@ export const MY_FORMATS = {
     eus = ["EU","Non-EU","Non-TPL","Non-EU-TPL"];
     
     status = ["F","S","U","(empty)"];
+    batchstatus = ["printed","prechecked"];
     dialogRef = inject(DialogRef);
     date = new FormControl(moment([2017, 0, 1]));
 
@@ -70,6 +71,46 @@ export const MY_FORMATS = {
       this.data.entry.Release__Block_for_Sale_date.slice(0,2);
     readonly dateBs = new FormControl(new Date(this.bsDate));
 
+    pmrDate = this.data.entry.Prio_meeting_release_date.slice(6,10) + "-" + 
+      this.data.entry.Prio_meeting_release_date.slice(3,5) + "-" + 
+      this.data.entry.Prio_meeting_release_date.slice(0,2);
+    readonly datePmr = new FormControl(new Date(this.pmrDate));
+
+    rqapmDate = this.data.entry.BRRor_QAPM.slice(6,10) + "-" + 
+      this.data.entry.BRRor_QAPM.slice(3,5) + "-" + 
+      this.data.entry.BRRor_QAPM.slice(0,2);
+    readonly dateRqapm = new FormControl(new Date(this.rqapmDate));
+
+    rcalcDate = this.data.entry.BRRor_calculation.slice(6,10) + "-" + 
+      this.data.entry.BRRor_calculation.slice(3,5) + "-" + 
+      this.data.entry.BRRor_calculation.slice(0,2);
+    readonly dateRcalc = new FormControl(new Date(this.rcalcDate));
+
+    qcalcDate = this.data.entry.QAPM_calculation.slice(6,10) + "-" + 
+    this.data.entry.QAPM_calculation.slice(3,5) + "-" + 
+    this.data.entry.QAPM_calculation.slice(0,2);
+    readonly dateQcalc = new FormControl(new Date(this.qcalcDate));
+
+    dbdDate = this.data.entry.date_batch_docs.slice(6,10) + "-" + 
+    this.data.entry.date_batch_docs.slice(3,5) + "-" + 
+    this.data.entry.date_batch_docs.slice(0,2);
+    readonly dateDbd = new FormControl(new Date(this.dbdDate));
+    
+    coarecDate = this.data.entry.CoA_chem_received.slice(6,10) + "-" + 
+    this.data.entry.CoA_chem_received.slice(3,5) + "-" + 
+    this.data.entry.CoA_chem_received.slice(0,2);
+    readonly dateCoarec = new FormControl(new Date(this.coarecDate));
+
+    coaaddDate = this.data.entry.CoA_add_received.slice(6,10) + "-" + 
+    this.data.entry.CoA_add_received.slice(3,5) + "-" + 
+    this.data.entry.CoA_add_received.slice(0,2);
+    readonly dateCoaadd = new FormControl(new Date(this.coaaddDate));
+
+    cocrecDate = this.data.entry.CoC_received.slice(6,10) + "-" + 
+    this.data.entry.CoC_received.slice(3,5) + "-" + 
+    this.data.entry.CoC_received.slice(0,2);
+    readonly dateCocrec = new FormControl(new Date(this.cocrecDate));
+
     showMonthsYears(i: number) {
       this.dmindex = i;
       if (i === 1) {
@@ -82,12 +123,11 @@ export const MY_FORMATS = {
       this.monthsYearsDialog.nativeElement.showModal(); ;
     }
 
-    emitCancel() {
+    emitCancel(e: any) {
       this.monthsYearsDialog.nativeElement.close();
     }
 
     emitSave(e: any) {
-      debugger;
       if ( e.i === 1) {
         this.data.entry.Manufacturing_date = e.m + "/" + e.y;
       } else {
@@ -96,7 +136,7 @@ export const MY_FORMATS = {
       this.monthsYearsDialog.nativeElement.close();
     }
 
-    addEvent(e: any, index: number) {
+    dateChangeEvent(e: any, index: number) {
       let day = e.value._i.date < 10 ? ("0" +  e.value._i.date.toString()) : e.value._i.date.toString();
       let month = e.value._i.month + 1;
       month = month < 10 ? ("0" +  month.toString()) : month.toString();
@@ -105,6 +145,22 @@ export const MY_FORMATS = {
       if (index === 1) this.data.entry.Sample_Receipt_date = date;
       if (index === 2) this.data.entry.Release__Block_for_Marketing_date = date;
       if (index === 3) this.data.entry.Release__Block_for_Sale_date = date; 
+      if (index === 4) this.data.entry.Prio_meeting_release_date = date; 
+      if (index === 5) this.data.entry.BRRor_QAPM = date; 
+      if (index === 6) this.data.entry.BRRor_calculation = date;
+      if (index === 7) this.data.entry.QAPM_calculation = date;
+      if (index === 8) this.data.entry.date_batch_docs = date;
+      if (index === 9) this.data.entry.CoA_chem_received = date;
+      if (index === 10) this.data.entry.CoA_add_received = date;
+      if (index === 11) this.data.entry.CoC_received = date;
+    }
+
+    changeChk(e: any, i: number) {
+      if (i === 1) {
+        this.data.entry.OGS_checked = e ? "x" : "";
+      } else {
+        this.data.entry.Temperaturauswertung_abgeschlossen = e ? "x" : "";
+      }
     }
 
     getCalendarDate(d: string): string {

@@ -9,6 +9,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatDatepickerModule,
     MatTabsModule,
     MatTooltipModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule,
+    MatRadioModule
   ],
   exports: [
     MatGridListModule,
@@ -35,7 +39,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatDatepicker, 
     MatDatepickerModule,
     MatTabsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule,
+    MatRadioModule
   ]    
 })
 

@@ -102,7 +102,7 @@
                 <mat-form-field style="width: 25%;">
                     <mat-label>Sample receipt date</mat-label>
                     <input 
-                        (dateChange)="addEvent($event, 1)" 
+                        (dateChange)="dateChangeEvent($event, 1)" 
                         matInput [matDatepicker]="srpicker" 
                         [formControl]="dateSr">
                     <mat-datepicker-toggle matIconSuffix [for]="srpicker"></mat-datepicker-toggle>
@@ -111,7 +111,7 @@
                 <mat-form-field style="width: 25%;">
                     <mat-label>Block mark. date</mat-label>
                     <input 
-                        (dateChange)="addEvent($event, 2)"
+                        (dateChange)="dateChangeEvent($event, 2)"
                          matInput [matDatepicker]="bmpicker" 
                          [formControl]="dateBm">
                     <mat-datepicker-toggle matIconSuffix [for]="bmpicker"></mat-datepicker-toggle>
@@ -120,7 +120,7 @@
                 <mat-form-field style="width: 25%;">
                     <mat-label>Block sale date</mat-label>
                     <input 
-                        (dateChange)="addEvent($event, 3)"
+                        (dateChange)="dateChangeEvent($event, 3)"
                          matInput [matDatepicker]="bspicker" 
                          [formControl]="dateBs">
                     <mat-datepicker-toggle matIconSuffix [for]="bspicker"></mat-datepicker-toggle>
@@ -128,9 +128,181 @@
                 </mat-form-field>
             </div> 
         </mat-tab>
-        <mat-tab label="BRR Process"> Content 2 </mat-tab>
-        <mat-tab label="BRR Status"> Content 3 </mat-tab>
-        <mat-tab label="QR Process"> Content 3 </mat-tab>
+        <mat-tab label="BRR Process"> 
+            <div style="display: flex;">
+                <mat-form-field style="width: 11%;">
+                    <mat-label>BRRor. resp</mat-label>
+                    <input [(ngModel)]="data.entry.BRRor_resp_" matInput/>
+                </mat-form-field>
+                <mat-form-field style="width: 12%;">
+                    <mat-label>QAPM resp.</mat-label>
+                    <input [(ngModel)]="data.entry.QAPM_resp_" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 12%;">
+                    <mat-label>QP resp.</mat-label>
+                    <input [(ngModel)]="data.entry.QP_resp_" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 10%;">
+                    <mat-label>Prio</mat-label>
+                    <input [(ngModel)]="data.entry.Prio" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 25%;">
+                    <mat-label>Prio meeting rel.</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 4)"
+                         matInput [matDatepicker]="pmrpicker" 
+                         [formControl]="datePmr">
+                    <mat-datepicker-toggle matIconSuffix [for]="pmrpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #pmrpicker></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field style="width: 30%;">
+                    <mat-label>Category</mat-label>
+                    <mat-select [(ngModel)]="data.entry.category">
+                    @for (c of data.categories; track c) {
+                        <mat-option [value]="c">{{c.category}}</mat-option>
+                    }
+                    </mat-select>
+                </mat-form-field>
+            </div> 
+            
+            <div style="display: flex;">
+                <mat-form-field style="width: 25%;">
+                    <input hidden=true matInput>
+                    <mat-checkbox matInput 
+                        [checked]="data.entry.OGS_checked=='x'" 
+                        (change)="changeChk($event.checked, 1)">OGS checked
+                    </mat-checkbox>
+                  </mat-form-field>
+                  <mat-form-field style="width: 75%;">
+                    <mat-label>QA comment</mat-label>
+                    <input [(ngModel)]="data.entry.QA_comment_" matInput />
+                </mat-form-field>
+            </div>
+            <div style="display: flex;">
+                <mat-form-field style="width: 33%;">
+                    <mat-label>BRRerror -> QAPM</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 5)"
+                         matInput [matDatepicker]="rqapmpicker" 
+                         [formControl]="dateRqapm">
+                    <mat-datepicker-toggle matIconSuffix [for]="rqapmpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #rqapmpicker></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field style="width: 33%;">
+                    <mat-label>BRRor calculation</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 6)"
+                         matInput [matDatepicker]="rcalcpicker" 
+                         [formControl]="dateRcalc">
+                    <mat-datepicker-toggle matIconSuffix [for]="rcalcpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #rcalcpicker></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field style="width: 33%;">
+                    <mat-label>QAPM calculation</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 7)"
+                         matInput [matDatepicker]="qcalcpicker" 
+                         [formControl]="dateQcalc">
+                    <mat-datepicker-toggle matIconSuffix [for]="qcalcpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #qcalcpicker></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </mat-tab>
+        <mat-tab label="BRR Status"> 
+            <div style="display: flex;">
+                <mat-form-field style="width: 50%;">
+                    <mat-label>Status Batch Docs</mat-label>
+                    <mat-select [(ngModel)]="data.entry.Status_Batch_docs">
+                    @for (s of batchstatus; track s) {
+                        <mat-option [value]="s">{{s}}</mat-option>
+                    }
+                    </mat-select>
+                </mat-form-field> 
+                <mat-form-field style="width: 50%;">
+                    <mat-label>Date Batch Docs</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 8)"
+                         matInput [matDatepicker]="dbdpicker" 
+                         [formControl]="dateDbd">
+                    <mat-datepicker-toggle matIconSuffix [for]="dbdpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #dbdpicker></mat-datepicker>
+                </mat-form-field>              
+            </div>
+            <div style="display: flex;">
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Docu comment</mat-label>
+                    <input [(ngModel)]="data.entry.Docu_comment" matInput />
+                </mat-form-field>
+            </div>
+            <div style="display: flex;">
+                <mat-form-field style="width: 50%;">
+                    <mat-label>Consecutive number</mat-label>
+                    <input [(ngModel)]="data.entry.Fortlaufende_Nummer" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 50%;">
+                    <input hidden=true matInput>
+                    <mat-checkbox matInput 
+                        [checked]="data.entry.Temperaturauswertung_abgeschlossen=='x'" 
+                        (change)="changeChk($event.checked, 2)">Temperature evaluation completed
+                    </mat-checkbox>
+                </mat-form-field>
+            </div>
+        </mat-tab>
+        <mat-tab label="QR Process">
+            <div style="display: flex;">
+                <mat-form-field style="width: 25%;">
+                    <mat-label>Lab chem.</mat-label>
+                    <input [(ngModel)]="data.entry.Lab_chem" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 25%;">
+                    <mat-label>Lab add.</mat-label>
+                    <input [(ngModel)]="data.entry.Lab_add" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 25%;">
+                    <mat-label>CoA (chem) exp.</mat-label>
+                    <input [(ngModel)]="data.entry.CoA_chem_expected" matInput />
+                </mat-form-field>
+                <mat-form-field style="width: 25%;">
+                    <mat-label>CoA (chem) exp.</mat-label>
+                    <input [(ngModel)]="data.entry.release_site" matInput />
+                </mat-form-field>
+            </div>
+            <div style="display: flex;">
+                <mat-form-field style="width: 33%;">
+                    <mat-label>CoA (chem.) rec.</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 9)"
+                         matInput [matDatepicker]="coarecpicker" 
+                         [formControl]="dateCoarec">
+                    <mat-datepicker-toggle matIconSuffix [for]="coarecpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #coarecpicker></mat-datepicker>
+                </mat-form-field>  
+                <mat-form-field style="width: 33%;">
+                    <mat-label>CoA (add.) rec.</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 10)"
+                         matInput [matDatepicker]="coaaddpicker" 
+                         [formControl]="dateCoaadd">
+                    <mat-datepicker-toggle matIconSuffix [for]="coaaddpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #coaaddpicker></mat-datepicker>
+                </mat-form-field>   
+                <mat-form-field style="width: 33%;">
+                    <mat-label>CoC received</mat-label>
+                    <input 
+                        (dateChange)="dateChangeEvent($event, 11)"
+                         matInput [matDatepicker]="cocrecpicker" 
+                         [formControl]="dateCocrec">
+                    <mat-datepicker-toggle matIconSuffix [for]="cocrecpicker"></mat-datepicker-toggle>
+                    <mat-datepicker #cocrecpicker></mat-datepicker>
+                </mat-form-field>        
+            </div>
+            <div style="display: flex;">
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Reanalysis comment</mat-label>
+                    <input [(ngModel)]="data.entry.Reanalysis_comment" matInput />
+                </mat-form-field>
+            </div>
+        </mat-tab>
       </mat-tab-group>
 </div>
 <div class="example-button-row">
@@ -141,12 +313,11 @@
 <dialog #monthsYearsDialog class="mydialog">
     <months-years-dialog 
       (childSave)="emitSave($event)" 
-      (childCancel)="emitCancel()" 
+      (childCancel)="emitCancel($event)" 
       [dmonth]="dmonth"
       [dyear]="dyear"
       [index]="dmindex">
-    >
     </months-years-dialog>
-  </dialog>
+</dialog>
 
 

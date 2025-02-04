@@ -42,7 +42,7 @@
 }
 
 .selectedRight {
-  border-right : 3px gray solid !important;
+  border-right : 2px gray solid !important;
   border-top : 2px gray solid !important;
   border-bottom : 3px gray solid !important;
 }
@@ -56,4 +56,53 @@
   border-left : 3px gray solid !important;
   border-top : 2px gray solid !important;
   border-bottom : 3px gray solid !important;
+}
+
+.mydialog {
+  overflow-x: hidden;
+  border: 2px solid lightgray;
+  box-shadow: 3px 3px 5px gray;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.titleDiv {
+  
+  margin-top: -1em;
+  margin-left: -1em;
+  padding-left: 0.5em;
+  height: 2em;
+  padding-top: 0.5em;
+  width: 150%;
+}
+
+.search {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  
+}
+
+.search:hover {
+  background: lightgray;
+}
+
+.filterOneColDialog {
+  border: 2px solid lightgray;
+  box-shadow: 3px 3px 5px gray;
+  border-radius: 6px 6px 6px 6px;
+  margin-top: 5em;
+  height: 16em;
+  width: 16em;
+  overflow-x: hidden;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 5px;
 }

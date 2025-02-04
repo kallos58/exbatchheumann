@@ -27,7 +27,6 @@ export class MonthsYearsDialog {
     ) {}  
   
     close() {
-        debugger;
         this.childCancel.emit();
     }
 

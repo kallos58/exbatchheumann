@@ -1,0 +1,27 @@
+.mydialog {
+    border: 2px solid lightgray;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 6px 6px 6px 6px;
+    left: 5%;
+  }
+
+ 
+  .titleDiv {
+    margin-top: -1em;
+    margin-left: -1em;
+    padding-left: 0.5em;
+    height: 2em;
+    padding-top: 0.5em;
+    width: 125%;
+  }
+
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }

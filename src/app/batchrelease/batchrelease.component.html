@@ -20,7 +20,9 @@
     </ng-container>
   
     <ng-container matColumnDef="MA_name_">
-      <th mat-header-cell *matHeaderCellDef> MA Name <span style="cursor: pointer;">&hellip;</span></th>
+      <th mat-header-cell *matHeaderCellDef > MA Name 
+        <span (click)="showFilterOneColDialog()"><mat-icon  class="search" fontIcon="search"></mat-icon></span>
+      </th>
       <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.MA_name_}} </td>
     </ng-container>
     <ng-container matColumnDef="Company">
@@ -36,3 +38,14 @@
 </div>
 
 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+<dialog #messageboxDialog class="mydialog">
+  <messagebox-dialog>
+  </messagebox-dialog>
+</dialog>
+
+<dialog #filterOneColDialog class="filterOneColDialog">
+  <filter-one-col-dialog
+    (childFilter)="emitFilterOneCol(sortIndex)">
+  </filter-one-col-dialog>
+</dialog>

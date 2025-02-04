@@ -5,14 +5,18 @@ span {
     margin-left: 2px;
 }
 
-.icon2424 {
-    height: 24px;
-    width: 24px;;
+.homeLabel {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 4px;
+    cursor: pointer;
 }
 
-.homeDiv {
-    margin-top: 4px;
-    cursor: pointer;
+.batchLabel {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 1em;
+    font-weight: bold;
 }
 
 .toolbarDiv {
@@ -20,4 +24,8 @@ span {
     height: 32px;
     padding-top: 4px;
     border: 1px solid lightgray;
+}
+
+.pointer {
+    cursor: pointer;
 }
