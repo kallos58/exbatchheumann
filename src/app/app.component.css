@@ -19,6 +19,13 @@ span {
     font-weight: bold;
 }
 
+.entriesLabel {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 1em;
+    margin-left: 3em;
+}
+
 .toolbarDiv {
     display: flex;
     height: 32px;

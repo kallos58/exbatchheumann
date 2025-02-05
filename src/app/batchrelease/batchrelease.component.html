@@ -1,26 +1,26 @@
 <div class="table-container border-shadow">
 
 
-  <table mat-table [dataSource]="dataSource" class="table mat-elevation-z8">
+  <table mat-table matSort (matSortChange)="announceSortChange($event)" [dataSource]="dataSource" class="table mat-elevation-z8">
 
     
     <ng-container matColumnDef="SAP_Material_Number" sticky>
-      <th mat-header-cell *matHeaderCellDef> SAP Mat.No. </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> SAP Mat.No. </th>
       <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedLeft': element.id=== currentId }"> {{element.SAP_Material_Number}} </td>
     </ng-container>
   
     <ng-container matColumnDef="FP_Batch_no__">
-      <th mat-header-cell *matHeaderCellDef> FP Batch </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> FP Batch </th>
       <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.FP_Batch_no__}} </td>
     </ng-container>
   
     <ng-container matColumnDef="Bulk_Batch_no_">
-      <th mat-header-cell *matHeaderCellDef> Bulk Batch </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Bulk Batch </th>
       <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.Bulk_Batch_no_}} </td>
     </ng-container>
   
     <ng-container matColumnDef="MA_name_">
-      <th mat-header-cell *matHeaderCellDef > MA Name 
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> MA Name 
         <span (click)="showFilterOneColDialog()"><mat-icon  class="search" fontIcon="search"></mat-icon></span>
       </th>
       <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.MA_name_}} </td>
@@ -46,6 +46,7 @@
 
 <dialog #filterOneColDialog class="filterOneColDialog">
   <filter-one-col-dialog
-    (childFilter)="emitFilterOneCol(sortIndex)">
+    (childFilter)="emitFilterOneCol($event)"
+    (sortIndex)="sortIndex">
   </filter-one-col-dialog>
 </dialog>

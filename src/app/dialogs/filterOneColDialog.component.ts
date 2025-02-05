@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
@@ -14,19 +14,19 @@ import { MaterialModule } from '../material.module';
     ]
 })
 export class FilterOneColDialog {
- 
     @Output() childFilter = new EventEmitter<any>();
-
-    selected: number = 0;
+    searchVal = "";
+    
+  
     constructor(
         
     ) {}  
+  
+   close() {
+    this.childFilter.emit({searchVal: this.searchVal});
+   }
 
-    close() {
-        this.childFilter.emit(1);
-    }
-
-    radioChange(e: any) {
-        debugger;
-    }
+   changeSelect(e: any) {
+    debugger;
+   }
 }

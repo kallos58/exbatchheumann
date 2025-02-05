@@ -1,12 +1,16 @@
 import * as Cosmos from "@azure/cosmos";
 import { CommonModule } from '@angular/common'
-import {Component, ElementRef, OnInit, ViewChild, inject} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Dialog, DialogModule, DialogRef} from '@angular/cdk/dialog';
 import { CdkDialog } from './cdk-dialog';
 import { MaterialModule } from '../material.module';
 import { MessageboxDialog } from '../dialogs/messageboxDialog.component';
 import { FilterOneColDialog } from '../dialogs/filterOneColDialog.component';
+import { MatSort, Sort } from "@angular/material/sort";
+import {LiveAnnouncer} from '@angular/cdk/a11y';
+import { MatTableDataSource } from "@angular/material/table";
+import { MessageService } from '../services/messageService';
 
 @Component({
   selector: 'app-batchrelease',
@@ -20,14 +24,16 @@ import { FilterOneColDialog } from '../dialogs/filterOneColDialog.component';
 export class BatchreleaseComponent implements OnInit {
   @ViewChild('messageboxDialog', { static: true }) messageboxDialog!: ElementRef<HTMLDialogElement>;
   @ViewChild('filterOneColDialog', { static: true }) filterOneColDialog!: ElementRef<HTMLDialogElement>;
-  
+  @ViewChild(MatSort)
+  sort: MatSort = new MatSort;
+  entries = 0;
   displayedColumns: string[] = ['SAP_Material_Number', 'FP_Batch_no__', 'Bulk_Batch_no_', 'MA_name_', 'Company'];
-  dataSource: any = [];
+  dataSource = new MatTableDataSource();
   apiManufacturers: any = [];
   manufacturers: any = [];
   releasesites: any = [];
   categories: any = [];
-  sortIndex: number = 0;
+  sortIndex: string = "";
   readonly dialog = inject(Dialog);
   DialogRef: DialogRef<CdkDialog> | undefined;
   currentItem: any = [];
@@ -38,7 +44,10 @@ export class BatchreleaseComponent implements OnInit {
   database = "Heumann";
   db = this.client.database(this.database);
 
-  constructor() {}
+  constructor(
+    private messageService: MessageService
+  ) {}
+  private _liveAnnouncer = inject(LiveAnnouncer);
   
   ngOnInit() {
     this.getBatchRelease();
@@ -46,6 +55,11 @@ export class BatchreleaseComponent implements OnInit {
     this.getManufacturers();
     this.getReleaseSites();
     this.getCategories();
+    this.entries = this.dataSource.filteredData.length;
+  }
+
+  announceSortChange(sortState: Sort) {
+    this.dataSource.sort = this.sort;
   }
 
   async getBatchRelease() {
@@ -57,7 +71,9 @@ export class BatchreleaseComponent implements OnInit {
       })
       .fetchAll()
       .then((response: any) => {
-        this.dataSource = response.resources;
+        this.messageService.changeData('Batch Release: ' + response.resources.length + " entries");
+        this.dataSource = new MatTableDataSource(response.resources);
+
       }) 
     } catch(error) {
       console.log(error);
@@ -170,9 +186,14 @@ export class BatchreleaseComponent implements OnInit {
     this.filterOneColDialog.nativeElement.showModal();  
   }
 
-  emitFilterOneCol(index: number) {
+  emitFilterOneCol(e: any) {
+    debugger;
+    this.dataSource.filter = e.searchVal;
+    this.dataSource.filterPredicate = (data: any, searchText: string) => {
+      return data.MA_name_.toString().includes(searchText);
+  };
+    this.messageService.changeData('Batch Release: ' + this.dataSource.filteredData.length + " filtered entries");
     this.filterOneColDialog.nativeElement.close()
-    alert(index);
   }
 }
 

@@ -11,7 +11,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
-
+import {Sort, MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   imports: [ 
@@ -27,7 +27,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatTooltipModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSortModule
   ],
   exports: [
     MatGridListModule,
@@ -41,7 +42,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatTabsModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSortModule
   ]    
 })
 

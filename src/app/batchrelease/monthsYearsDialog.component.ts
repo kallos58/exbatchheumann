@@ -31,7 +31,6 @@ export class MonthsYearsDialog {
     }
 
     save()  {
-        debugger;
         this.childSave.emit({i: this.index, m: this.dmonth, y: this.dyear});
     }
 }
