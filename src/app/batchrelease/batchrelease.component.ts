@@ -1,6 +1,6 @@
 import * as Cosmos from "@azure/cosmos";
 import { CommonModule } from '@angular/common'
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, inject} from '@angular/core';
+import {signal , Component, ElementRef, OnInit, ViewChild, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Dialog, DialogModule, DialogRef} from '@angular/cdk/dialog';
 import { CdkDialog } from './cdk-dialog';
@@ -11,12 +11,14 @@ import { MatSort, Sort } from "@angular/material/sort";
 import {LiveAnnouncer} from '@angular/cdk/a11y';
 import { MatTableDataSource } from "@angular/material/table";
 import { MessageService } from '../services/messageService';
+import { DataService } from '../services/dataService';
+import { RouterOutlet, Router } from '@angular/router';
 
 @Component({
   selector: 'app-batchrelease',
   imports: [   
     CommonModule,
-    FormsModule, DialogModule, MaterialModule, MessageboxDialog, FilterOneColDialog],
+    FormsModule, DialogModule, MaterialModule, MessageboxDialog, FilterOneColDialog, RouterOutlet],
   templateUrl: './batchrelease.component.html',
   styleUrl: './batchrelease.component.css'
 })
@@ -25,15 +27,41 @@ export class BatchreleaseComponent implements OnInit {
   @ViewChild('messageboxDialog', { static: true }) messageboxDialog!: ElementRef<HTMLDialogElement>;
   @ViewChild('filterOneColDialog', { static: true }) filterOneColDialog!: ElementRef<HTMLDialogElement>;
   @ViewChild(MatSort)
+
+  //users = resource({
+    ////loader: async () => {
+   //   let endpoint = "https://schruefer.documents.azure.com:443/";
+    //  let key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
+    //  let client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
+    //  let database = "Heumann";
+   //   let db = this.client.database(database);
+   //   let container = db.container("Batch_Release");
+  //  try {
+  //    await container.items
+  //    .query({
+   //       query: "SELECT * from c"
+   //   })
+   //   .fetchAll()
+   //   .then((response: any) => {
+   //     console.log(response.resources);
+   //     this.dataSource = new MatTableDataSource(response.resources);
+   //   }) 
+   /// } catch(error) {
+  //    console.log(error);
+ //   }    
+ //   },
+  //});
+
   sort: MatSort = new MatSort;
-  entries = 0;
+  entries = "";
+  currentCol = "";
+  currentIndex = 0;
   displayedColumns: string[] = ['SAP_Material_Number', 'FP_Batch_no__', 'Bulk_Batch_no_', 'MA_name_', 'Company'];
   dataSource = new MatTableDataSource();
   apiManufacturers: any = [];
   manufacturers: any = [];
   releasesites: any = [];
   categories: any = [];
-  sortIndex: string = "";
   readonly dialog = inject(Dialog);
   DialogRef: DialogRef<CdkDialog> | undefined;
   currentItem: any = [];
@@ -44,18 +72,27 @@ export class BatchreleaseComponent implements OnInit {
   database = "Heumann";
   db = this.client.database(this.database);
 
+  filterCol: string = "";
+  filters: any = ["MA Name", "Chi Bame"];
   constructor(
-    private messageService: MessageService
+    private messageService: MessageService,
+    private dataService: DataService,
+    private router: Router
   ) {}
   private _liveAnnouncer = inject(LiveAnnouncer);
   
+  goHome() {
+    this.router.navigate(['/']);
+  }
   ngOnInit() {
-    this.getBatchRelease();
+    this.dataSource = new MatTableDataSource(this.dataService.batchrelase);
+
+    //this.getBatchRelease();
     this.getAPIManufacturers();
     this.getManufacturers();
     this.getReleaseSites();
     this.getCategories();
-    this.entries = this.dataSource.filteredData.length;
+    this.entries = 'Batch Release: ' + this.dataService.batchrelase.length + " entries";
   }
 
   announceSortChange(sortState: Sort) {
@@ -182,18 +219,24 @@ export class BatchreleaseComponent implements OnInit {
     });
   }
 
-  showFilterOneColDialog() {
+  showFilterOneColDialog(currentCol: string, currentIndex: number) { 
+    this.currentCol = "Filter by " + currentCol;
+    this.currentIndex = currentIndex;
     this.filterOneColDialog.nativeElement.showModal();  
   }
 
   emitFilterOneCol(e: any) {
-    debugger;
+    this.filterOneColDialog.nativeElement.close();
+    if (!e.filter) return;
     this.dataSource.filter = e.searchVal;
     this.dataSource.filterPredicate = (data: any, searchText: string) => {
-      return data.MA_name_.toString().includes(searchText);
-  };
-    this.messageService.changeData('Batch Release: ' + this.dataSource.filteredData.length + " filtered entries");
-    this.filterOneColDialog.nativeElement.close()
+      if (e.index === 1) return data.SAP_Material_Number.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 2) return data.FP_Batch_no__.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 3) return data.Bulk_Batch_no_.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 4) return data.MA_name_.toString().toUpperCase().includes(searchText.toUpperCase());
+    };
+    this.entries = 'Batch Release: ' + this.dataSource.filteredData.length + " filtered entries";
+    
   }
 }
 

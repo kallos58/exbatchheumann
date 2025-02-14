@@ -92,7 +92,7 @@
   border-radius: 6px 6px 6px 6px;
   margin-top: 5em;
   height: 16em;
-  width: 16em;
+  width: 20em;
   overflow-x: hidden;
 }
 
@@ -105,4 +105,56 @@
 
 .example-radio-button {
   margin: 5px;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding-top: 12px;
+  margin-left: 2px;
+}
+
+.homeLabel {
+  font-size: 13px;
+  margin-top: 8px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.batchLabel {
+  font-size: 13px;
+  margin-top: 8px;
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+.entriesLabel {
+  font-size: 13px;
+  margin-top: 8px;
+  margin-left: 1em;
+  margin-left: 3em;
+}
+
+.toolbarDiv {
+  display: flex;
+  height: 32px;
+  padding-top: 4px;
+  border: 1px solid lightgray;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.imgFilter {
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+.imgExcel {
+  height: 16px;
+  width: 16px;
+  margin-left: 1em;
+  margin-top: 8px;
+  cursor: pointer;
 }

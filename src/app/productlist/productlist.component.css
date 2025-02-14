@@ -1,0 +1,23 @@
+.toolbarDiv {
+    display: flex;
+    height: 32px;
+    padding-top: 4px;
+    border: 1px solid lightgray;
+  }
+  .batchLabel {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 1em;
+    font-weight: bold;
+  }
+  
+  .homeLabel {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 4px;
+  }
+  
+  .pointer {
+      cursor: pointer;
+  }
+    

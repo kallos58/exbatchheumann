@@ -1,8 +1,21 @@
-<div class="titleDiv">MA Namezzzz</div>
+
+<div style="display: flex;">
+<mat-form-field  style="width: 100%;">
+  <mat-label>Select a column</mat-label>
+  <select (change)="changeFilter($event)" matNativeControl [(ngModel)]="filterCol">
+    @for (f of filters; track f) {
+    <option [value]="f.index">{{f.value}}</option>
+    }
+  </select>
+ 
+</mat-form-field></div>
 <div style="display: flex;">
   <mat-form-field style="width: 100%;">
-      <mat-label>Enter MA Name</mat-label>
+      <mat-label>Enter filter value</mat-label>
       <input [(ngModel)]="searchVal" matInput />
   </mat-form-field>
 </div>
-<br><button (click)="close()" mat-raised-button >OK</button>
+<br>
+<button (click)="clear()" mat-raised-button >Clear Filter</button>
+<button (click)="cancel()" mat-raised-button >Cancel</button>
+<button (click)="close()" mat-raised-button >OK</button>

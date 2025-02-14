@@ -11,7 +11,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
-import {Sort, MatSortModule} from '@angular/material/sort';
+import {MatSortModule} from '@angular/material/sort';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   imports: [ 
@@ -28,7 +29,8 @@ import {Sort, MatSortModule} from '@angular/material/sort';
     MatSelectModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSortModule
+    MatSortModule,
+    MatPaginatorModule
   ],
   exports: [
     MatGridListModule,
@@ -43,7 +45,8 @@ import {Sort, MatSortModule} from '@angular/material/sort';
     MatSelectModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSortModule
+    MatSortModule,
+    MatPaginatorModule
   ]    
 })
 

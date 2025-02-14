@@ -1,11 +1,19 @@
+<div class="toolbarDiv">
+  <mat-icon class="pointer" (click)="goHome()" fontIcon="home"></mat-icon>
+  <label class="homeLabel" (click)="goHome()">Home</label>
+  <label class="batchLabel" >ExBatch+</label>
+  <label class="entriesLabel" >{{entries}}</label>
+  <mat-icon class="imgFilter" (click)="showFilterOneColDialog('SAP Material Number', 1)" fontIcon="filter_list"></mat-icon>
+  <label class="homeLabel pointer" (click)="showFilterOneColDialog('SAP Material Number', 1)">Filter</label>
+  <img class="pointer" src="https://cdn3.iconfinder.com/data/icons/document-icons-2/30/647714-excel-64.png" class="imgExcel"/>
+  <label class="homeLabel pointer" (click)="showFilterOneColDialog('SAP Material Number', 1)">Export to Excel</label>
+</div>
 <div class="table-container border-shadow">
-
 
   <table mat-table matSort (matSortChange)="announceSortChange($event)" [dataSource]="dataSource" class="table mat-elevation-z8">
 
-    
     <ng-container matColumnDef="SAP_Material_Number" sticky>
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> SAP Mat.No. </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header > SAP Mat.No. &#8285; </th>
       <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedLeft': element.id=== currentId }"> {{element.SAP_Material_Number}} </td>
     </ng-container>
   
@@ -21,7 +29,7 @@
   
     <ng-container matColumnDef="MA_name_">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> MA Name 
-        <span (click)="showFilterOneColDialog()"><mat-icon  class="search" fontIcon="search"></mat-icon></span>
+        <span (click)="showFilterOneColDialog('MA Name', 4)"><mat-icon  class="search" fontIcon="search"></mat-icon></span>
       </th>
       <td mat-cell (click)="setSelected(element)" *matCellDef="let element" [ngClass]="{ 'selectedMiddle': element.id=== currentId }"> {{element.MA_name_}} </td>
     </ng-container>
@@ -37,7 +45,6 @@
   </table>
 </div>
 
-<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 
 <dialog #messageboxDialog class="mydialog">
   <messagebox-dialog>
@@ -47,6 +54,8 @@
 <dialog #filterOneColDialog class="filterOneColDialog">
   <filter-one-col-dialog
     (childFilter)="emitFilterOneCol($event)"
-    (sortIndex)="sortIndex">
+    [currentCol]="currentCol"
+    [currentIndex]="currentIndex">
   </filter-one-col-dialog>
 </dialog>
+<router-outlet />
