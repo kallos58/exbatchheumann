@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BatchreleaseComponent } from './batchrelease/batchrelease.component';
-import { ProductlistComponent } from './productlist/productlist.component';
+import { SettingsComponent } from './settings/settings.component';
 
 export const routes: Routes = [
     {
@@ -17,7 +17,7 @@ export const routes: Routes = [
         component: BatchreleaseComponent,
     },
     {
-        path: 'productlist',
-        component: ProductlistComponent,
+        path: 'settings',
+        component: SettingsComponent,
     }
 ];

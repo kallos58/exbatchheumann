@@ -1,6 +1,6 @@
 import * as Cosmos from "@azure/cosmos";
 import { CommonModule } from '@angular/common'
-import {signal , Component, ElementRef, OnInit, ViewChild, inject} from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Dialog, DialogModule, DialogRef} from '@angular/cdk/dialog';
 import { CdkDialog } from './cdk-dialog';
@@ -28,29 +28,7 @@ export class BatchreleaseComponent implements OnInit {
   @ViewChild('filterOneColDialog', { static: true }) filterOneColDialog!: ElementRef<HTMLDialogElement>;
   @ViewChild(MatSort)
 
-  //users = resource({
-    ////loader: async () => {
-   //   let endpoint = "https://schruefer.documents.azure.com:443/";
-    //  let key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
-    //  let client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
-    //  let database = "Heumann";
-   //   let db = this.client.database(database);
-   //   let container = db.container("Batch_Release");
-  //  try {
-  //    await container.items
-  //    .query({
-   //       query: "SELECT * from c"
-   //   })
-   //   .fetchAll()
-   //   .then((response: any) => {
-   //     console.log(response.resources);
-   //     this.dataSource = new MatTableDataSource(response.resources);
-   //   }) 
-   /// } catch(error) {
-  //    console.log(error);
- //   }    
- //   },
-  //});
+ 
 
   sort: MatSort = new MatSort;
   entries = "";
@@ -58,7 +36,8 @@ export class BatchreleaseComponent implements OnInit {
   currentIndex = 0;
   displayedColumns: string[] = ['SAP_Material_Number', 'FP_Batch_no__', 'Bulk_Batch_no_', 'MA_name_', 'Company'];
   dataSource = new MatTableDataSource();
-  apiManufacturers: any = [];
+  batchrelease: any = [];
+  apimanufacturers: any = [];
   manufacturers: any = [];
   releasesites: any = [];
   categories: any = [];
@@ -66,11 +45,7 @@ export class BatchreleaseComponent implements OnInit {
   DialogRef: DialogRef<CdkDialog> | undefined;
   currentItem: any = [];
   currentId: string = "";
-  endpoint = "https://schruefer.documents.azure.com:443/";
-  key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
-  client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
-  database = "Heumann";
-  db = this.client.database(this.database);
+  
 
   filterCol: string = "";
   filters: any = ["MA Name", "Chi Bame"];
@@ -86,101 +61,17 @@ export class BatchreleaseComponent implements OnInit {
   }
   ngOnInit() {
     this.dataSource = new MatTableDataSource(this.dataService.batchrelase);
-
-    //this.getBatchRelease();
-    this.getAPIManufacturers();
-    this.getManufacturers();
-    this.getReleaseSites();
-    this.getCategories();
+    this.apimanufacturers = this.dataService.apimanufacturers;
+    this.manufacturers = this.dataService.manufacturers;
+    this.releasesites = this.dataService.releasesites;
+    this.categories = this.dataService.categories;
     this.entries = 'Batch Release: ' + this.dataService.batchrelase.length + " entries";
   }
 
   announceSortChange(sortState: Sort) {
     this.dataSource.sort = this.sort;
   }
-
-  async getBatchRelease() {
-    const container = this.db.container("Batch_Release");
-    try {
-      await container.items
-      .query({
-          query: "SELECT * from c"
-      })
-      .fetchAll()
-      .then((response: any) => {
-        this.messageService.changeData('Batch Release: ' + response.resources.length + " entries");
-        this.dataSource = new MatTableDataSource(response.resources);
-
-      }) 
-    } catch(error) {
-      console.log(error);
-    }    
-  }
-
-  async getAPIManufacturers() {
-    const container = this.db.container("API_Manufacturers");
-    try {
-      await container.items
-      .query({
-          query: "SELECT * from c"
-      })
-      .fetchAll()
-      .then((response: any) => {
-        this.apiManufacturers = response.resources;
-      }) 
-    } catch(error) {
-      console.log(error);
-    }    
-  }
-
-  async getManufacturers() {
-    const container = this.db.container("Manufacturers");
-    try {
-      await container.items
-      .query({
-          query: "SELECT * from c"
-      })
-      .fetchAll()
-      .then((response: any) => {
-        this.manufacturers = response.resources;
-      }) 
-    } catch(error) {
-      console.log(error);
-    }    
-  }
-
-  async getReleaseSites() {
-    const container = this.db.container("Release_Sites");
-    try {
-      await container.items
-      .query({
-          query: "SELECT * from c"
-      })
-      .fetchAll()
-      .then((response: any) => {
-        this.releasesites = response.resources;
-      }) 
-    } catch(error) {
-      console.log(error);
-    }    
-  }
-
-  async getCategories() {
-    const container = this.db.container("Categories");
-    try {
-      await container.items
-      .query({
-          query: "SELECT * from c"
-      })
-      .fetchAll()
-      .then((response: any) => {
-        this.categories = response.resources;
-      }) 
-    } catch(error) {
-      console.log(error);
-    }    
-  }
-
+ 
   setSelected(e: any) {
     this.currentId = e.id;
   }
@@ -193,12 +84,13 @@ export class BatchreleaseComponent implements OnInit {
       data: {
         entry: e,
         currentEu: "EU",
-        apimanufacturers: this.apiManufacturers,
+        apimanufacturers: this.apimanufacturers,
         manufacturers: this.manufacturers,
         releasesites: this.releasesites,
         categories: this.categories
       },
     });
+    
     dialog.closed.subscribe(async data => {
       this.currentItem = data;
 

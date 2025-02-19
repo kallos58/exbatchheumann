@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
 
   i = "1";
   entries: string = "";
+  batchrelease: any = [];
   constructor( 
     private router: Router,
     private messageService: MessageService,
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit {
   }
   
   ngOnInit() {
+    this.dataService.getAllData();
     this.messageService.entries.subscribe(e => this.entries = e);
     this.messageService.index.subscribe(e => this.i = e);
   }
