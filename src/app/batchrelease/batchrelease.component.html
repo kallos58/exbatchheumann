@@ -47,7 +47,9 @@
 
 
 <dialog #messageboxDialog class="mydialog">
-  <messagebox-dialog>
+  <messagebox-dialog
+    [message]="message"
+    [messageIndex]="messageIndex">
   </messagebox-dialog>
 </dialog>
 

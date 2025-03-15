@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MessageboxDialog } from '../dialogs/messageboxDialog.component';
 import { MessageService } from '../services/messageService';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-settings',
@@ -22,7 +23,7 @@ import { MessageService } from '../services/messageService';
   styleUrl: './settings.component.css'
 })
 
-export class SettingsComponent {
+export class SettingsComponent implements OnInit {
    @ViewChild('messageboxDialog', { static: true }) messageboxDialog!: ElementRef<HTMLDialogElement>;
   constructor(
       private router: Router,
@@ -30,26 +31,40 @@ export class SettingsComponent {
       private messageService: MessageService
     ) {
       this.productfamilies = new MatTableDataSource(this.dataService.productfamilies);
-      this.countries = this.dataService.countries;
-      debugger;
-      this.dataSource = new MatTableDataSource(this.countries);
+      this.countries = new MatTableDataSource(this.dataService.countries);
+      this.ptypes = new MatTableDataSource(this.dataService.ptypes);
+      this.austatus = new MatTableDataSource(this.dataService.austatus);
+      this.creators = new MatTableDataSource(this.dataService.creators);
     }
 
-  items = ["Product Families", "Countries"];
+  items = ["Product Families", "Countries", "Procedure Types", "Authorisation Status", "Creators / Modifiers"];
   currentItem: any = [];
   productfamilies: any = [];
   countries: any = [];
-  dataSource = new MatTableDataSource();
+  ptypes: any = [];
+  austatus: any = [];
+  creators: any = [];
   displayedColumns: string[] = ['country'];
   displayedColumnsP: string[] = ['Product_Family'];
+  displayedColumnsPt: string[] = ['ptype'];
+  displayedColumnsAu: string[] = ['austatus'];
+  displayedColumnsC: string[] = ['creator'];
   data: any = [];
   family = "";
+  ptype = "";
+  austat = "";
+  crea = "";
   shortcut = "";
   country = "";
   currentId = "";
   filterVal = "";
   index = 0;
   mode = "";
+  message = "";
+  messageIndex = 0;
+
+  ngOnInit() {
+  }
 
   goHome() {
     this.router.navigate(['/']);
@@ -57,43 +72,119 @@ export class SettingsComponent {
 
   setItem(e: any) {
     this.currentId = e.id;
-    if (this.index === 0) {
-      this.family = e.Product_Family;
-    } else {
-      this.shortcut = e.shortcut;
-      this.country = e.country;
+    switch (this.index) {
+      case 0: 
+        this.family = e.Product_Family;
+        break;
+      case 1: 
+        this.shortcut = e.shortcut;
+        this.country = e.country;
+        break;
+      case 2: 
+        this.ptype = e.ptype;
+        break;
+      case 3: 
+        this.austat = e.austatus;
+        break;
+      case 4: 
+        this.crea = e.creator;
+        break;
     }
     this.currentItem = e;
   }
 
   saveData() {
+    this.messageIndex = 0;
+    this.message = "The changes were saved...";
     this.messageboxDialog.nativeElement.showModal(); 
     setTimeout(() => {
       this.messageboxDialog.nativeElement.close();
     }, 2000);
+
     let container = "";
     let entry: any;
     const id = this.createId();
-    if (this.index === 0) {
-      entry = {
-        id: id,
-        Product_Family: this.family
-      };
-      container = "Product_Families";
+    switch (this.index) {
+      case 0:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          Product_Family: this.family
+        };
+        container = "Product_Families";
+        break;
+      case 1:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          shortcut: this.shortcut,
+          country: this.country
+        };
+        container = "Countries";
+        break;
+      case 2:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          ptype: this.ptype
+        };
+        container = "Procedure_Types";
+        break;
+      case 3:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          austatus: this.austat
+        };
+        container = "Authorisation_Status";
+        break;
+      case 4:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          creator: this.crea
+        };
+        container = "Creators";
+        break;
     }
-    debugger;
     if (this.mode === "new") {
-      this.dataService.addData("Product_Families", this.currentItem)
+      this.dataService.addData(container, entry);
+      this.localInsert(entry);
     } else {
+      debugger;
       this.dataService.saveData(container, entry);
+      this.localUpdate(entry);
     }
   }
 
   filterData() {
-    this.productfamilies.filter = this.filterVal;
-    this.productfamilies.filterPredicate = (data: any, searchText: string) => {
-      return data.Product_Family.toString().toUpperCase().includes(searchText.toUpperCase());
-    };
+    switch(this.index) {
+      case 0:
+        this.productfamilies.filter = this.filterVal;
+        this.productfamilies.filterPredicate = (data: any, searchText: string) => {
+          return data.Product_Family.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 1:
+        this.countries.filter = this.filterVal;
+        this.countries.filterPredicate = (data: any, searchText: string) => {
+          return data.country.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 2:
+        this.ptypes.filter = this.filterVal;
+        this.ptypes.filterPredicate = (data: any, searchText: string) => {
+          return data.ptype.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 3:
+        this.austatus.filter = this.filterVal;
+        this.austatus.filterPredicate = (data: any, searchText: string) => {
+          return data.austatus.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 4:
+        this.creators.filter = this.filterVal;
+        this.creators.filterPredicate = (data: any, searchText: string) => {
+          return data.creator.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+    }
   }
 
   clearFilter() {
@@ -103,7 +194,11 @@ export class SettingsComponent {
 
   addData() {
     this.mode = "new";
-    this.family = "new product family";
+    if (this.index === 0) this.family = "new product family";
+    if (this.index === 1) this.country = "new country";
+    if (this.index === 2) this.ptype = "new procedure type";
+    if (this.index === 3) this.austat = "new authorisation status";
+    if (this.index === 4) this.crea = "new creator / modifier";
   }
 
   settingChange(i: number) {
@@ -111,8 +206,79 @@ export class SettingsComponent {
   }
 
   deleteItem() {
+    
+    let pos;
+    switch (this.index) {
+      case 0:
+        pos = this.productfamilies.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+        this.message = "Do you want to remove the product family '" + this.family + "'?";
+        break;
+      case 1:
+        pos = this.countries.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+        this.message = "Do you want to remove the country '" + this.country + "'?";
+        break;
+      case 2:
+        pos = this.ptypes.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+        this.message = "Do you want to remove the procedure type '" + this.ptype + "'?";
+        break;  
+      case 3:
+        pos = this.austatus.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+        this.message = "Do you want to remove the authorisation status '" + this.austat + "'?";
+        break;  
+      case 4:
+        pos = this.creators.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+        this.message = "Do you want to remove the creator / modifier '" + this.crea + "'?";
+        break;        
+    }
+    this.messageIndex = 1;
+    this.messageboxDialog.nativeElement.showModal();
+  }
+
+  deleteProductFamily() {
+    const pos = this.productfamilies.data.findIndex((el: { id: any; }) => el.id === this.currentId);
     debugger;
+    if (pos >= 0) {
+      this.productfamilies.data.splice(pos, 1);
+      this.productfamilies.data = this.productfamilies.data;
+    }
     this.dataService.deleteItem("Product_Families", this.currentId);
+  }
+
+  deleteCountry() {
+    const pos = this.countries.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+    if (pos >= 0) {
+      this.countries.data.splice(pos, 1);
+      this.countries.data = this.countries.data;
+    }
+    this.dataService.deleteItem("Countries", this.currentId);
+  }
+
+  deletePtype() {
+    const pos = this.ptypes.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+    if (pos >= 0) {
+      this.ptypes.data.splice(pos, 1);
+      this.ptypes.data = this.ptypes.data;
+    }
+    this.dataService.deleteItem("Procedure_Types", this.currentId);
+  }
+
+  deleteAustatus() {
+    const pos = this.austatus.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+    if (pos >= 0) {
+      this.austatus.data.splice(pos, 1);
+      this.austatus.data = this.austatus.data;
+    }
+    this.dataService.deleteItem("Authorisation_Status", this.currentId);
+  }
+
+  deleteCreator() {
+    const pos = this.creators.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+    if (pos >= 0) {
+    const pos = this.creators.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+      this.creators.data.splice(pos, 1);
+      this.creators.data = this.creators.data;
+    }
+    this.dataService.deleteItem("Creators", this.currentId);
   }
 
   public createId(): string {
@@ -125,6 +291,70 @@ export class SettingsComponent {
       counter += 1;
     }
     return result;
+  }
+
+  localUpdate(e: any) {
+    let item;
+    switch (this.index) {
+      case 0:
+        item = this.productfamilies.data.find((o: { id: any; }) => o.id === e.id)
+        item.Product_Family = e.Product_Family;
+        break;
+      case 1:
+        item = this.countries.data.find((o: { id: any; }) => o.id === e.id)
+        item.shortcut = e.shortcut;
+        item.country = e.country;
+        break;
+      case 2:
+        item = this.ptypes.data.find((o: { id: any; }) => o.id === e.id)
+        item.ptype = e.ptype;
+        break;
+      case 3:
+        item = this.austatus.data.find((o: { id: any; }) => o.id === e.id)
+        item.austatus = e.austatus;
+        break;
+      case 4:
+        item = this.creators.data.find((o: { id: any; }) => o.id === e.id)
+        item.creator = e.creator;
+        break;
+    }
+  }
+ 
+  localInsert(e: any) {
+    switch (this.index) {
+      case 0:
+        this.productfamilies.data.push(e);
+        this.productfamilies.data = this.productfamilies.data;
+        break;
+      case 1:
+        this.countries.data.push(e);
+        this.countries.data = this.countries.data;
+        break;
+      case 2:
+        this.ptypes.data.push(e);
+        this.ptypes.data = this.ptypes.data;
+        break;
+      case 3:
+        this.austatus.data.push(e);
+        this.austatus.data = this.austatus.data;
+        break;
+      case 4:
+        this.creators.data.push(e);
+        this.creators.data = this.creators.data;
+        break;
+    }
+
+  }
+
+  cancelMessage(e: any) {
+    if (e === 1) {
+      if (this.index === 0) this.deleteProductFamily();
+      if (this.index === 1) this.deleteCountry();
+      if (this.index === 2) this.deletePtype();
+      if (this.index === 3) this.deleteAustatus();
+      if (this.index === 4) this.deleteCreator();
+    }
+    this.messageboxDialog.nativeElement.close();
   }
 }
 

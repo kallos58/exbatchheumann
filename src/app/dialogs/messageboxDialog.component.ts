@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
@@ -15,11 +15,16 @@ import { MaterialModule } from '../material.module';
 })
 export class MessageboxDialog {
  
-    
-  
+    @Input() message: string = "";
+    @Input() messageIndex: number = 0;
+    @Output() cancelMessage = new EventEmitter<any>();
     constructor(
         
     ) {}  
   
+    cancel(i: number) {
+        debugger;
+        this.cancelMessage.emit(i);
+    }
    
 }

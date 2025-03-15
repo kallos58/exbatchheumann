@@ -1,11 +1,10 @@
-import { Injectable, resource, signal } from '@angular/core';
+import { Injectable } from '@angular/core';
 import * as Cosmos from "@azure/cosmos";
 
 @Injectable({
   providedIn: 'root',
 })
-export class DataService {
-    private trigger = signal<void>(undefined);
+export class DataService  {
     endpoint = "https://schruefer.documents.azure.com:443/";
     key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
     client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
@@ -18,7 +17,10 @@ export class DataService {
     categories: any = [];
     productfamilies: any = [];
     countries: any = [];
-    
+    ptypes: any = [];
+    austatus: any = [];
+    creators: any = [];
+
     getAllData() {
         this.getData("Batch_Release", 1);
         this.getData("API_Manufacturers", 2);
@@ -27,6 +29,9 @@ export class DataService {
         this.getData("Categories", 5);
         this.getData("Product_Families", 6);
         this.getData("Countries", 7);
+        this.getData("Procedure_Types", 8);
+        this.getData("Authorisation_Status", 9);
+        this.getData("Creators", 10);
     }
 
     async getData(c: string, i: number) {
@@ -45,6 +50,9 @@ export class DataService {
             if ( i === 5) this.categories = response.resources;
             if ( i === 6) this.productfamilies = response.resources;
             if ( i === 7) this.countries = response.resources;
+            if ( i === 8) this.ptypes = response.resources;
+            if ( i === 9) this.austatus = response.resources;
+            if ( i === 10) this.creators = response.resources;
           }) 
         } catch(error) {
           console.log(error);
@@ -61,12 +69,7 @@ export class DataService {
 
     public async addData(c: string, entry: any) {
         //const id = this.createId();
-        const container = this.db.container(c);
-        //debugger;
-        //const entry = {
-        //    id: id,
-        //    Product_Family: item.Product_Family
-       // }  
+        const container = this.db.container(c); 
         await container.items.create(entry);
     }
 

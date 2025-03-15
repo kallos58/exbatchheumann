@@ -1,2 +1,3 @@
-<div class="titleDiv">The changes were saved...</div>
-<br><button mat-raised-button >OK</button>
+<div class="titleDiv">{{message}}</div>
+<br><button *ngIf="messageIndex==1" mat-raised-button (click)="cancel(0)">Cancel</button>
+<button mat-raised-button (click)="cancel(1)">OK</button>

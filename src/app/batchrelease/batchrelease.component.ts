@@ -45,8 +45,8 @@ export class BatchreleaseComponent implements OnInit {
   DialogRef: DialogRef<CdkDialog> | undefined;
   currentItem: any = [];
   currentId: string = "";
-  
-
+  message = "The changes were saved...";
+  messageIndex = 0;
   filterCol: string = "";
   filters: any = ["MA Name", "Chi Bame"];
   constructor(
