@@ -1,8 +1,24 @@
-<div class="toolbarDiv">
-  <mat-icon class="pointer" fontIcon="home"></mat-icon>
-  <label class="homeLabel">Home</label>
-  <label class="batchLabel" >ExBatch++</label>
+<div *ngIf="isPassed==false" class="password">
+  <div style="display: flex; flex-direction: column; width: 16em;">
+      <mat-form-field style="width: 90%; margin-top: 16px; margin-left: 16px;">
+          <mat-label>Enter user name</mat-label>
+          <input matInput [(ngModel)]="username"/>
+      </mat-form-field>
+      <mat-form-field style="width: 90%; margin-top: 16px; margin-left: 16px;">
+        <mat-label>Enter password</mat-label>
+        <input matInput type="password" [(ngModel)]="password"/>
+    </mat-form-field>
+  </div>
+  <br>
+  <label *ngIf="invalid" style="margin-left: 16px; color: red; font-size: 12px;">Invalid user name or password</label>
+  <button (click)="checkPw()" style="margin-left: 16px;" mat-raised-button >OK</button>
 </div>
+<div *ngIf="isPassed==true">
+  <div class="toolbarDiv">
+    <mat-icon class="pointer" fontIcon="home"></mat-icon>
+    <label class="homeLabel">Home</label>
+    <label class="batchLabel" >ExBatch++</label>
+  </div>
 <div style="display: flex" >
     <div class="card" (click)="cardClick(8)">
       <div>Batch Release</div>
@@ -79,5 +95,6 @@
       <img style="border: none" src="https://cdn3.iconfinder.com/data/icons/document-icons-2/30/647714-excel-64.png" height="16px" width="16px"/>
     </button>
   </div>
+</div>
   
 
