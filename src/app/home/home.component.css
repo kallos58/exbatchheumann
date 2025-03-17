@@ -66,12 +66,12 @@
 }
 
 .password {
-  width: 16em;
+    width: 16em;
     margin-left: 35%;
     margin-top: 10%;
     border: 2px solid lightgray;
     border-radius: 25px;
-    height: 18em;
+    height: 20em;
     box-shadow: 10px 10px darkgray;
 }
   

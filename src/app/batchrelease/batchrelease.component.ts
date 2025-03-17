@@ -92,8 +92,8 @@ export class BatchreleaseComponent implements OnInit {
     });
     
     dialog.closed.subscribe(async data => {
+      if (!data) return;
       this.currentItem = data;
-
       this.messageboxDialog.nativeElement.showModal(); 
       setTimeout(() => {
         this.messageboxDialog.nativeElement.close();

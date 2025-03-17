@@ -1,5 +1,7 @@
 <div *ngIf="isPassed==false" class="password">
+  
   <div style="display: flex; flex-direction: column; width: 16em;">
+    <label style="margin-left: 16px; margin-top: 16px;">Heumann ExBatch+</label>
       <mat-form-field style="width: 90%; margin-top: 16px; margin-left: 16px;">
           <mat-label>Enter user name</mat-label>
           <input matInput [(ngModel)]="username"/>
@@ -86,7 +88,7 @@
         <div><label style="font-size:11px;">11 entries</label></div>
     </div>
   </div>
-  <div  style="margin-left: 1em; margin-top: 1em; font-weight: bold;">
+  <div  style="display: none; margin-left: 1em; margin-top: 1em; font-weight: bold;">
     <label >{{entries}}</label>
     <button class="xlsButton ml1" type="submit" (click)="clearFilter()" >Clear filter
       <img style="border: none" src="https://cdn-icons-png.flaticon.com/128/3126/3126675.png" height="16px" width="16px"/>

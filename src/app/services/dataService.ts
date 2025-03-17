@@ -20,7 +20,8 @@ export class DataService  {
     ptypes: any = [];
     austatus: any = [];
     creators: any = [];
-
+    
+    
     getAllData() {
         this.getData("Batch_Release", 1);
         this.getData("API_Manufacturers", 2);
