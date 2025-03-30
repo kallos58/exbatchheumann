@@ -29,13 +29,6 @@
         src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
         <div><label style="font-size:11px;">777 entries</label></div>
     </div>
-    <div class="card" (click)="cardClick(1)">
-      <div>Abbreviations</div>
-      <div><img 
-          class="img2424"
-        src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
-        <div><label style="font-size:11px;">27 entries</label></div>
-    </div>
     <div class="card" (click)="cardClick(2)">
       <div>CMO Masters</div>
       <div><img 
@@ -64,15 +57,16 @@
         src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
         <div><label style="font-size:11px;">74 entries</label></div>
     </div>
-  </div>
-  <div style="display: flex;">
-    <div class="card" (click)="cardClick(6)">
+    <div [ngClass]="{'card': !isNotAllowedUser, 'disabledCard' : isNotAllowedUser }" (click)="cardClick(6)">
       <div>Contacts SKU</div>
       <div><img 
         class="img2424"
         src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
         <div><label style="font-size:11px;">1941 entries</label></div>
     </div>
+  </div>
+  <div style="display: flex;">
+    
     <div class="card"  (click)="cardClick(7)">
       <div>SAP FG Material</div>
       <div><img 
@@ -87,7 +81,22 @@
         src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
         <div><label style="font-size:11px;">11 entries</label></div>
     </div>
+    <div class="card" (click)="cardClick(10)">
+      <div>Article Master<br>Batches</div>
+      <div><img 
+          class="img2424"
+        src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
+        <div><label style="font-size:11px;">313 entries</label></div>
+    </div>
+    <div class="card" (click)="cardClick(11)">
+      <div>Data Migration</div>
+      <div><img 
+          class="img2424"
+        src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
+        <div><label style="font-size:11px;">313 entries</label></div>
+    </div>
   </div>
+
   <div  style="display: none; margin-left: 1em; margin-top: 1em; font-weight: bold;">
     <label >{{entries}}</label>
     <button class="xlsButton ml1" type="submit" (click)="clearFilter()" >Clear filter

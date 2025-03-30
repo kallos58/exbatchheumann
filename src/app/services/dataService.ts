@@ -10,18 +10,24 @@ export class DataService  {
     client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
     database = "Heumann";
     db = this.client.database(this.database);
-    batchrelase: any = [];
+    batchrelease: any = [];
     apimanufacturers: any = [];
     manufacturers: any = [];
     releasesites: any = [];
     categories: any = [];
+    abbreviations: any = [];
+    eus: any = [];
+    status: any = [];
     productfamilies: any = [];
     countries: any = [];
     ptypes: any = [];
     austatus: any = [];
     creators: any = [];
-    
-    
+    articlemaster: any = [];
+    batches: any = [];
+    isPassed = false;
+    isNotAllowedUser = false;
+
     getAllData() {
         this.getData("Batch_Release", 1);
         this.getData("API_Manufacturers", 2);
@@ -33,18 +39,54 @@ export class DataService  {
         this.getData("Procedure_Types", 8);
         this.getData("Authorisation_Status", 9);
         this.getData("Creators", 10);
+        this.getData("Article_Master", 11);
+        this.getData("Batches", 12);
+        this.getData("Abbreviations", 13);
+        this.getData("Abbreviations", 14);
+        this.getData("Abbreviations", 15);
     }
 
     async getData(c: string, i: number) {
         const container = this.db.container(c);
+        let query;
+        switch (i) {
+          case 6:
+            query = "SELECT * from c ORDER BY c.Product_Family";
+            break;
+          case 2:
+            query = "SELECT * from c ORDER BY c.API_Manufacturer";
+            break;
+          case 3:
+            query = "SELECT * from c ORDER BY c.Manufacturer";
+            break;
+          case 4:
+            query = "SELECT * from c ORDER BY c.release_site";
+            break;
+          case 11:
+            query = "SELECT * from c ORDER BY c.SAP_Mat_No";
+            break;
+          case 13:
+            query = "SELECT * from c WHERE c.index=1 ORDER BY c.content";
+            break;
+          case 14:
+            query = "SELECT * from c WHERE c.index=2 ORDER BY c.content";
+            break;
+          case 15:
+            query = "SELECT * from c WHERE c.index=3 ORDER BY c.content";
+            break;
+          default:
+            query = "SELECT * from c";
+            break;
+
+        }
         try {
           await container.items
           .query({
-              query: i!=6 ? "SELECT * from c" : "SELECT * from c ORDER BY c.Product_Family"
+              query: query
           })
           .fetchAll()
           .then((response: any) => {
-            if ( i === 1) this.batchrelase = response.resources;
+            if ( i === 1) this.batchrelease = response.resources;
             if ( i === 2) this.apimanufacturers = response.resources;
             if ( i === 3) this.manufacturers = response.resources;
             if ( i === 4) this.releasesites = response.resources;
@@ -54,18 +96,45 @@ export class DataService  {
             if ( i === 8) this.ptypes = response.resources;
             if ( i === 9) this.austatus = response.resources;
             if ( i === 10) this.creators = response.resources;
+            if ( i === 11) this.articlemaster = response.resources;
+            if ( i === 12) this.batches = response.resources;
+            if ( i === 13) this.abbreviations = response.resources;
+            if ( i === 14) this.eus = response.resources;
+            if ( i === 15) this.status = response.resources;
           }) 
         } catch(error) {
           console.log(error);
         }    
     }
 
+    public async saveStatus(batchno: string, status: string) {
+      const container = this.db.container("Batches");
+      const query = "SELECT * from c WHERE c.FP_Batch_No = '" + batchno + "'";
+      try {
+        await container.items
+        .query({
+            query: query
+        })
+        .fetchAll()
+        .then((response: any) => {
+          let item = response.resources[0];
+          item.Status = status;
+          this.saveData("Batches", item);
+        }) 
+      } catch(error) {
+        console.log(error);
+      }    
+    }
+
     public async saveData(c: string, item: any) {
-      debugger;
         const container = this.db.container(c);
-        await container
-        .item(item.id, item.id)
-        .replace(item);
+        try {
+          await container
+          .item(item.id, item.id)
+          .replace(item);
+        } catch(error) {
+          console.log(error);
+        } 
     }
 
     public async addData(c: string, entry: any) {

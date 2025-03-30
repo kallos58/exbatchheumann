@@ -1,18 +1,48 @@
 
 <div style="display: flex;">
-<mat-form-field  style="width: 100%;">
-  <mat-label>Select a column</mat-label>
-  <select (change)="changeFilter($event)" matNativeControl [(ngModel)]="filterCol">
-    @for (f of filters; track f) {
-    <option [value]="f.index">{{f.value}}</option>
-    }
-  </select>
- 
-</mat-form-field></div>
-<div style="display: flex;">
+  <mat-form-field  style="width: 100%;">
+    <mat-label>Select a column</mat-label>
+    <select (change)="changeFilter($event)" matNativeControl [(ngModel)]="filterCol">
+      @for (f of filters; track f) {
+      <option [value]="f.index">{{f.value}}</option>
+      }
+    </select>
+  </mat-form-field>
+</div>
+<div *ngIf="getCi()" style="display: flex;">
   <mat-form-field style="width: 100%;">
       <mat-label>Enter filter value</mat-label>
       <input [(ngModel)]="searchVal" matInput />
+  </mat-form-field>
+</div>
+<div *ngIf="currentIndex==6" style="display: flex;">
+  <mat-form-field  style="width: 100%;">
+    <mat-label>Select a company</mat-label>
+    <select matNativeControl [(ngModel)]="searchVal">
+      @for (c of companies; track c) {
+      <option [value]="c.value">{{c.value}}</option>
+      }
+    </select>
+  </mat-form-field>
+</div>
+<div *ngIf="currentIndex==7" style="display: flex;">
+  <mat-form-field  style="width: 100%;">
+    <mat-label>Select an API manufacturer</mat-label>
+    <select matNativeControl [(ngModel)]="searchVal">
+      @for (api of apimanufacturers; track api) {
+      <option [value]="api.API_Manufacturer">{{api.API_Manufacturer}}</option>
+      }
+    </select>
+  </mat-form-field>
+</div>
+<div *ngIf="currentIndex==8" style="display: flex;">
+  <mat-form-field  style="width: 100%;">
+    <mat-label>Select a manufacturer</mat-label>
+    <select matNativeControl [(ngModel)]="searchVal">
+      @for (m of manufacturers; track m) {
+      <option [value]="m.Manufacturer">{{m.Manufacturer}}</option>
+      }
+    </select>
   </mat-form-field>
 </div>
 <br>

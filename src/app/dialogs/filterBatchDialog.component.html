@@ -1,0 +1,46 @@
+<div style="display: flex;">
+  <mat-form-field  style="width: 100%;">
+    <mat-label>Select a column</mat-label>
+    <select (change)="changeFilter($event)" matNativeControl [(ngModel)]="currentIndex">
+      @for (f of filters; track f) {
+      <option [value]="f.index" [selected]="f.selected">{{f.value}}</option>
+      }
+    </select>
+  </mat-form-field>
+</div>
+<div *ngIf="currentIndex==0" style="display: flex;">
+  <mat-form-field style="width: 100%;">
+      <mat-label>Enter filter value</mat-label>
+      <input [(ngModel)]="searchVal" matInput />
+  </mat-form-field>
+</div>
+<div *ngIf="currentIndex==1" style="display: flex;">
+  <mat-form-field  style="width: 100%;">
+    <mat-label>Select a release site</mat-label>
+    <select  matNativeControl [(ngModel)]="searchVal">
+      @for (r of releasesites; track r) {
+      <option [value]="r.release_site" >{{r.release_site}}</option>
+      }
+    </select>
+  </mat-form-field>
+</div>
+<div *ngIf="currentIndex==2" style="display: flex;">
+  <mat-form-field  style="width: 100%;">
+    <mat-label>Select a status</mat-label>
+    <select  matNativeControl [(ngModel)]="searchVal">
+      @for (s of status; track s) {
+      <option [value]="s" >{{s}}</option>
+      }
+    </select>
+  </mat-form-field>
+</div>
+<div *ngIf="currentIndex==3 || currentIndex==4 || currentIndex==5" class="date" > 
+    <label>From</label>
+    <input [(ngModel)]="fromDate" style="margin-left: 1em; height: 1.5em; " type="date"/>
+    <label style="margin-left: 8px;">To</label>
+    <input [(ngModel)]="toDate" style="margin-left: 1em; height: 1.5em; margin-right: 4px;" type="date"/>
+</div>
+<br>
+<button (click)="clear()" mat-raised-button >Clear Filter</button>
+<button (click)="cancel()" mat-raised-button >Cancel</button>
+<button (click)="close()" mat-raised-button >OK</button>

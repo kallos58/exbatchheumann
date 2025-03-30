@@ -1,6 +1,6 @@
 import { DIALOG_DATA, DialogModule, DialogRef } from "@angular/cdk/dialog";
 import { CommonModule } from "@angular/common";
-import { Component, inject, ChangeDetectionStrategy, Directive, ViewChild, ElementRef } from "@angular/core";
+import { Component, inject, ChangeDetectionStrategy, Directive, ViewChild, ElementRef, OnInit } from "@angular/core";
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MaterialModule } from '../material.module';
 import {default as _rollupMoment, Moment} from 'moment';
@@ -8,6 +8,8 @@ import * as _moment from 'moment';
 import {provideMomentDateAdapter} from '@angular/material-moment-adapter';
 import { MatDatepicker } from "@angular/material/datepicker";
 import { MonthsYearsDialog } from './monthsYearsDialog.component'
+import { DataService } from '../services/dataService';
+
 const moment = _rollupMoment || _moment;
 export const MY_FORMATS = {
   parse: {
@@ -30,14 +32,20 @@ export const MY_FORMATS = {
     providers: [ provideMomentDateAdapter(MY_FORMATS) ],
     changeDetection: ChangeDetectionStrategy.OnPush
   })
-  export class CdkDialog {
+  export class CdkDialog implements OnInit {
     @ViewChild('monthsYearsDialog', { static: true }) monthsYearsDialog!: ElementRef<HTMLDialogElement>;
 
-    constructor() {}
+    constructor(
+      private dataService: DataService
+    ) {
+      this.isNotAllowedUser = this.dataService.isNotAllowedUser;
+      this.abbreviations = this.dataService.abbreviations;
+      console.log(this.abbreviations);
+    }
 
     data = inject(DIALOG_DATA);
-    eus = ["EU","Non-EU","Non-TPL","Non-EU-TPL"];
     
+    isNotAllowedUser = false;
     status = ["F","S","U","(empty)"];
     batchstatus = ["printed","prechecked"];
     dialogRef = inject(DialogRef);
@@ -50,9 +58,10 @@ export const MY_FORMATS = {
     dmonth = "";
     dyear = "";
     dmindex = 0;
+    eus: any = [];
+    abbreviations: any = [];
     xMonth = this.data.entry.Expiry_date.slice(0,2);
     xYear = this.data.entry.Expiry_date.slice(3,7);
-    
     xDate = this.getCalendarDate(this.data.entry.Expiry_date);
     readonly dateX = new FormControl(moment(this.xDate));
     
@@ -111,6 +120,9 @@ export const MY_FORMATS = {
     this.data.entry.CoC_received.slice(0,2);
     readonly dateCocrec = new FormControl(new Date(this.cocrecDate));
 
+    ngOnInit(): void {
+        this.eus = this.dataService.eus;
+    }
     showMonthsYears(i: number) {
       this.dmindex = i;
       if (i === 1) {
@@ -128,6 +140,7 @@ export const MY_FORMATS = {
     }
 
     emitSave(e: any) {
+      debugger;
       if ( e.i === 1) {
         this.data.entry.Manufacturing_date = e.m + "/" + e.y;
       } else {
@@ -169,6 +182,7 @@ export const MY_FORMATS = {
     }
 
     save() {
+      debugger;
       this.dialogRef.close(this.data.entry);
     }
   

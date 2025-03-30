@@ -34,7 +34,16 @@ export class BatchreleaseComponent implements OnInit {
   entries = "";
   currentCol = "";
   currentIndex = 0;
-  displayedColumns: string[] = ['SAP_Material_Number', 'FP_Batch_no__', 'Bulk_Batch_no_', 'MA_name_', 'Company'];
+  displayedColumns: string[] = [
+    'SAP_Material_Number', 
+    'FP_Batch_no__', 
+    'Bulk_Batch_no_', 
+    'MA_name_', 
+    'MA_No_', 
+    'Company',
+    'API_Manufacturer',
+    'Manufacturer',
+    'Action'];
   dataSource = new MatTableDataSource();
   batchrelease: any = [];
   apimanufacturers: any = [];
@@ -49,6 +58,7 @@ export class BatchreleaseComponent implements OnInit {
   messageIndex = 0;
   filterCol: string = "";
   filters: any = ["MA Name", "Chi Bame"];
+  filterMode = false;
   constructor(
     private messageService: MessageService,
     private dataService: DataService,
@@ -60,12 +70,16 @@ export class BatchreleaseComponent implements OnInit {
     this.router.navigate(['/']);
   }
   ngOnInit() {
-    this.dataSource = new MatTableDataSource(this.dataService.batchrelase);
+    this.getData();
+  }
+
+  getData() {
+    this.dataSource = new MatTableDataSource(this.dataService.batchrelease);
     this.apimanufacturers = this.dataService.apimanufacturers;
     this.manufacturers = this.dataService.manufacturers;
     this.releasesites = this.dataService.releasesites;
     this.categories = this.dataService.categories;
-    this.entries = 'Batch Release: ' + this.dataService.batchrelase.length + " entries";
+    this.entries = 'Batch Release: ' + this.dataService.batchrelease.length + " entries";
   }
 
   announceSortChange(sortState: Sort) {
@@ -98,37 +112,43 @@ export class BatchreleaseComponent implements OnInit {
       setTimeout(() => {
         this.messageboxDialog.nativeElement.close();
       }, 2000);
-      
-      const endpoint = "https://schruefer.documents.azure.com:443/";
-      const key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
-      const client = new Cosmos.CosmosClient({endpoint: endpoint, key: key});
-      const database = "Heumann";
-      const db = client.database(database);
-      const container = db.container("Batch_Release");
-      await container
-        .item(this.currentItem.id, this.currentItem.id)
-        .replace(this.currentItem);
+      this.dataService.saveData("Batch_Release", this.currentItem);
     });
   }
 
   showFilterOneColDialog(currentCol: string, currentIndex: number) { 
     this.currentCol = "Filter by " + currentCol;
     this.currentIndex = currentIndex;
+    this.filterMode = true;
     this.filterOneColDialog.nativeElement.showModal();  
   }
 
   emitFilterOneCol(e: any) {
+    if (this.filterMode) {
+      this.getData();
+      this.filterMode = false;
+    }
     this.filterOneColDialog.nativeElement.close();
+    
     if (!e.filter) return;
+    if (e.searchVal === "") {
+      this.getData();
+      return;
+    }
     this.dataSource.filter = e.searchVal;
     this.dataSource.filterPredicate = (data: any, searchText: string) => {
-      if (e.index === 1) return data.SAP_Material_Number.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 1) return data.SAP_Material_Number.toString().includes(searchText);
       if (e.index === 2) return data.FP_Batch_no__.toString().toUpperCase().includes(searchText.toUpperCase());
       if (e.index === 3) return data.Bulk_Batch_no_.toString().toUpperCase().includes(searchText.toUpperCase());
       if (e.index === 4) return data.MA_name_.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 5) return data.MA_No_.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 6) return data.Company.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 7) return data.API_Manufacturer.toString().toUpperCase().includes(searchText.toUpperCase());
+      if (e.index === 8) return data.Manufacturer.toString().toUpperCase().includes(searchText.toUpperCase());
     };
     this.entries = 'Batch Release: ' + this.dataSource.filteredData.length + " filtered entries";
     
   }
+
 }
 

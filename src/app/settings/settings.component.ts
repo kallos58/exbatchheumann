@@ -35,34 +35,63 @@ export class SettingsComponent implements OnInit {
       this.ptypes = new MatTableDataSource(this.dataService.ptypes);
       this.austatus = new MatTableDataSource(this.dataService.austatus);
       this.creators = new MatTableDataSource(this.dataService.creators);
+      this.manufacturers = new MatTableDataSource(this.dataService.manufacturers);
+      this.apimanufacturers = new MatTableDataSource(this.dataService.apimanufacturers);
+      this.categories = new MatTableDataSource(this.dataService.categories);
+      this.releasesites = new MatTableDataSource(this.dataService.releasesites);
+      this.abbreviations = new MatTableDataSource(this.dataService.abbreviations);
+      this.eus = new MatTableDataSource(this.dataService.eus);
+      this.status = new MatTableDataSource(this.dataService.status);
     }
 
-  items = ["Product Families", "Countries", "Procedure Types", "Authorisation Status", "Creators / Modifiers"];
+  items = ["Product Families", "Countries", "Procedure Types", "Authorisation Status", 
+    "Creators / Modifiers", "Manufacturers", "API Manufacturers", "Categories", "Release Sites", "Abbreviations", "EU / Non EU", "Status"];
   currentItem: any = [];
   productfamilies: any = [];
   countries: any = [];
   ptypes: any = [];
   austatus: any = [];
   creators: any = [];
-  displayedColumns: string[] = ['country'];
+  manufacturers: any = [];
+  apimanufacturers: any = [];
+  categories: any = [];
+  abbreviations: any = [];
+  eus: any = [];
+  status: any = [];
+  releasesites: any = [];
+  displayedColumns: string[] = ['shortcut','country'];
   displayedColumnsP: string[] = ['Product_Family'];
   displayedColumnsPt: string[] = ['ptype'];
   displayedColumnsAu: string[] = ['austatus'];
   displayedColumnsC: string[] = ['creator'];
+  displayedColumnsM: string[] = ['Manufacturer'];
+  displayedColumnsAPI: string[] = ['API_Manufacturer'];
+  displayedColumnsCat: string[] = ['category'];
+  displayedColumnsRS: string[] = ['release_site'];
+  displayedColumnsAbb: string[] = ['abbreviation','content'];
+  displayedColumnsEus: string[] = ['content'];
+  displayedColumnsStatus: string[] = ['content'];
   data: any = [];
   family = "";
   ptype = "";
   austat = "";
   crea = "";
+  manufacturer = "";
+  apimanufacturer = "";
+  category = "";
+  abbreviation = "";
+  releasesite = "";
   shortcut = "";
   country = "";
+  content = "";
   currentId = "";
   filterVal = "";
   index = 0;
   mode = "";
   message = "";
   messageIndex = 0;
-
+  disabled = true;
+  model = {name: "family"};
   ngOnInit() {
   }
 
@@ -71,6 +100,7 @@ export class SettingsComponent implements OnInit {
   }
 
   setItem(e: any) {
+    this.disabled = false;
     this.currentId = e.id;
     switch (this.index) {
       case 0: 
@@ -89,11 +119,30 @@ export class SettingsComponent implements OnInit {
       case 4: 
         this.crea = e.creator;
         break;
+      case 5: 
+        this.manufacturer = e.Manufacturer;
+        break;
+      case 6: 
+        this.apimanufacturer = e.API_Manufacturer;
+        break;
+      case 7: 
+        this.category = e.category;
+        break;
+      case 8: 
+        this.releasesite = e.release_site;
+        break;
+      case 9: 
+      case 10: 
+      case 11: 
+        this.abbreviation = e.abbreviation;
+        this.content = e.content;
+        break;
     }
     this.currentItem = e;
   }
 
   saveData() {
+    this.disabled = true;
     this.messageIndex = 0;
     this.message = "The changes were saved...";
     this.messageboxDialog.nativeElement.showModal(); 
@@ -141,6 +190,57 @@ export class SettingsComponent implements OnInit {
         };
         container = "Creators";
         break;
+      case 5:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          Manufacturer: this.manufacturer
+        };
+        container = "Manufacturers";
+        break;
+      case 6:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          API_Manufacturer: this.apimanufacturer
+        };
+        container = "API_Manufacturers";
+        break;
+      case 7:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          category: this.category
+        };
+        container = "Categories";
+        break;
+      case 8:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          release_site: this.releasesite
+        };
+        container = "Release_Sites";
+        this.changeRS(this.currentId, this.releasesite)
+        break;
+      case 9:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          abbreviation: this.abbreviation,
+          content: this.content,
+          index: 1
+        };
+        container = "Abbreviations";
+        if (this.mode != "new") this.changeRS(this.currentId, this.abbreviation)
+        break;
+      case 10:
+      case 11:
+        entry = {
+          id:  this.mode === "new" ? id : this.currentId,
+          abbreviation: "",
+          content: this.content,
+          index: this.index == 10 ? 2 : 3
+        };
+        container = "Abbreviations";
+        break;
+      default:
+        break;
     }
     if (this.mode === "new") {
       this.dataService.addData(container, entry);
@@ -149,6 +249,15 @@ export class SettingsComponent implements OnInit {
       debugger;
       this.dataService.saveData(container, entry);
       this.localUpdate(entry);
+    }
+  }
+  changeRS(id: string, rsite: string) {
+    let batches = this.dataService.batches;
+    for ( let i = 0; i < batches.length; i++) {
+      if (batches[i].release_site_id === id) {
+        batches[i].RB_Site = rsite;
+        this.dataService.saveData("Batches", batches[i]);
+      }
     }
   }
 
@@ -184,6 +293,41 @@ export class SettingsComponent implements OnInit {
           return data.creator.toString().toUpperCase().includes(searchText.toUpperCase());
         };
         break;
+      case 5:
+        this.manufacturers.filter = this.filterVal;
+        this.manufacturers.filterPredicate = (data: any, searchText: string) => {
+          return data.Manufacturer.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 6:
+        this.apimanufacturers.filter = this.filterVal;
+        this.apimanufacturers.filterPredicate = (data: any, searchText: string) => {
+          return data.API_Manufacturer.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 7:
+        this.categories.filter = this.filterVal;
+        this.categories.filterPredicate = (data: any, searchText: string) => {
+          return data.category.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 8:
+        this.releasesites.filter = this.filterVal;
+        this.releasesites.filterPredicate = (data: any, searchText: string) => {
+          return data.release_site.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      case 9:
+      case 10:
+      case 11:
+        this.abbreviations.filter = this.filterVal;
+        this.abbreviations.filterPredicate = (data: any, searchText: string) => {
+          return data.content.toString().toUpperCase().includes(searchText.toUpperCase())
+            || data.abbreviation.toString().toUpperCase().includes(searchText.toUpperCase());
+        };
+        break;
+      default:
+        break;
     }
   }
 
@@ -193,6 +337,7 @@ export class SettingsComponent implements OnInit {
   }
 
   addData() {
+    this.disabled = false;
     this.mode = "new";
     if (this.index === 0) this.family = "new product family";
     if (this.index === 1) this.country = "new country";
@@ -228,6 +373,10 @@ export class SettingsComponent implements OnInit {
       case 4:
         pos = this.creators.data.findIndex((el: { id: any; }) => el.id === this.currentId);
         this.message = "Do you want to remove the creator / modifier '" + this.crea + "'?";
+        break;  
+      case 9:
+        pos = this.abbreviations.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+        this.message = "Do you want to remove the abbreviation '" + this.abbreviation + "'?";
         break;        
     }
     this.messageIndex = 1;
@@ -281,6 +430,16 @@ export class SettingsComponent implements OnInit {
     this.dataService.deleteItem("Creators", this.currentId);
   }
 
+  deleteAbbreviation() {
+    const pos = this.abbreviations.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+    if (pos >= 0) {
+    const pos = this.abbreviations.data.findIndex((el: { id: any; }) => el.id === this.currentId);
+      this.abbreviations.data.splice(pos, 1);
+      this.abbreviations.data = this.abbreviations.data;
+    }
+    this.dataService.deleteItem("Abbreviations", this.currentId);
+  }
+
   public createId(): string {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ-0123456789';
     const charactersLength = characters.length;
@@ -316,6 +475,35 @@ export class SettingsComponent implements OnInit {
       case 4:
         item = this.creators.data.find((o: { id: any; }) => o.id === e.id)
         item.creator = e.creator;
+        break;
+      case 5:
+        item = this.manufacturers.data.find((o: { id: any; }) => o.id === e.id)
+        item.Manufacturer = e.Manufacturer;
+        break;
+      case 6:
+        item = this.apimanufacturers.data.find((o: { id: any; }) => o.id === e.id)
+        item.API_Manufacturer = e.API_Manufacturer;
+        break;
+      case 7:
+        item = this.categories.data.find((o: { id: any; }) => o.id === e.id)
+        item.category = e.category;
+        break;
+      case 8:
+        item = this.releasesites.data.find((o: { id: any; }) => o.id === e.id)
+        item.release_site = e.release_site;
+        break;
+      case 9:
+        item = this.abbreviations.data.find((o: { id: any; }) => o.id === e.id)
+        item.abbreviation = e.abbreviation;
+        item.content = e.content;
+        break;
+      case 10:
+        item = this.eus.data.find((o: { id: any; }) => o.id === e.id)
+        item.content = e.content;
+        break;
+      case 11:
+        item = this.status.data.find((o: { id: any; }) => o.id === e.id)
+        item.content = e.content;
         break;
     }
   }
@@ -353,6 +541,7 @@ export class SettingsComponent implements OnInit {
       if (this.index === 2) this.deletePtype();
       if (this.index === 3) this.deleteAustatus();
       if (this.index === 4) this.deleteCreator();
+      if (this.index === 9) this.deleteAbbreviation();
     }
     this.messageboxDialog.nativeElement.close();
   }

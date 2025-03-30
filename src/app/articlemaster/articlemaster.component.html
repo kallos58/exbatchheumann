@@ -1,0 +1,309 @@
+<div class="toolbarDiv"  >
+  <mat-icon class="pointer" (click)="goHome()" fontIcon="home"></mat-icon>
+  <label class="homeLabel" (click)="goHome()">Home</label>
+  <label class="batchLabel" >ExBatch+</label>
+  <!--<button (click)="createIds()">drigg</button>-->
+</div>
+<div class="split left" style="margin-top: 1.5em;">
+  <h4 style="margin-top: 1.5em; margin-left: 0.5em;" >Article Master</h4>
+  <div style="display: flex; margin-left: 0.5em;">
+    <mat-form-field  > 
+      <mat-label >Filter</mat-label>
+      <input [(ngModel)]="filterVal" (keyup)="filterData()" matInput />  
+    </mat-form-field> 
+    <mat-label style="margin-top: 1em; margin-left: 1em;" >{{entries}}</mat-label>
+  </div>
+  <div class="table">
+    <table  mat-table  matSort (matSortChange)="announceSortChange($event)" [dataSource]="articlemaster" class="table mat-elevation-z8">
+      <ng-container matColumnDef="SAP_Mat_No" sticky>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header >SAP Mat. No.</th>
+        <td 
+          [ngClass]="{ 'selectedLeft': element.id=== currentId }"
+          width="30%"
+          (click)="setSelected(element)"
+          mat-cell 
+          *matCellDef="let element" 
+          > {{element.SAP_Mat_No}} 
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="MA_Name" sticky>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header >MA Name</th>
+        <td 
+          [ngClass]="{ 'selectedRight': element.id=== currentId }"
+          width="70%"
+          (click)="setSelected(element)"
+          mat-cell 
+          *matCellDef="let element" 
+          > {{element.MA_Name}} 
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns; " ></tr>
+    </table>
+  </div>
+</div>
+
+<div class="split right">
+  <div style="height: 35%;">
+    <div>
+      <mat-form-field style="width: 25%;">
+          <mat-label>SAP Mat. No.</mat-label>
+          <input [(ngModel)]="currentEntry.SAP_Mat_No" matInput disabled/>
+      </mat-form-field>
+      <mat-form-field style="width: 75%;">
+          <mat-label>MA Name</mat-label>
+          <input  [(ngModel)]="currentEntry.MA_Name" matInput disabled/>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field style="width: 25%;">
+        <mat-label>MA No.</mat-label>
+        <input [(ngModel)]="currentEntry.MA_No" matInput/>
+      </mat-form-field>
+      <mat-form-field style="width: 25%;">
+        <mat-label>Company</mat-label>
+        <mat-select [(ngModel)]="currentEntry.Company">
+          @for (c of companies; track c) {
+              <mat-option [value]="c">{{c}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field style="width: 25%;">
+        <mat-label>Pack size</mat-label>
+        <input [(ngModel)]="currentEntry.Packsize" matInput/>
+      </mat-form-field>
+      <mat-form-field style="width: 25%;">
+        <mat-label>NTIN</mat-label>
+        <input [(ngModel)]="currentEntry.NTIN" matInput/>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field style="width: 40%;">
+          <mat-label>Manufacturer</mat-label>
+          <input [(ngModel)]="currentEntry.Manufacturer" matInput disabled/>
+      </mat-form-field>
+      <mat-form-field style="width: 10%;">
+        <mat-label>EU / Non-EU</mat-label>
+        <input [(ngModel)]="currentEntry.EU" matInput disabled/>
+      </mat-form-field>
+      <mat-form-field style="width: 40%;">
+        <mat-label>API Manufacturer</mat-label>
+        <input [(ngModel)]="currentEntry.API_Manufacturer" matInput disabled/>
+    </mat-form-field>
+    </div>
+  </div>
+  <div style="height: 65%; ">
+    <mat-tab-group>
+      <mat-tab label="Batches by SAP Material No." >
+        <div style="display: flex; margin-top: 0.5em;">
+          <label style="font-weight: bold;" >Batches</label>
+          <label style="margin-left: 8px;">({{batchentries}})</label>
+        </div>
+        <div style="height: 24em">
+          <table mat-table matSort [dataSource]="batches" class="batchtable mat-elevation-z8">
+            <ng-container matColumnDef="FP_Batch_No" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >FP Batch No.</th>
+              <td 
+                width="15%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.FP_Batch_No}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="RB_Site" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Release Blocking Site</th>
+              <td 
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.RB_Site}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Status" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Status</th>
+              <td 
+                width="10%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Status}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Sample_Receipt_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Sample Receipt Date</th>
+              <td 
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Sample_Receipt_Date}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="RB_Mark_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >RB Marketing Date</th>
+              <td 
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.RB_Mark_Date}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="RB_Sale_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >RB Sale Date</th>
+              <td 
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.RB_Sale_Date}} 
+              </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsBatch; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsBatch; " ></tr>
+          </table> 
+        </div>  
+      </mat-tab>
+      <mat-tab label="{{batchesFiltered}}" > 
+       
+        <div style="height: 24em">
+         
+          <table mat-table matSort [dataSource]="batches2" class="batchtable mat-elevation-z8">
+            
+            <ng-container matColumnDef="SAP_Mat_No" sticky>
+              <th mat-header-cell *matHeaderCellDef >SAP No.</th>
+              <td 
+                width="10%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.SAP_Mat_No}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="MA_Name" sticky>
+              <th mat-header-cell *matHeaderCellDef >MA Name</th>
+              <td 
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.MA_Name}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="FP_Batch_No" sticky>
+              <th mat-header-cell *matHeaderCellDef >
+                Batch No.
+                <span (click)="showFilterBatchDialog(0)">
+                  <mat-icon class="pointer" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                </span>
+              </th>
+              <td 
+                width="10%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.FP_Batch_No}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="RB_Site" sticky>
+              <th mat-header-cell *matHeaderCellDef matTooltip="Info about the action">
+                RB Site
+                <span class="pointer" (click)="showFilterBatchDialog(1)">
+                  <mat-icon class="pointer" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                </span>
+              </th>
+              <td 
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.RB_Site}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Status" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >
+                Status
+                <span (click)="showFilterBatchDialog(2)">
+                  <mat-icon class="pointer" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                </span></th>
+              <td 
+                width="10%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Status}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Sample_Receipt_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef >
+                SR Date
+                <span (click)="showFilterBatchDialog(3)">
+                  <mat-icon class="pointer" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                </span></th>
+              <td 
+                width="10%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Sample_Receipt_Date}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="RB_Mark_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef >Mark. Date
+                <span (click)="showFilterBatchDialog(4)">
+                  <mat-icon class="pointer" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                </span>
+              </th>
+              <td 
+                width="10%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.RB_Mark_Date}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="RB_Sale_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef  >Sale Date
+                <span (click)="showFilterBatchDialog(5)">
+                  <mat-icon class="pointer" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                </span>
+              </th>
+              <td 
+                width="10%"
+                mat-cell 
+                (click)="showEditBatchDialog(element)"
+                *matCellDef="let element" 
+                > {{element.RB_Sale_Date}} 
+              </td>
+            </ng-container>
+            
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsBatchFilter; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsBatchFilter; " ></tr>
+          </table> 
+        </div>  
+      </mat-tab> 
+    </mat-tab-group>  
+  </div>
+</div>
+
+<dialog #messageboxDialog class="mydialog">
+  <messagebox-dialog
+    [message]="message"
+    [messageIndex]="messageIndex"
+    (cancelMessage)="cancelMessage($event)">
+  </messagebox-dialog>
+</dialog>
+<router-outlet />
+
+<dialog #filterBatchDialog class="filterOneColDialog">
+  <filter-batch-dialog
+    (childFilter)="emitFilterOneCol($event)"
+    [currentIndex]="currentIndex"
+    [filters]="filters"
+    [releasesites]="releasesites"
+   >
+  </filter-batch-dialog>
+</dialog>
+
