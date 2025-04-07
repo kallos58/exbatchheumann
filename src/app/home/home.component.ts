@@ -36,6 +36,8 @@ export class HomeComponent implements OnInit{
     if ( i === 9 ) this.router.navigate(['/settings']);
     if ( i === 10 ) this.router.navigate(['/articlemaster']);
     if ( i === 11 ) this.router.navigate(['/datamigration']);
+    if ( i === 12 ) this.router.navigate(['/currentstatusmpv']);
+    if ( i === 13 ) this.router.navigate(['/capafollowup']);
   }
 
   checkPw() {

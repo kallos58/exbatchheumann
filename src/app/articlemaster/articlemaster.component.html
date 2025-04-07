@@ -13,24 +13,32 @@
     </mat-form-field> 
     <mat-label style="margin-top: 1em; margin-left: 1em;" >{{entries}}</mat-label>
   </div>
-  <div class="table">
+  <div [ngClass]="entriesLen > 10 ? 'table32' : 'tableAuto'">
     <table  mat-table  matSort (matSortChange)="announceSortChange($event)" [dataSource]="articlemaster" class="table mat-elevation-z8">
       <ng-container matColumnDef="SAP_Mat_No" sticky>
-        <th mat-header-cell *matHeaderCellDef mat-sort-header >SAP Mat. No.</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header >SAP No</th>
         <td 
           [ngClass]="{ 'selectedLeft': element.id=== currentId }"
-          width="30%"
           (click)="setSelected(element)"
           mat-cell 
           *matCellDef="let element" 
           > {{element.SAP_Mat_No}} 
         </td>
       </ng-container>
+      <ng-container matColumnDef="MA_No" sticky>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header >MA No.</th>
+        <td 
+          [ngClass]="{ 'selectedLeft': element.id=== currentId }"
+          (click)="setSelected(element)"
+          mat-cell 
+          *matCellDef="let element" 
+          > {{element.MA_No}} 
+        </td>
+      </ng-container>
       <ng-container matColumnDef="MA_Name" sticky>
         <th mat-header-cell *matHeaderCellDef mat-sort-header >MA Name</th>
         <td 
           [ngClass]="{ 'selectedRight': element.id=== currentId }"
-          width="70%"
           (click)="setSelected(element)"
           mat-cell 
           *matCellDef="let element" 

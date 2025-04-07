@@ -32,9 +32,9 @@ import { Dialog, DialogRef } from '@angular/cdk/dialog';
 })
 
 export class ArticleMasterComponent implements OnInit {
-   @ViewChild('messageboxDialog', { static: true }) messageboxDialog!: ElementRef<HTMLDialogElement>;
-   @ViewChild('filterBatchDialog', { static: true }) filterBatchDialog!: ElementRef<HTMLDialogElement>;
-   @ViewChild(MatSort)
+  @ViewChild('messageboxDialog', { static: true }) messageboxDialog!: ElementRef<HTMLDialogElement>;
+  @ViewChild('filterBatchDialog', { static: true }) filterBatchDialog!: ElementRef<HTMLDialogElement>;
+  @ViewChild(MatSort)
   sort: MatSort = new MatSort;
   constructor(
       private router: Router,
@@ -49,11 +49,11 @@ export class ArticleMasterComponent implements OnInit {
       this.isNotAllowedUser = this.dataService.isNotAllowedUser;
     }
 
-     endpoint = "https://schruefer.documents.azure.com:443/";
-      key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
-      client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
-      database = "Heumann";
-      db = this.client.database(this.database);
+    endpoint = "https://schruefer.documents.azure.com:443/";
+    key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
+    client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
+    database = "Heumann";
+    db = this.client.database(this.database);
 
   items = ["Product Families", "Countries", "Procedure Types", "Authorisation Status", "Creators / Modifiers"];
   currentItem: any = [];
@@ -62,7 +62,7 @@ export class ArticleMasterComponent implements OnInit {
   batchesForFilter: any = [];
   articlemaster: any = [];
   releasesites: any = [];
-  displayedColumns: string[] = ['SAP_Mat_No','MA_Name'];
+  displayedColumns: string[] = ['SAP_Mat_No','MA_No','MA_Name'];
   displayedColumnsBatch: string[] = ['FP_Batch_No','RB_Site','Status','Sample_Receipt_Date','RB_Mark_Date','RB_Sale_Date'];
   displayedColumnsBatchFilter: string[] = ['SAP_Mat_No','MA_Name','FP_Batch_No','RB_Site','Status','Sample_Receipt_Date','RB_Mark_Date','RB_Sale_Date'];
   readonly dialog = inject(Dialog);
@@ -85,6 +85,7 @@ export class ArticleMasterComponent implements OnInit {
   messageIndex = 0;
   entries = "";
   batchentries = "";
+  entriesLen = 99;
   filterMode = false;
   searchFields = ["FP Batch No.", "Release Blocking Site"];
   companies = ["Heumann", "Heunet"];
@@ -257,6 +258,7 @@ export class ArticleMasterComponent implements OnInit {
       return "";
     }    
   }
+  
   createBatchesForFilter() {
     this.batchesForFilter = [];
     this.dataService.batches.forEach((item: any) => {
@@ -336,9 +338,11 @@ export class ArticleMasterComponent implements OnInit {
     this.articlemaster.filter = this.filterVal;
         this.articlemaster.filterPredicate = (data: any, searchText: string) => {
           return data.SAP_Mat_No.toString().includes(searchText) ||
-          data.MA_Name.toString().toUpperCase().includes(searchText.toUpperCase());
+          data.MA_Name.toString().toUpperCase().includes(searchText.toUpperCase())||
+          data.MA_No.toString().toUpperCase().includes(searchText.toUpperCase());
         };
     this.entries = this.articlemaster.filteredData.length + " filtered entries";
+    this.entriesLen = this.articlemaster.filteredData.length;
   }
 
   filterBatches(id: string) {

@@ -1,9 +1,20 @@
 import { Injectable } from '@angular/core';
 import * as Cosmos from "@azure/cosmos";
+import * as batch_release_overview from '../../assets/json/batch_release_overview.json';
+import * as statuslist from '../../assets/json/current_status_validation_list.json'
+import * as capafollowup from '../../assets/json/capa_follow_up.json'
 
+import { saveAs } from 'file-saver';
+import * as XLSX from 'xlsx';
+import { ngxCsv } from 'ngx-csv/ngx-csv';
+
+const EXCEL_TYPE =
+  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8';
+const EXCEL_EXTENSION = '.xlsx';
 @Injectable({
   providedIn: 'root',
 })
+
 export class DataService  {
     endpoint = "https://schruefer.documents.azure.com:443/";
     key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
@@ -27,7 +38,9 @@ export class DataService  {
     batches: any = [];
     isPassed = false;
     isNotAllowedUser = false;
-
+    batchReleaseOverview: any = batch_release_overview;
+    statuslist: any = statuslist;
+    capaFollowup: any = capafollowup;
     getAllData() {
         this.getData("Batch_Release", 1);
         this.getData("API_Manufacturers", 2);
@@ -159,4 +172,50 @@ export class DataService  {
     const container = this.db.container(c);
     await container.item(id, id).delete();
   }
+
+  public exportAsExcelFile(data: any): void {
+    const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(data);
+    // id	name	username	email
+    const workbook: XLSX.WorkBook = {
+      Sheets: { data: worksheet },
+      SheetNames: ['data'],
+    };
+    const excelBuffer: any = XLSX.write(workbook, {
+      bookType: 'xlsx',
+      type: 'array',
+    });
+    this.saveAsExcelFile(excelBuffer, "data_");
+  }
+
+  private saveAsExcelFile(buffer: any, fileName: string): void {
+    const data: Blob = new Blob([buffer], {
+      type: EXCEL_TYPE,
+    });
+    saveAs(
+      data,
+      fileName + '_export_' + new Date().getTime() + EXCEL_EXTENSION
+    );
+  }
+
+  public exportToCSV(data: any) {
+    let formula = "data";
+    let options = {
+      title: 'User Details',
+      fieldSeparator: ';',
+      quoteStrings: '"',
+      decimalseparator: '.',
+      showLabels: false,
+      noDownload: false,
+      showTitle: false,
+      useBom: false,
+    };
+
+    const fileInfo = new ngxCsv(data, formula, options);
+
+    console.log(fileInfo);
+  }
+}
+
+function encodeBase64(csv: any) {
+  throw new Error('Function not implemented.');
 }

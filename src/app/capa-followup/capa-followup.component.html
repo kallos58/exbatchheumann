@@ -1,0 +1,145 @@
+<div class="toolbarDiv"  >
+    <mat-icon class="pointer" (click)="goHome()" fontIcon="home"></mat-icon>
+    <label class="homeLabel" (click)="goHome()">Home</label>
+    <label class="batchLabel" >ExBatch+</label>
+</div>
+<div class="split left" style="margin-top: 1.5em;">
+    <h4 style="margin-top: 1.5em; margin-left: 0.5em;" >CAPA Follow Up</h4>
+    <div style="display: flex; margin-left: 0.5em;">
+      <mat-form-field  > 
+        <mat-label >Filter</mat-label>
+        <input [(ngModel)]="filterVal" (keyup)="filterData()" matInput />  
+      </mat-form-field> 
+      <mat-label style="margin-top: 1em; margin-left: 1em;" >{{entries}}</mat-label>
+    </div>
+    <div class='table32'>
+      <table  mat-table [dataSource]="capaFollowupUniqueList" class="table mat-elevation-z8">
+        <ng-container matColumnDef="Supplier" sticky>
+          <th mat-header-cell *matHeaderCellDef  >Supplier</th>
+          <td 
+            [ngClass]="{ 'selectedRight': element.id=== currentId }"
+            (click)="setSelected(element)"
+             mat-cell 
+            *matCellDef="let element" 
+            > {{element.Supplier}} 
+          </td>
+        </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumnsSupplier; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumnsSupplier; " ></tr>
+      </table>
+    </div>
+
+    <div class="split right">
+        <div style="height: 35%; width: 100%">
+            <mat-form-field class="ta ml16" >
+                <mat-label>Finding</mat-label>
+                <textarea class="ta fs14" [(ngModel)]="currentEntry.Finding" matInput></textarea>
+            </mat-form-field>
+            <mat-form-field class="ta ml16" >
+                <mat-label>CAPA Response</mat-label>
+                <textarea class="ta fs14" [(ngModel)]="currentEntry.CAPA_Response" matInput></textarea>
+            </mat-form-field>
+            <mat-form-field class="ta ml16" >
+                <mat-label>CMO Response</mat-label>
+                <textarea class="ta fs14" [(ngModel)]="currentEntry.CMO_Response" matInput></textarea>
+            </mat-form-field>
+        </div>
+        <div style="height: 65%;">
+        <div class='table24'>
+            <table  mat-table  [dataSource]="capaFollowupList" class="table mat-elevation-z8">
+              <ng-container matColumnDef="CAPA_No" sticky>
+                <th mat-header-cell *matHeaderCellDef >No.</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedLeft': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                   mat-cell 
+                  *matCellDef="let element" 
+                  > {{element.CAPA_No}} 
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="CAPA_ID" sticky>
+                <th mat-header-cell *matHeaderCellDef >ID</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedLeft': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                   mat-cell 
+                  *matCellDef="let element" 
+                  > {{element.CAPA_ID}} 
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="Audit_Date" sticky>
+                <th mat-header-cell *matHeaderCellDef >Audit Date</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedLeft': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                   mat-cell 
+                  *matCellDef="let element" 
+                  > {{element.Audit_Date}} 
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="Date" sticky>
+                <th mat-header-cell *matHeaderCellDef >Date</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedLeft': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                   mat-cell 
+                  *matCellDef="let element" 
+                  > {{element.Date}} 
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="Due_Date" sticky>
+                <th mat-header-cell *matHeaderCellDef >Due Date</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedLeft': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                   mat-cell 
+                  *matCellDef="let element" 
+                  > {{element.Due_Date}} 
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="Initial_Followup" sticky>
+                <th mat-header-cell *matHeaderCellDef >Initial</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedLeft': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                   mat-cell 
+                  *matCellDef="let element" 
+                  > {{element.Initial_Followup}} 
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="Classification" sticky>
+                <th mat-header-cell *matHeaderCellDef >Classification</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedLeft': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                    mat-cell 
+                    *matCellDef="let element"> 
+                    {{element.Classification}} 
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="CAPA_Status" sticky>
+                <th mat-header-cell *matHeaderCellDef >Status</th>
+                <td 
+                    class="pointer"
+                    [ngClass]="{ 'selectedRight': element.id=== currentFollowupId }"
+                    (click)="setSelectedFollowup(element)"
+                   mat-cell 
+                  *matCellDef="let element" 
+                  > {{element.CAPA_Status}} 
+                </td>
+              </ng-container>
+              <tr mat-header-row *matHeaderRowDef="displayedColumnsFollowup; sticky: true"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumnsFollowup; " ></tr>
+            </table>
+          </div> 
+        </div>
+  </div>
+<router-outlet />

@@ -1,0 +1,95 @@
+.toolbarDiv {
+    display: flex;
+    height: 32px;
+    padding-top: 2px;
+    border: 1px solid lightgray;
+  }
+.batchLabel {
+  font-size: 13px;
+  margin-top: 4px;
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+.homeLabel {
+  font-size: 13px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 5px;
+  }
+  
+  .left {
+    width: 30%;
+    left: 0;
+  }
+  
+  .right {
+    width: 70%;
+    margin-top: 2em;
+    right: 0;
+    overflow-y: hidden;
+  }
+  
+  .table32 {
+    height: 32.75em !important;
+    overflow-y: scroll;
+    border-right: 2px solid lightgray;
+  }
+  
+  .table24 {
+    height: 24em !important;
+    overflow-y: scroll;
+    border-right: 2px solid lightgray;
+  }
+
+  .tableAuto {
+    height: 32em !important;
+    overflow-y: scroll;
+    border-right: 2px solid lightgray;
+  }
+  
+  .selectedRight {
+    border-right : 2px gray solid !important;
+    border-top : 2px gray solid !important;
+    border-bottom : 3px gray solid !important;
+  }
+
+  .selectedLeft {
+    border-top : 2px gray solid !important;
+    border-bottom : 3px gray solid !important;
+  }
+
+  .linklabel {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .linklabel:hover {
+    cursor: pointer;
+  }
+
+  .ta {
+    height: 16em !important;
+    width: 21em !important;
+  }
+
+  
+  .ml16 {
+    margin-left: 16px;
+  }
+
+  .fs14 {
+    font-size: 14px !important;
+  }

@@ -106,9 +106,16 @@
   overflow-y: hidden;
 }
 
-.table {
+.table32 {
+  height: 32.75em !important;
+  overflow-y: scroll;
+  border-right: 2px solid lightgray;
+}
+
+.tableAuto {
   height: 32em !important;
   overflow-y: scroll;
+  border-right: 2px solid lightgray;
 }
 
 .batchtable {
@@ -128,4 +135,52 @@
 }
 tr {
   cursor: pointer  !important;
+}
+
+.mat-column-SAP_Mat_No {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 28% !important;
+  width: 6.5em !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-MA_No {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 28% !important;
+  width: 10em !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mat-column-MA_Name {
+  word-wrap: break-word !important;
+  white-space: unset !important;
+  flex: 0 0 28% !important;
+  width: 16em !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }

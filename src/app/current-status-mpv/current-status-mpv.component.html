@@ -1,0 +1,157 @@
+<div class="toolbarDiv"  >
+    <mat-icon class="pointer" (click)="goHome()" fontIcon="home"></mat-icon>
+    <label class="homeLabel" (click)="goHome()">Home</label>
+    <label class="batchLabel" >ExBatch+</label>
+</div>
+
+<div class="split left" style="margin-top: 1.5em;">
+  <h4 style="margin-top: 1.5em; margin-left: 0.5em;" >Current Status MPV</h4>
+  <div style="display: flex; margin-left: 0.5em;">
+    <mat-form-field  > 
+      <mat-label >Filter</mat-label>
+      <input [(ngModel)]="filterVal" (keyup)="filterData()" matInput />  
+    </mat-form-field> 
+    <mat-label style="margin-top: 1em; margin-left: 1em;" >{{entries}}</mat-label>
+  </div>
+  <div [ngClass]="entriesLen > 10 ? 'table32' : 'tableAuto'">
+    <table  mat-table  matSort (matSortChange)="announceSortChange($event)" [dataSource]="statuslistU" class="table mat-elevation-z8">
+      <ng-container matColumnDef="MA_No" sticky>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header >MA-No.</th>
+        <td 
+            [ngClass]="{ 'selectedLeft': element.id=== currentId }"
+          (click)="setSelected(element)"
+           mat-cell 
+          *matCellDef="let element" 
+          > {{element.MA_No}} 
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="Productname" sticky>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header >Product Name</th>
+        <td 
+            [ngClass]="{ 'selectedRight': element.id=== currentId }"
+            (click)="setSelected(element)"
+            mat-cell 
+            *matCellDef="let element" 
+          > {{element.Productname}} 
+        </td>
+      </ng-container>
+      
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns; " ></tr>
+    </table>
+  </div>
+</div>
+<div class="split right">
+    <div style="height: 35%;">
+        <div>
+          <mat-form-field style="width: 25%;">
+              <mat-label>SAP Mat. No.</mat-label>
+              <input [(ngModel)]="currentEntry.SAP_Mat_No" matInput disabled/>
+          </mat-form-field>
+          <mat-form-field style="width: 75%;">
+              <mat-label>MA Name</mat-label>
+              <input  [(ngModel)]="currentEntry.MA_Name" matInput disabled/>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field style="width: 25%;">
+            <mat-label>MA No.</mat-label>
+            <input [(ngModel)]="currentEntry.MA_No" matInput/>
+          </mat-form-field>
+          <mat-form-field style="width: 25%;">
+            <mat-label>Company</mat-label>
+            <mat-select [(ngModel)]="currentEntry.Company">
+              @for (c of companies; track c) {
+                  <mat-option [value]="c">{{c}}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field style="width: 25%;">
+            <mat-label>Pack size</mat-label>
+            <input [(ngModel)]="currentEntry.Packsize" matInput/>
+          </mat-form-field>
+          <mat-form-field style="width: 25%;">
+            <mat-label>NTIN</mat-label>
+            <input [(ngModel)]="currentEntry.NTIN" matInput/>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field style="width: 40%;">
+              <mat-label>Manufacturer</mat-label>
+              <input [(ngModel)]="currentEntry.Manufacturer" matInput disabled/>
+          </mat-form-field>
+          <mat-form-field style="width: 10%;">
+            <mat-label>EU / Non-EU</mat-label>
+            <input [(ngModel)]="currentEntry.EU" matInput disabled/>
+          </mat-form-field>
+          <mat-form-field style="width: 40%;">
+            <mat-label>API Manufacturer</mat-label>
+            <input [(ngModel)]="currentEntry.API_Manufacturer" matInput disabled/>
+        </mat-form-field>
+        </div>
+      </div>
+    <div style="height: 65%;">
+    <div [ngClass]="entriesLen > 10 ? 'table32' : 'tableAuto'">
+        <table  mat-table  matSort (matSortChange)="announceSortChange($event)" [dataSource]="statuslistMPV" class="table mat-elevation-z8">
+          <ng-container matColumnDef="Status" sticky>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header >Status</th>
+            <td 
+               mat-cell 
+              *matCellDef="let element" 
+              > {{element.Status}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="Dosageform" sticky>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header >Dosage</th>
+            <td 
+                mat-cell 
+                *matCellDef="let element" 
+              > {{element.Dosageform}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="CMOSite" sticky>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header >CMO Site</th>
+            <td 
+                mat-cell 
+                *matCellDef="let element" 
+              > {{element.CMOSite}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="Reference" sticky>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header >Reference</th>
+            <td 
+                mat-cell 
+                *matCellDef="let element" 
+              > {{element.Reference}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="MPVReviewNo" sticky>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header >MPV Review</th>
+            <td 
+                mat-cell 
+                *matCellDef="let element" 
+              > {{element.MPVReviewNo}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="ProcessValidationReport" sticky>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header >Process Val. Rep.</th>
+            <td 
+                mat-cell 
+                *matCellDef="let element" 
+              > {{element.ProcessValidationReport}} 
+            </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumnsMPV; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumnsMPV; " ></tr>
+        </table>
+      </div> 
+    </div>
+</div>
+<dialog #messageboxDialog class="mydialog">
+    <messagebox-dialog
+      [message]="message"
+      [messageIndex]="messageIndex"
+      (cancelMessage)="cancelMessage($event)">
+    </messagebox-dialog>
+  </dialog>
+<router-outlet />

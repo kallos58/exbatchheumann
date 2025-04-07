@@ -33,34 +33,40 @@
 <div class="split right">
     <div style="margin-top: 2em;">
         <h4>{{csvTitle}}</h4>
-        <button (click)="getCsv()" type="submit" >Create CSV</button>
-        <button (click)="setIndex()" type="submit" >Display as Table</button>
+        <button (click)="getDataCsv()" type="submit" >Create CSV</button>
+        <button (click)="displayTable()" type="submit" style="margin-left: 0.5em;">Display as table</button>
+        <button (click)="exportAsCsv()" type="submit" style="margin-left: 0.5em;">Download as CSV file</button>
+        <button (click)="exportAsXlsx()" type="submit" style="margin-left: 0.5em;">
+          <img style="border: none; " src="https://cdn3.iconfinder.com/data/icons/document-icons-2/30/647714-excel-64.png" height="16px" width="16px"/>
+          Download as Excel file</button>
+        <button type="submit" style="margin-left: 0.5em;">Migrate to database</button>
     </div>
-    <div *ngIf="index==1" style="margin-top: 2em;">
-        <mat-form-field style="width: 80%; height: 30em;">
-            <textarea style="height: 18em;" matInput disabled>{{csvContent}}</textarea>
+    <div *ngIf="index==1" style="margin-top: 2em; height: 32em;">
+        <mat-form-field style="width: 80%; height: 100%;">
+            <textarea style="height: 29em;" matInput disabled>{{csvContent}}</textarea>
         </mat-form-field>
     </div>
     <div *ngIf="index==2" class="table">
-        <table  mat-table  matSort [dataSource]="euSource" class="table mat-elevation-z8">
-          <ng-container matColumnDef="id" sticky>
+        <table mat-table  matSort [dataSource]="tableDataSource" class="table mat-elevation-z8">
+          <ng-container matColumnDef="id" sticky >
             <th mat-header-cell *matHeaderCellDef >ID</th>
             <td 
+              style="width: 32em !important;"
               mat-cell 
               *matCellDef="let element" 
               > {{element.id}} 
             </td>
           </ng-container>
           <ng-container matColumnDef="content" sticky>
-            <th mat-header-cell *matHeaderCellDef >EU / Non-EU</th>
+            <th mat-header-cell *matHeaderCellDef >{{getHeader()}}</th>
             <td 
               mat-cell 
               *matCellDef="let element" 
               > {{element.content}} 
             </td>
           </ng-container>
-          <tr mat-header-row *matHeaderRowDef="displayedColumnsEU; sticky: true"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumnsEU; " ></tr>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns; " ></tr>
         </table>
       </div>
 </div>
