@@ -1,0 +1,66 @@
+<h2 mat-dialog-title>Settings - Status</h2>
+<mat-dialog-content>
+    <mat-form-field *ngIf="data.index==1" style="width: 20%;"> 
+        <mat-label >Shortcut</mat-label>
+        <input matInput [(ngModel)]="value1" disabled="{{disabled}}"/> 
+    </mat-form-field> 
+    <mat-form-field  *ngIf="data.index==1" style="width: 40%; margin-left: 2px;"> 
+        <mat-label >Status</mat-label>
+        <input matInput [(ngModel)]="value2" disabled="{{disabled}}"/> 
+    </mat-form-field> 
+    <mat-form-field  *ngIf="data.index==2" style="width: 70%; margin-left: 2px;"> 
+      <mat-label >Release Blocking Site</mat-label>
+      <input matInput [(ngModel)]="value2" disabled="{{disabled}}"/> 
+  </mat-form-field> 
+    <mat-icon (click)="setDisabled()" class="icons" aria-hidden="false" aria-label="Example home icon" fontIcon="edit"></mat-icon>
+    <button mat-icon-button [disabled]="disabled" color="primary" >
+        <mat-icon color="warn" (click)="saveData()" style="cursor: pointer;"  class="icons" fontIcon="save"></mat-icon>
+    </button>
+    <mat-icon (click)="addData()" class="icons" aria-hidden="false" aria-label="Example home icon" fontIcon="add"></mat-icon>
+    <div *ngIf="data.index==1" style="height: 15em; overflow-y: scroll;">
+      <table  mat-table [dataSource]="settingsstatus" class="batchtable mat-elevation-z8" style="width: 24em;">
+          <ng-container matColumnDef="shortcut" sticky>
+            <th mat-header-cell *matHeaderCellDef  >Shortcut</th>
+            <td 
+              (click)="showSetting(element)"
+              class="pointer"
+              mat-cell 
+              *matCellDef="let element" 
+              > {{element.shortcut}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="status" sticky>
+            <th mat-header-cell *matHeaderCellDef  >Status</th>
+            <td 
+              class="pointer"
+              (click)="showSetting(element)"
+              mat-cell 
+              *matCellDef="let element" 
+              > {{element.status}} 
+            </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumnsStatus; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumnsStatus; " ></tr>
+        </table> 
+      </div>
+      <div *ngIf="data.index==2" style="height: 15em; overflow-y: scroll;">
+        <table mat-table [dataSource]="settingsrbsites" class="batchtable mat-elevation-z8" style="width: 32em;">
+          
+          <ng-container matColumnDef="rbsite" sticky>
+            <th mat-header-cell *matHeaderCellDef  >Release Blocking Site</th>
+            <td 
+              class="pointer"
+              (click)="showSetting(element)"
+              mat-cell 
+              *matCellDef="let element" 
+              > {{element.RB_Site}} 
+            </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumnsRbsites; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumnsRbsites; " ></tr>
+        </table> 
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button  (click)="onClose()" >Close</button>
+</mat-dialog-actions>

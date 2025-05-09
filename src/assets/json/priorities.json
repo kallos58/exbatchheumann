@@ -1,0 +1,38 @@
+[
+    {
+      "shortcut": "0a",
+      "priority": "high priority as tender product: AOK single winner, MOH ?0,7"
+    },
+    {
+      "shortcut": "0b",
+      "priority": "high priority as tender product: single winner, MOH ?0,7"
+    },
+    {
+      "shortcut": "0c",
+      "priority": "high priority as tender product: 3 winner AOK, MOH ?0,7"
+    },
+    {
+      "shortcut": "0d",
+      "priority": "high priority as tender product: remaining tender, MOH ?0,7"
+    },
+    {
+      "shortcut": 1,
+      "priority": "release Q stock on priority: no tender product, MOH ?0,7"
+    },
+    {
+      "shortcut": 2,
+      "priority": "release incoming delivery within current month (no Q-stock)"
+    },
+    {
+      "shortcut": 3,
+      "priority": "no release in current month due to del. Date or current stock"
+    },
+    {
+      "shortcut": 4,
+      "priority": "no priority (no Q-stock)"
+    },
+    {
+      "shortcut": "(empty)",
+      "priority": "(empty)"
+    }
+  ]

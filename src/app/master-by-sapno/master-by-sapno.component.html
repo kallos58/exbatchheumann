@@ -1,0 +1,384 @@
+<div class="toolbarDiv"  >
+    <mat-icon class="pointer" (click)="goHome()" fontIcon="home"></mat-icon>
+    <label class="homeLabel" (click)="goHome()">Home</label>
+    <label class="batchLabel" >ExBatch+</label>
+</div>
+<div class="split left">
+    <h4 style="margin-top: 0.5em; margin-left: 0.5em;" >{{masterCaption}}</h4>
+    <div style="display: flex; margin-left: 0.5em;">
+        <mat-form-field  style="width: 80%;" > 
+            <mat-label >Filter</mat-label>
+            <input [(ngModel)]="filterVal" matInput />  
+        </mat-form-field> 
+        <div (click)="filterMaster()"><img class="img2424" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-64.png" /></div>
+        <div (click)="unfilterMaster()"><img class="img2424" src="https://cdn1.iconfinder.com/data/icons/trycons/32/undo-64.png" /> </div>
+    </div>
+    
+    @for (a of articleMaster; track a) {
+    <div *ngIf="!a.filter" class="material" [ngClass]="{ 'bgBlue': a.SAP_Mat_No === currentMasterId }" (click)="selectMaterial(a.SAP_Mat_No)">
+        <div style="padding-top: 8px; padding-left: 8px; display: flex">
+            <div style="width: 20%;"><mat-label style="font-size: 13px; color: gray">SAP Mat. No.</mat-label></div>
+            <div style="width: 80%; margin-left: 2px;"><mat-label style="font-size: 13px;">{{a.SAP_Mat_No}}</mat-label></div>
+        </div>
+        <div style="padding-left: 8px; display: flex">
+            <div style="width: 20%;"><mat-label style="font-size: 13px; color: gray">MA Name</mat-label></div>
+            <div style="width: 80%; cursor: pointer;margin-left: 2px;"><mat-label style="font-size: 13px;">{{a.MA_Name}}</mat-label></div>
+        </div>
+        <div style="padding-left: 8px; display: flex; border-bottom: 1px solid lightgray; padding-bottom: 8px">
+            <div style="width: 20%;"><mat-label style="font-size: 13px; color: gray">Packsize</mat-label></div>
+            <div style="width: 10%;"><mat-label style="font-size: 13px;">{{a.Packsize}}</mat-label></div>
+            <div style="width: 15%; margin-left: 8px;"><mat-label style="font-size: 13px; color: gray">Company</mat-label></div>
+            <div style="width: 20%;"><mat-label style="font-size: 13px;">{{a.Company.Company}}</mat-label></div>
+            <div style="width: 12%;"><mat-label style="font-size: 13px; color: gray">MA No</mat-label></div>
+            <div style="width: 20%;"><mat-label style="font-size: 13px;">{{a.MA_No}}</mat-label></div>
+        </div>
+    </div>}
+</div>
+<div class="split right">
+    <div style="height: 35%;margin-left: 0.5em; margin-top: 0.5em; width: 98%;">
+        <div>
+            <mat-form-field style="width: 25%;">
+                <mat-label>SAP Mat. No.</mat-label>
+                <input class="disabledBoldBlack" [(ngModel)]="currentEntry.SAP_Mat_No" matInput disabled/>
+            </mat-form-field>
+            <mat-form-field style="width: 75%;">
+                <mat-label>MA Name</mat-label>
+                <input class="disabledBoldBlack" [(ngModel)]="currentEntry.MA_Name" matInput disabled/>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field style="width: 25%;">
+              <mat-label>MA No.</mat-label>
+              <input [(ngModel)]="currentEntry.MA_No" matInput/>
+            </mat-form-field>
+            <mat-form-field style="width: 25%; margin-left: 2px;">
+              <mat-label>Company</mat-label>
+              <mat-select [(ngModel)]="currentEntry.Company.Company">
+                @for (c of companies; track c) {
+                    <mat-option [value]="c.Company">{{c.Company}}</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field style="width: 25%; margin-left: 2px;">
+              <mat-label>Pack size</mat-label>
+              <input [(ngModel)]="currentEntry.Packsize" matInput/>
+            </mat-form-field>
+            <mat-form-field style="width: 24%; margin-left: 2px;">
+              <mat-label>NTIN</mat-label>
+              <input [(ngModel)]="currentEntry.NTIN" matInput/>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field style="width: 40%;">
+                <mat-label>Manufacturer</mat-label>
+                <input class="disabledBlack" [(ngModel)]="currentEntry.Manufacturer.Manufacturer" matInput disabled/>
+            </mat-form-field>
+            <mat-form-field style="width: 20%;">
+              <mat-label>EU / Non-EU</mat-label>
+              <input class="disabledBlack" [(ngModel)]="currentEntry.EU.EU" matInput disabled/>
+            </mat-form-field>
+            <mat-form-field style="width: 40%;">
+              <mat-label>API Manufacturer</mat-label>
+              <input class="disabledBlack" [(ngModel)]="currentEntry.API_Manufacturer.Manufacturer" matInput disabled/>
+          </mat-form-field>
+        </div>
+    </div>
+    <div style="height: 63.5%; width: 97%; overflow-y: scroll; margin-left: 1em; border: 1px solid lightgray;">
+        <div *ngIf="show">
+          <h4 style="margin-left: 1em;">{{batchesFilter}}</h4>
+          <table mat-table matSort [dataSource]="batches" class="batchtable mat-elevation-z8">
+            <ng-container matColumnDef="FP_Batch_No" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >FP Batch No.</th>
+              <td 
+                class="pointer"
+                width="15%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.FP_Batch_No}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="RB_Site" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Release Blocking Site</th>
+              <td 
+                class="pointer"
+                width="25%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.RB_Site}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Status_Shortcut" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Status</th>
+              <td 
+                class="pointer"
+                width="5%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Status_Shortcut}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Manufacturing_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Manufacturing Date</th>
+              <td 
+                class="pointer"
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Manufacturing_Date}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Expiry_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Expiry Date</th>
+              <td 
+                class="pointer"
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Expiry_Date}} 
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="Sample_Receipt_Date" sticky>
+              <th mat-header-cell *matHeaderCellDef mat-sort-header >Sample Receipt Date</th>
+              <td 
+                class="pointer"
+                width="20%"
+                (click)="showEditBatchDialog(element)"
+                mat-cell 
+                *matCellDef="let element" 
+                > {{element.Sample_Receipt_Date}} 
+              </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsBatch; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsBatch; " ></tr>
+          </table> 
+        </div>
+        <div *ngIf="!show">
+          <div style="display: flex;">
+            <h4 style="margin-left: 8px;">Batch / Details</h4>
+            <div>
+              <img 
+                style="margin-left: 4em;"
+                class="img2424 pointer" 
+                src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-512.png" 
+                alt="Settings">
+            </div>
+            <select style="height: 2em; width: 12em; margin-top: 1em; margin-left: 1em; background: #E0E2EC; border-radius: 4px; border: gray;" [(ngModel)]="setting" (ngModelChange)="onChangeSelect()">
+              @for (s of settings; track s) {
+                <option [value]="s">{{s}}</option>
+              }
+            </select>
+          </div>
+          <mat-tab-group >
+            <mat-tab style="background: #E0E2EC;" label="Warehouse" >
+              <div style="margin-top: 8px; display: flex;">
+                <mat-form-field style="width: 20%; margin-left: 4px;">
+                    <mat-label>FP Batch No.</mat-label>
+                    <input [(ngModel)]="currentBatchEntry.FP_Batch_No" matInput/>
+                </mat-form-field>
+                <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>Bulk Batch No.</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.Bulk_Batch_No" matInput/>
+                </mat-form-field>
+               
+                <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>Manufacturing Date</mat-label>
+                  <input matInput [matDatepicker]="dp" [formControl]="manudate">
+                  <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+                  <mat-datepicker #dp
+                      startView="multi-year"
+                      (monthSelected)="setMonthAndYear($event, dp, 1)"
+                      panelClass="example-month-picker">
+                  </mat-datepicker>
+                </mat-form-field>
+                <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>Expiry Date</mat-label>
+                  <input matInput [matDatepicker]="dpx"  [formControl]="expirydate">
+                  <mat-datepicker-toggle matIconSuffix [for]="dpx"></mat-datepicker-toggle>
+                  <mat-datepicker #dpx
+                      startView="multi-year"
+                      (monthSelected)="setMonthAndYear($event, dpx, 2)"
+                      panelClass="example-month-picker">
+                  </mat-datepicker>
+                </mat-form-field>
+                <div class="date" style="width: 20%;">
+                  <label style="font-size: 12px;">Sample Receipt Date</label>
+                  <input class="inputDate" type="date" [(ngModel)]="srdate" (change)="changeDate($event, 1)">
+                </div>
+              </div>
+              <div style="display: flex">
+                <mat-form-field style="width: 40.5%;">
+                    <mat-label>Release Blocking Site</mat-label>
+                    <mat-select [(ngModel)]="currentBatchEntry.RB_Site_Id">
+                    @for (r of rbsites; track r) {
+                        <mat-option [value]="r.id">{{r.RB_Site}}</mat-option>
+                    }
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field style="width: 9.5%; margin-left: 2px;">
+                  <mat-label>Status</mat-label>
+                  <mat-select [(ngModel)]="currentBatchEntry.Status_Id" (ngModelChange)="changeSelect($event, 1)">
+                  @for (s of status; track s) {
+                      <mat-option [value]="s.id" >{{s.shortcut}} </mat-option>
+                  }
+                  </mat-select>
+                </mat-form-field>
+              <div class="date" >
+                <label style="font-size: 12px;">Release / Block for Marketing Date</label><br>
+                <input class="inputDate" type="date" [(ngModel)]="rbmdate" (change)="changeDate($event, 2)">
+              </div>
+              <div class="date">
+                <label style="font-size: 12px;">Release / Block for Sale Date</label>
+                <input class="inputDate" type="date" [(ngModel)]="rbsdate" (change)="changeDate($event, 3)">
+              </div>
+            </div>  
+            </mat-tab>
+            <mat-tab label="BRR Process" >
+              <div style="margin-top: 8px; display: flex;">
+                <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>BRRor Resp.</mat-label>
+                  <mat-select [(ngModel)]="currentBatchEntry.BRRor_Resp_Id" (ngModelChange)="changeSelect($event, 2)">
+                  @for (r of responsibles; track r) {
+                      <mat-option [value]="r.id" >{{r.shortcut}} / {{r.responsible}} </mat-option>
+                  }
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>QAPM Resp.</mat-label>
+                  <mat-select [(ngModel)]="currentBatchEntry.QAPM_Resp_Id" (ngModelChange)="changeSelect($event, 3)">
+                  @for (r of responsibles; track r) {
+                      <mat-option [value]="r.id" >{{r.shortcut}} / {{r.responsible}} </mat-option>
+                  }
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>QP Resp.</mat-label>
+                  <mat-select [(ngModel)]="currentBatchEntry.QP_Resp_Id" (ngModelChange)="changeSelect($event, 4)">
+                  @for (r of responsibles; track r) {
+                      <mat-option [value]="r.id" >{{r.shortcut}} / {{r.responsible}} </mat-option>
+                  }
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field style="width: 10%; margin-left: 2px;">
+                  <mat-label>Priority</mat-label>
+                  <mat-select [(ngModel)]="currentBatchEntry.Priority_Id" (ngModelChange)="changeSelect($event, 5)">
+                  @for (p of priorities; track p) {
+                      <mat-option [value]="p.id" >{{p.shortcut}}</mat-option>
+                  }
+                  </mat-select>
+                </mat-form-field>
+                <div class="date" style="width: 15%">
+                  <label style="font-size: 12px;">Prio Meeting</label>
+                  <input class="inputDate" type="date" [(ngModel)]="pmdate" (change)="changeDate($event, 4)">
+                </div>
+                <div class="date" style="width: 15%">
+                  <label style="font-size: 12px;">Not applicable</label><br>
+                  <input (change)="changeChk($event, 1)" type="checkbox" [checked]="currentBatchEntry.PrioMeeting=='Not Applicable'">
+                </div>
+              </div>
+              <div style="margin-top: 8px; display: flex;">
+                <div class="date" style="width: 15%">
+                  <label style="font-size: 12px;">OGS checked</label><br>
+                  <input (change)="changeChk($event, 2)" type="checkbox" [checked]="currentBatchEntry.OGS_checked=='x'">
+                </div>
+                <mat-form-field style="width: 85%; margin-left: 4px;">
+                  <mat-label>QA Comment</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.QA_Comment" matInput/>
+                </mat-form-field>
+              </div>
+              <div style="margin-top: 8px; display: flex;">
+                <div class="date" style="width: 15%">
+                  <label style="font-size: 12px;">BRRor -> QAPM</label>
+                  <input class="inputDate" type="date" [(ngModel)]="brrqapmdate" (change)="changeDate($event, 5)">
+                </div>
+                <div class="date" style="width: 15%">
+                  <label style="font-size: 12px;">BRRor calc.</label>
+                  <input class="inputDate" type="date" [(ngModel)]="brrcalcdate" (change)="changeDate($event, 6)">
+                </div>
+                <div class="date" style="width: 15%">
+                  <label style="font-size: 12px;">QAPM calc.</label>
+                  <input class="inputDate" type="date" [(ngModel)]="qapmcalcdate" (change)="changeDate($event, 7)">
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="BRR Status" >
+              <div style="margin-top: 8px; display: flex;">
+                <mat-form-field style="width: 50%; margin-left: 2px;">
+                  <mat-label>Status Batch Docs</mat-label>
+                  <mat-select [(ngModel)]="currentBatchEntry.Status_Batch_Docs_Id" (ngModelChange)="changeSelect($event, 5)">
+                  @for (s of statusbatchdocs; track s) {
+                      <mat-option [value]="s.id" >{{s.Status_Batch_Docs}}</mat-option>
+                  }
+                  </mat-select>
+                </mat-form-field>     
+                <div class="date" style="width: 50%">
+                  <label style="font-size: 12px;">Date Batch Docs</label><br>
+                  <input class="inputDate" type="date" [(ngModel)]="dbdate" (change)="changeDate($event, 8)">
+                </div>         
+              </div>
+              <div style="margin-top: 8px; display: flex;">
+                <mat-form-field style="width: 100%; margin-left: 4px;">
+                  <mat-label>Docu Comment</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.Docu_Comment" matInput/>
+                </mat-form-field>
+              </div>
+              <div style="margin-top: 8px; display: flex;">
+                <mat-form-field style="width: 50%; margin-left: 4px;">
+                  <mat-label>Consecutive Number</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.Consecutive_Number" matInput/>
+                </mat-form-field>
+                <div class="date" style="width:50%">
+                  <label style="font-size: 12px;">Temparature evaluation completed</label><br>
+                  <input (change)="changeChk($event, 3)" type="checkbox" [checked]="currentBatchEntry.Temp_Eval_Completed=='x'">
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="QC Process" >
+              <div style="margin-top: 8px; display: flex;">
+                <mat-form-field style="width: 20%; margin-left: 4px;">
+                  <mat-label>Lab. chem.</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.Lab_Chem" matInput/>
+                </mat-form-field>
+                <mat-form-field style="width: 20%; margin-left: 4px;">
+                  <mat-label>CoA chem. exp.</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.CoA_Chem_Exp" matInput/>
+                </mat-form-field>
+                <div class="date" style="width: 20%">
+                  <label style="font-size: 12px;">CoA chem. received</label>
+                  <div style="display: flex">
+                    <input class="inputDate" type="date" [(ngModel)]="coarecdate" (change)="changeDate($event, 9)">
+                    <label style="font-size: 12px;margin-left: 16px;">n/a</label>
+                    <input (change)="changeChk($event, 4)" type="checkbox" [checked]="currentBatchEntry.CoA_Chem_Rec=='n/a'">
+                  </div>
+                </div>
+                <mat-form-field style="width: 20%; margin-left: 4px;">
+                  <mat-label>Lab. add.</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.Lab_Add" matInput/>
+                </mat-form-field>
+                <div class="date" style="width: 20%">
+                  <label style="font-size: 12px;">CoA chem. received</label>
+                  <div style="display: flex">
+                    <input class="inputDate" type="date" [(ngModel)]="coaadddate" (change)="changeDate($event, 10)">
+                    <label style="font-size: 12px;margin-left: 16px;">n/a</label>
+                    <input (change)="changeChk($event, 5)" type="checkbox" [checked]="currentBatchEntry.CoA_Add_Rec=='n/a'">
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 8px; display: flex;">
+                <mat-form-field style="width: 100%; margin-left: 4px;">
+                  <mat-label>Reanalysis Comment</mat-label>
+                  <input [(ngModel)]="currentBatchEntry.Reanalysis_Comment" matInput/>
+                </mat-form-field>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+          <button style="margin-left: 4px;" mat-raised-button (click)="cancelBatch()">Cancel</button>
+          <button style="margin-left: 4px; "mat-raised-button (click)="saveBatch()" >Save</button>
+      </div>
+    </div>
+</div>
+<router-outlet />

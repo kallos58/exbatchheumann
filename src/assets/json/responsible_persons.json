@@ -1,0 +1,142 @@
+[
+    {
+      "shortcut": "F",
+      "responsible": "Freigabe"
+    },
+    {
+      "shortcut": "S",
+      "responsible": "Sperrung"
+    },
+    {
+      "shortcut": "U",
+      "responsible": "Umpacker"
+    },
+    {
+      "shortcut": "AH",
+      "responsible": "Alexandra Harenberg"
+    },
+    {
+      "shortcut": "ARo",
+      "responsible": "Alexandre Rocha"
+    },
+    {
+      "shortcut": "AZ",
+      "responsible": "Anne Zetzsch"
+    },
+    {
+      "shortcut": "CMi",
+      "responsible": "Claudia Miranda"
+    },
+    {
+      "shortcut": "DLo",
+      "responsible": "Daniela Monteiro Lopes"
+    },
+    {
+      "shortcut": "OA",
+      "responsible": "Onetsine Arizibalaga"
+    },
+    {
+      "shortcut": "KMu",
+      "responsible": "Kerstin Müller"
+    },
+    {
+      "shortcut": "MaSc/KMu",
+      "responsible": "Manuela Schradi/Kerstin Müller"
+    },
+    {
+      "shortcut": "KMu/MaSc",
+      "responsible": "Kerstin Müller/Manuela Schradi"
+    },
+    {
+      "shortcut": "FC",
+      "responsible": "Filipe Capaz"
+    },
+    {
+      "shortcut": "IA",
+      "responsible": "Igor Akrap"
+    },
+    {
+      "shortcut": "KH",
+      "responsible": "Heffner"
+    },
+    {
+      "shortcut": "KHe",
+      "responsible": "Katharina"
+    },
+    {
+      "shortcut": "MaSc",
+      "responsible": "Manuela Schradi"
+    },
+    {
+      "shortcut": "KV",
+      "responsible": "Klara Vechtova"
+    },
+    {
+      "shortcut": "MGa",
+      "responsible": "Mamta Gandhi"
+    },
+    {
+      "shortcut": "Mki",
+      "responsible": "Mikis Kiourtzidis"
+    },
+    {
+      "shortcut": "MT",
+      "responsible": "Melanie Then"
+    },
+    {
+      "shortcut": "RC",
+      "responsible": "Rita Centeio"
+    },
+    {
+      "shortcut": "RP",
+      "responsible": "Rute Pinelo"
+    },
+    {
+      "shortcut": "SU",
+      "responsible": "Sanem Ucar"
+    },
+    {
+      "shortcut": "VL",
+      "responsible": "Vanessa Lopes"
+    },
+    {
+      "shortcut": "CF",
+      "responsible": "Corinna Fischer"
+    },
+    {
+      "shortcut": "PF",
+      "responsible": "Pedro Felix"
+    },
+    {
+      "shortcut": "BU",
+      "responsible": "Bernhard Unterlinner"
+    },
+    {
+      "shortcut": "UB",
+      "responsible": "Ulrich Baumeister"
+    },
+    {
+      "shortcut": "ext.",
+      "responsible": "externer QP"
+    },
+    {
+      "shortcut": "(empty)",
+      "responsible": "(empty)"
+    },
+    {
+      "shortcut": "Khe",
+      "responsible": "Katharina Heffner"
+    },
+    {
+      "shortcut": "MKI",
+      "responsible": "Mikis Kiourtzidis"
+    },
+    {
+      "shortcut": "MKi",
+      "responsible": "Mikis Kiourtzidis"
+    },
+    {
+      "shortcut": "Ext.",
+      "responsible": "externer QP"
+    }
+  ]

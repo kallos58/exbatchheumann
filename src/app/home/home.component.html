@@ -107,10 +107,19 @@
       <div><img 
           class="img2424"
         src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
-        <div><label style="font-size:11px;">512 entries</label></div>
+        <div><label style="font-size:11px;">214 entries</label></div>
     </div>
   </div>
-
+  <div style="display: flex;">
+    
+    <div class="card" (click)="cardClick(14)">
+      <div>Article Masters<br>to Batches<br>by SAP Material No.</div>
+      <div><img 
+          class="img2424"
+        src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
+        <div><label style="font-size:11px;">313 entries</label></div>
+    </div>
+  </div>
   <div  style="display: none; margin-left: 1em; margin-top: 1em; font-weight: bold;">
     <label >{{entries}}</label>
     <button class="xlsButton ml1" type="submit" (click)="clearFilter()" >Clear filter

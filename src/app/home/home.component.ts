@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent implements OnInit{
   entries = 0;
-  isPassed = true;
+  isPassed = false;
   invalid = false;
   username = "bm";
   password = "";
@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit{
     if ( i === 11 ) this.router.navigate(['/datamigration']);
     if ( i === 12 ) this.router.navigate(['/currentstatusmpv']);
     if ( i === 13 ) this.router.navigate(['/capafollowup']);
+    if ( i === 14 ) this.router.navigate(['/masterbysapno']);
   }
 
   checkPw() {

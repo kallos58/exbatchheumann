@@ -1,0 +1,1376 @@
+[
+    {
+      "API_Manufacturer": "(See original batch)",
+      "Manufacturer": "Abdi Ibrahim Ilac San Ve Tic. A.S.",
+      "RB_Site": "Advance Pharma GmbH",
+      "Category": "CMO"
+    },
+    {
+      "API_Manufacturer": "Aarti Pharmalabs Limited Unit IV",
+      "Manufacturer": "Acino Pharma AG",
+      "RB_Site": "Chanelle Medical Unlimited Company",
+      "Category": "CoC Pending"
+    },
+    {
+      "API_Manufacturer": "Alembic Limited (API Unit I)",
+      "Manufacturer": "Adamed Pharma S.A.",
+      "RB_Site": "Eurofins PHAST GmbH",
+      "Category": "Elemental Impurities"
+    },
+    {
+      "API_Manufacturer": "Alembic Pharmaceuticals Limited - API Unit I",
+      "Manufacturer": "ADL Pharma GmbH",
+      "RB_Site": "Fairmed Healthcare GmbH",
+      "Category": "IO assessment"
+    },
+    {
+      "API_Manufacturer": "Alembic Pharmaceuticals Limited - API Unit II",
+      "Manufacturer": "Advance Pharma GmbH",
+      "RB_Site": "Fairmed Healthcare GmbH",
+      "Category": "OOX"
+    },
+    {
+      "API_Manufacturer": "Alembic Pharmaceuticals Limited - API Unit III",
+      "Manufacturer": "Aizant Drug Research Solutions Pvt Ltd",
+      "RB_Site": "Gedeon Richter Ltd. - Site Budapest",
+      "Category": "Others"
+    },
+    {
+      "API_Manufacturer": "Amino Chemicals Ltd.",
+      "Manufacturer": "Alembic Pharmaceuticals Limited",
+      "RB_Site": "Haupt Pharma Latina S.r.L.",
+      "Category": "Qualification"
+    },
+    {
+      "API_Manufacturer": "Amoli Organics Pvt. Ltd.",
+      "Manufacturer": "Alfred E. Tiefenbacher GmbH & Co. KG",
+      "RB_Site": "Heumann Pharma GmbH & Co. Generica KG",
+      "Category": "On hold"
+    },
+    {
+      "API_Manufacturer": "Apitoria Pharma Private Limited - Unit II / Zydus Lifesciences Ltd.",
+      "Manufacturer": "Balkanpharma - Site Dupnitsa",
+      "RB_Site": "Interpharma Services Ltd.",
+      "Category": "Reanalysis"
+    },
+    {
+      "API_Manufacturer": "Arevipharma GmbH",
+      "Manufacturer": "Balkanpharma - Site Dupnitsa /\nWatson Pharma Private Limited",
+      "RB_Site": "Jadran Galenski Laboratorij d.d. (JGL)",
+      "Category": "Repacking"
+    },
+    {
+      "API_Manufacturer": "Aurisco Pharmaceutical Co. Ltd.",
+      "Manufacturer": "Balkanpharma - Site Razgrad",
+      "RB_Site": "Laboratorios Cinfa, S.A.",
+      "Category": "Deviation"
+    },
+    {
+      "API_Manufacturer": "Aurobindo Pharma Limited",
+      "Manufacturer": "Balkanpharma - Razgrad AD /\nSterigenics Germany GmbH",
+      "RB_Site": "Laboratorios Liconsa, S.A.",
+      "Category": "Expired Materials"
+    },
+    {
+      "API_Manufacturer": "Aurobindo Pharma Limited",
+      "Manufacturer": "Balkanpharma - Site Razgrad /\nPharmathen S.A.",
+      "RB_Site": "Lichtenheldt GmbH",
+      "Category": "Tracelink"
+    },
+    {
+      "API_Manufacturer": "Aurobindo Pharma Limited - Unit 1",
+      "Manufacturer": "Bluepharma Industria Farmaceutica, S.A.",
+      "RB_Site": "Misom Labs Limited",
+      "Category": "Validation"
+    },
+    {
+      "API_Manufacturer": "Aurobindo Pharma Limited - Unit 11",
+      "Manufacturer": "C.P.M. Contractpharma GmbH",
+      "RB_Site": "Pharmadox Healthcare Ltd.",
+      "Category": "Variation"
+    },
+    {
+      "API_Manufacturer": "Aurobindo Pharma Limited - Unit 8",
+      "Manufacturer": "Chanelle Medical",
+      "RB_Site": "Pharmathen International S.A.",
+      "Category": "Artworks"
+    },
+    {
+      "API_Manufacturer": "Aurobindo Pharma Limited - Unit 8 / \nCadila Healtchcare",
+      "Manufacturer": "Chanelle Medical Unlimited Company",
+      "RB_Site": "Pharmathen S.A.",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Aurobindo Pharma Limited - Unit 8 / \nZydus Lifesciences Limited",
+      "Manufacturer": "Cipla Ltd.",
+      "RB_Site": "Pharmazet Group s.r.o.,",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Aurore Pharmaceuticals Private Limited (Unit-1)",
+      "Manufacturer": "Conforma NV",
+      "RB_Site": "Pliva Hrvatska d.o.o. [Pliva Croatia Ltd]",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "BCN Peptides, S.A.",
+      "Manufacturer": "Desitin Arzneimittel GmbH",
+      "RB_Site": "PS Pharma Service GmbH",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "BGP Healthcare PVT. LTD.",
+      "Manufacturer": "Develco Pharma GmbH",
+      "RB_Site": "SK Pharma Logistics GmbH",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Biocon Limited - Site Hosur Road",
+      "Manufacturer": "Douglas Manufacturing Limited",
+      "RB_Site": "Synoptis Industrial Sp. z.o.o.",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Biocon Limited SPE - Site Jigani Link Road",
+      "Manufacturer": "Dragenopharm Apotheker Püschl GmbH",
+      "RB_Site": "Synthon BV",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Bioindustria Laboratorio Italiano Medicinali SPA",
+      "Manufacturer": "Dragenopharm Apotheker Püschl GmbH / \nKlocke Verpackungs-Service GmbH",
+      "RB_Site": "Synthon Hispania S.L.",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Cadila Healthcare Limited / \nUnichem Laboratories LTD",
+      "Manufacturer": "Dragenopharm Apotheker Püschl GmbH / \nSwiss Caps",
+      "RB_Site": "Torrent Pharma (Malta) Itd",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Cadila Healthcare Limited Ankleshwar Unit I",
+      "Manufacturer": "ELPEN PHARMACEUTICAL CO INC",
+      "RB_Site": "Wiewelhove GmbH",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Cadila Healthcare Limited Dabhasa",
+      "Manufacturer": "Eurofins PHAST GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Cambrex Profarmaco Milano SRL",
+      "Manufacturer": "EVA PHARMA for Pharmaceuticals and Medical Appliances",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Cedarburg Pharmaceuticals, Inc.",
+      "Manufacturer": "Fair-Med / Strides",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Centrient Pharmaceuticals India Private Limited",
+      "Manufacturer": "Famar S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Changzhou Pharmaceutical Factory",
+      "Manufacturer": "Fresenius Kabi Austria GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Chemische Fabrik Berg GmbH (CFB)",
+      "Manufacturer": "GE Pharmaceuticals Ltd.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Cipla Limited",
+      "Manufacturer": "Gedeon Richter Ltd - Site Romania",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Cipla Limited\n(Cipla Patalganga)",
+      "Manufacturer": "Gedeon Richter Ltd. - Site Budapest",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "CKD Bio Corporation",
+      "Manufacturer": "GP Pharm, S.A. / Recipharm",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "CKW Pharma-Extrakt GmbH & Co. KG",
+      "Manufacturer": "GP Pharm, S.A. / Rechon Life Science AB",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Concord Biotech Ltd",
+      "Manufacturer": "HÄLSA Pharma GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Coprima S.L",
+      "Manufacturer": "Haupt Pharma Latina S.r.L.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Corden Pharma",
+      "Manufacturer": "Haupt Pharma Münster GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Covalent Laboratories Pvt. Ltd.",
+      "Manufacturer": "Hermes Pharma GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Crystal Pharma S.A.U.",
+      "Manufacturer": "Hetero Labs Limited - Unit III",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Crystal Pharma S.A.U./\nFDC Limited",
+      "Manufacturer": "Hetero Labs Limited - Unit V",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "CTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "Hetero Labs Limited - Unit VI",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Curia Spain S.A.U. /\nFDC Limited",
+      "Manufacturer": "Iberfar - Indústria Farmacêutica S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Delmar Chemicals INC.",
+      "Manufacturer": "Ind-Swift Limited",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Delta Biotech S.A.",
+      "Manufacturer": "Intas Pharmaceuticals Ltd.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Delta Biotech S.A./\nFDC Limited",
+      "Manufacturer": "IPCA Laboratories Limited - Athal",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DERETIL S. A.",
+      "Manufacturer": "Jadran - Galenski Laboratorij d.d. (JGL)",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DERETIL S.A. / \nCKD Bio",
+      "Manufacturer": "Jadran - Galenski Laboratorij d.d. /\nSterigenics Germany GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DERETIL S.A. / \nFermic S.A. de C.V.",
+      "Manufacturer": "Klocke Verpackungs-Service GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DERETIL S.A. / \nShandong New Time Pharmaceutical CO., LTD.",
+      "Manufacturer": "Laboratorios Cinfa, S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dipharma Francis S.r.l.",
+      "Manufacturer": "Laboratorios Farmalan, S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dishman Carbogen Amcis Limited",
+      "Manufacturer": "Laboratorios León Farma, S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Divi´s Laboratories Limited-Unit II / RA Chem Pharma Limited",
+      "Manufacturer": "Laboratorios Liconsa, S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Divis Divis Laboratories LTD /\nCTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "Lichtenheldt GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Divis Laboratories LTD",
+      "Manufacturer": "Lotus Pharmaceutical Co., Ltd.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dr Reddy's Laboratories Ltd., Chemical Tech Ops (CTO) Unit V",
+      "Manufacturer": "LTS Lohmann Therapie-Systeme AG",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dr Reddy's Laboratories Ltd., Chemical Tech Ops I",
+      "Manufacturer": "M/s. Granules India Limited",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dr Reddy's Laboratories Ltd., Chemical Tech Ops III",
+      "Manufacturer": "Macleods Pharmaceuticals Limited -Site Baddi",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dr Reddy's Laboratories Ltd., Chemical Tech Ops IV",
+      "Manufacturer": "Macleods Pharmaceuticals Limited -Site Daman",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dr. Reddy's Laboratories Limited",
+      "Manufacturer": "Medana",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dr. Reddy's Laboratories Ltd. / \nUnichem Laboratories LTD",
+      "Manufacturer": "Mibe GmbH Arzneimittel",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Dr. Reddy's Laboratories Ltd., Chemical Tech Ops VI",
+      "Manufacturer": "Midas Pharma GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DSM Nutritional Products (UK) Ltd.",
+      "Manufacturer": "Natco Pharma Limited Kothur",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DSM Nutritional Products (UK) Ltd. /\nSudeep Pharma Private Limited",
+      "Manufacturer": "Nectar Lifescience Limited Unit VI",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DSM Nutritional Products (UK) Ltd./\nImerys Carbonates Austria GmbH",
+      "Manufacturer": "Nectar Lifescience Limited Unit VI",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DSM Nutritional Products AG (CH)",
+      "Manufacturer": "Nobel İlaç San. Ve Tic.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "DSM Nutritional Products LTD (FR)",
+      "Manufacturer": "Nordmark Pharma GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Excella GmbH & Co. KG",
+      "Manufacturer": "Nosch Labs PVT. Limited Unit-III",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "extrakt chemie Dr. Bruno\nStellmach GmbH & Co. KG",
+      "Manufacturer": "Nosch Labs PVT. Limited Unit-III / \nTPL Baddi",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Farmak, A.S.",
+      "Manufacturer": "Oman Pharmaceutical Products Co. LLC",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Farmsom Pharmaceutical Gujarat (Unit-I)",
+      "Manufacturer": "Osmopharm SA",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Fermic S.A. de C.V.",
+      "Manufacturer": "PenCef Pharma GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Fleming Laboratories Ltd. / Recordati Industria chimica Farmaceutica S.P.A",
+      "Manufacturer": "Pharmathen International S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Formosa Laboratories INC",
+      "Manufacturer": "Pharmathen S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Fresenius Kabi Austria GmbH",
+      "Manufacturer": "Pharmathen S.A. /\nPharmathen International S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Gedeon Richter Ltd. Budapest site",
+      "Manufacturer": "Pharmazet Group s.r.o.,",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Glenmark Life Sciences Limited",
+      "Manufacturer": "Pliva Hrvatska d.o.o.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Glenmark Life Sciences Limited /\nCTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "Prestige Promotion Verkaufsförderung & Werbeservice GmbH - Alzenau",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Glenmark Life Sciences Limited /\nUnichem Laboratories LTD",
+      "Manufacturer": "Prestige Promotion Verkaufsförderung & Werbeservice GmbH - Kleinostheim",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Glochem Industries LTD",
+      "Manufacturer": "Prestige Promotion Verkaufsförderung & Werbeservice GmbH - Lindigstraße 6, Kleinostheim",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Granules India Limited (Unit-IV)",
+      "Manufacturer": "PS Pharma Service",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Harman Finochem Limited - Chikalthana Site",
+      "Manufacturer": "Rafarm S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Harman Finochem Limited - Shendra Site",
+      "Manufacturer": "Recipharm",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "HEC Pharm Co. Ltd",
+      "Manufacturer": "Recipharm /\nChanelle Medical Unlimited Company",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Drugs Limited - Unit I",
+      "Manufacturer": "Rompharm Company SRL",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Drugs Limited - Unit I /\nMacleods Pharmaceuticals Limited Sarigam",
+      "Manufacturer": "Sanovel Ilac San.ve Tic A.S.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Drugs Limited - Unit I /\nMacleods Pharmaceuticals Limited Sarigam /\nCTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "SK Chemicals Co., Ltd., Cheongju plant",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Drugs Limited - Unit IX",
+      "Manufacturer": "SK Pharma Logistics GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Labs Limited - Unit I",
+      "Manufacturer": "Sofarimex Industria Química e Farmacêutica, S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Labs Limited - Unit I / \nHetero Labs Limited - Unit IX",
+      "Manufacturer": "Strides Pharma Sciences Ltd",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Labs Limited - Unit I /\nCadila Healthcare Limited",
+      "Manufacturer": "Swiss Caps GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Labs Limited - Unit I /\nUnichem Laboratories LTD",
+      "Manufacturer": "Synoptis Industrial Sp. z o.o.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Labs Limited - Unit I /\nZydus Lifesciences Ltd.",
+      "Manufacturer": "Synthon BV",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Labs Limited - Unit IX",
+      "Manufacturer": "Synthon Hispania S.L.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hetero Labs Limited - Unit IX /\nHetero Labs Limited - Unit IX",
+      "Manufacturer": "Temmler Pharma GmbH & Co. KG",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Hikal Limited",
+      "Manufacturer": "Torrent Pharma (Malta) Itd",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Honour Lab Limited Unit-III",
+      "Manufacturer": "Torrent Pharmaceuticals Ltd. -Site Baddi",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Ind Swift Laboratories Limited",
+      "Manufacturer": "Torrent Pharmaceuticals Ltd. -Site Dahej",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Indena S.A.S.",
+      "Manufacturer": "Torrent Pharmaceuticals Ltd. -Site Indrad",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Industriale Chimica",
+      "Manufacturer": "Torrent Pharmaceuticals\nLtd. - Site Bileshwarpura",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Interquim S.A.",
+      "Manufacturer": "UNISON PHARMACEUTICALS PVT. LTD., UNIT-3,",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "IOL Chemicals & Pharmaceuticals Ltd.",
+      "Manufacturer": "Watson Pharma Private Limited",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "IPCA Laboratories Limited",
+      "Manufacturer": "Wiewelhove GmbH",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Ipochem SP. Z 0.0",
+      "Manufacturer": "Zentiva România",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Jubilant Generics Ltd.",
+      "Manufacturer": "Famar S.A. / Pharmathen S.A. /\nIFET S.A.",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "KD-Pharma Bexbach GmbH",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "L.I.M.S.A",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Laboratori Alchemia SRL",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Lake Chemicals Private Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Laurus Labs Private Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Lee Pharma Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Macfarlan Smith LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Macfarlan Smith LTD /\nMacfarlan Smith LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Macfarlan Smith LTD/\nSiegfried LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Macleods Pharmaceuticals Limited Sarigam",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Macleods Pharmaceuticals Limited Sarigam / \nCTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Macleods Pharmaceuticals Limited Sarigam/ Laurus Labs Private Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Malladi Drugs & Pharmaceuticals Limited, Unit-3",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Maprimed S.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Medichem Manufacturing Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Medichem Manufacturing Ltd. / Cipla Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Medichem S.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Medichem S.A. /\nPharmathen International S.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Megafine Pharma (P) Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Moehs BCN, S.L.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "MOEHS BCN, S.L./\nSiegfried Evionnaz SA",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Moehs Cantabra, S.L.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Moehs Catalana, S.L.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Morepen Laboratories Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "MSN Laboratories Pvt. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "MSN Organics Private Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "MSN Pharmachem Private Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Mylan Laboratories Ltd. Unit-1",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Mylan Laboratories Ltd. Unit-7",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Mylan Laboratories Ltd. Unit-8",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Mylan Laboratories Ltd. Unit-9",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Natco Pharma Limited (Chemical Devision)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Natco Pharma Limited Mekaguda",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Nectar Lifescience LTD Unit II",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Neuland Laboratories LTD Unit I",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Neuland Laboratories LTD Unit II",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Noramco, LLC.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Nosch Labs PVT. Limited Unit-II",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Nosch Labs PVT. Limited Unit-IV",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Olon S.p.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Optimus Drugs Private Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Pharmaceutical Works Polpharma S.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Pharmaceutical Works Polpharma S.A. / \nPharmathen International S.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Pharmaceutical Works Polpharma S.A. /\nPharmathen International S.A. /\nFermenta Biotech Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Pharmacia & Upjohn Company",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Procos SPA",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Quimica Sintetica S.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Quimica Sintetica S.A. /\nCambrex Profarmaco Milano SRL",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "RA Chem Pharma Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Recordati Industria Chimica E Farmaceutica S.P.A.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Sanofi Chimie Aramon",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Saurav Chemicals Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Saurav Chemicals Limited Unit-III",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "ScinoPharm Taiwan LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Shandong New Time Pharmaceutical CO., LTD.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Shandong Xinhua Pharmaceutical Co., Ltd. Hutian",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Shilpa Medicare LTD (Unit-1)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Shilpa Pharma Lifescience Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Shodhana Laboratories Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Shodhana Laboratories Private Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Siegfried Evionnaz SA (BASF Pharma)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Siegfried LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Siegfried LTD /\nMacfarlan Smith LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Siegfried LTD /\nNoramco",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Siegfried LTD /\nSiegfried LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Siegfried Pharmachemikalien Minden GmbH",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Siegfried Pharmachemikalien Minden GmbH / Noramco",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "SIMS S.R.L (Societa Italiana Medicinalli Scandicci)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Sintenovo S.A. de C.V.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "SMS Pharmaceuticals Ltd. Unit II",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "SMS Pharmaceuticals Ltd. Unit VII",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Solara Active Pharma Sciences Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Sri Krishna Pharmaceuticals Ltd. Unit I",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Sudeep Pharma Private Limited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Sun Pharmaceutical Industries Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Sun Pharmaceutical Industries Ltd. /\nMoehs Catalana, S.L.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Symbiotica Speciality Ingredients Sdn. Bhd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Symed Labs Limited Unit I",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Symed Labs Limited Unit IV",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Synthon Argentina SA",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Synthon s.r.o.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Teva API India Limited (TAPI)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Teva Czech Industries, s.r.o. (TCI)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Teva Pharmaceutical Industries Plantex Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Teva Pharmaceutical Works Private Limited Company",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Therapiva Private Lmited",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Therapiva Private Lmited TU-II",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Torrent Pharmaceuticals Ltd. - Site Vizag",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Torrent Pharmaceuticals Ltd. -Site Dahej",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Torrent Pharmaceuticals Ltd. -Site Indrad",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Torrent Pharmaceuticals Ltd. -Site Indrad /\nUnichem Laboratories LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Unichem Laboratories LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Unique Chemicals (A Div. Of J.B. Chemicals & Pharmaceuticals Ltd.)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Ven Petrochem & Pharma Pvt. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Vitalife Laboratories",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Viyash Life Sciences Private Limited Unit-I",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Wanbury Limited (Doctors Organic Chemical)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Wanbury Limited Unit-1",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Wavelength Enterprises Ltd",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Welding GmbH & Co. KG",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Wuhan Wuyao Pharmaceutical Co., Ltd",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Yichang Hec Changjiang Pharmaceutical Co., LTD.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zakłady Farmaceutyczne POLPHARMA S.A. (Pharmaceutical Works Polpharma S.A.)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "ZCL Chemicals LTD.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Ausun Pharmaceutical Co. Ltd",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Charioteer Pharmaceutical Co. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Cheng Yi Pharmaceutical Co. LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Chiral Medicine Chemical Co. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Hisoar Pharmaceutical Co., Ltd",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Chuannan",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Chuannan /\nAlembic Pharmaceuticals Limited - API Unit I",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Chuannan /\nCambrex Profarmaco Milano SRL",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Chuannan /\nChangzhou Pharmaceutical Factory",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Chuannan /\nCTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Chuannan /\nUnichem Laboratories LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Xunqiao",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Xunqiao /\nCTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Huahai Pharmaceutical Co., Ltd. -Site Xunqiao /\nUnichem Laboratories LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Tianyu Pharmaceutical Co., Ltd.  (Huangyan Site) /\nCTX Life Sciences Pvt. Ltd.",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Tianyu Pharmaceutical Co., Ltd. (Huangyan Site)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Tianyu Pharmaceutical Co., Ltd. (Huangyan Site) /\nCambrex Profarmaco Milano SRL",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhejiang Tianyu Pharmaceutical Co., Ltd. (Linhai Site)",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    },
+    {
+      "API_Manufacturer": "Zhuhai Rundu Pharmaceutical CO., LTD",
+      "Manufacturer": "",
+      "RB_Site": "",
+      "Category": ""
+    }
+  ]

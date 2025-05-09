@@ -1,0 +1,3887 @@
+[
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0026300",
+      "MA_name": "Allopurinol 300 Heumann",
+      "MA-No.": "6580345.01.00"
+    },
+    {
+      "SAP_Material_Number": "0039600",
+      "MA_name": "Heparin 30.000 I.E. Heumann Creme",
+      "MA-No.": "6247597.00.00"
+    },
+    {
+      "SAP_Material_Number": "0039700",
+      "MA_name": "Heparin 30.000 I.E. Heumann Creme",
+      "MA-No.": "6247597.00.00"
+    },
+    {
+      "SAP_Material_Number": "0040000",
+      "MA_name": "Heparin 60.000 I.E. Heumann Creme",
+      "MA-No.": "6417071.00.00"
+    },
+    {
+      "SAP_Material_Number": "0040000",
+      "MA_name": "Heparin 60.000 I.E. Heumann Creme",
+      "MA-No.": "6417071.00.00"
+    },
+    {
+      "SAP_Material_Number": "0040000",
+      "MA_name": "Heparin 60.000 I.E. Heumann Creme",
+      "MA-No.": "6417071.00.00"
+    },
+    {
+      "SAP_Material_Number": "0040100",
+      "MA_name": "Heparin 60.000 I.E. Heumann Creme",
+      "MA-No.": "6417071.00.00"
+    },
+    {
+      "SAP_Material_Number": "0040100",
+      "MA_name": "Heparin 60.000 I.E. Heumann Creme",
+      "MA-No.": "6417071.00.00"
+    },
+    {
+      "SAP_Material_Number": "0040100",
+      "MA_name": "Heparin 60.000 I.E. Heumann Creme",
+      "MA-No.": "6417071.00.00"
+    },
+    {
+      "SAP_Material_Number": "0040100",
+      "MA_name": "Heparin 60.000 I.E. Heumann Creme",
+      "MA-No.": "6417071.00.00"
+    },
+    {
+      "SAP_Material_Number": "0069600",
+      "MA_name": "Morphin 10 retard Heumann",
+      "MA-No.": "40108.00.00"
+    },
+    {
+      "SAP_Material_Number": "0069700",
+      "MA_name": "Morphin 10 retard Heumann",
+      "MA-No.": "40108.00.00"
+    },
+    {
+      "SAP_Material_Number": "0069700",
+      "MA_name": "Morphin 10 retard Heumann",
+      "MA-No.": "40108.00.00"
+    },
+    {
+      "SAP_Material_Number": "0078900",
+      "MA_name": "Amiodaron 200 Heumann",
+      "MA-No.": "40158.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096100",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096200",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096300",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096300",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096300",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096300",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096300",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0096300",
+      "MA_name": "Fenofibrat 200 Heumann",
+      "MA-No.": "3000146.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117300",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117400",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117400",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117500",
+      "MA_name": "Panthenol Heumann Creme",
+      "MA-No.": "6225756.00.00"
+    },
+    {
+      "SAP_Material_Number": "0117900",
+      "MA_name": "Moxonidin Heumann 0,2 mg Filmtabletten",
+      "MA-No.": "57414.00.00"
+    },
+    {
+      "SAP_Material_Number": "0118000",
+      "MA_name": "Moxonidin Heumann 0,2 mg Filmtabletten",
+      "MA-No.": "57414.00.00"
+    },
+    {
+      "SAP_Material_Number": "0118500",
+      "MA_name": "Moxonidin Heumann 0,3 mg Filmtabletten",
+      "MA-No.": "57414.01.00"
+    },
+    {
+      "SAP_Material_Number": "0118600",
+      "MA_name": "Moxonidin Heumann 0,3 mg Filmtabletten",
+      "MA-No.": "57414.01.00"
+    },
+    {
+      "SAP_Material_Number": "0118900",
+      "MA_name": "Moxonidin Heumann 0,4 mg Filmtabletten",
+      "MA-No.": "57414.02.00"
+    },
+    {
+      "SAP_Material_Number": "0119100",
+      "MA_name": "Moxonidin Heumann 0,4 mg Filmtabletten",
+      "MA-No.": "57414.02.00"
+    },
+    {
+      "SAP_Material_Number": "0136600",
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": "0136700",
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": "0136700",
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": "0137100",
+      "MA_name": "Mirtazapin Heumann 30 mg Filmtabletten",
+      "MA-No.": "60281.01.00"
+    },
+    {
+      "SAP_Material_Number": "0137200",
+      "MA_name": "Mirtazapin Heumann 30 mg Filmtabletten",
+      "MA-No.": "60281.01.00"
+    },
+    {
+      "SAP_Material_Number": "0137200",
+      "MA_name": "Mirtazapin Heumann 30 mg Filmtabletten",
+      "MA-No.": "60281.01.00"
+    },
+    {
+      "SAP_Material_Number": "0137200",
+      "MA_name": "Mirtazapin Heumann 30 mg Filmtabletten",
+      "MA-No.": "60281.01.00"
+    },
+    {
+      "SAP_Material_Number": "0137200",
+      "MA_name": "Mirtazapin Heumann 30 mg Filmtabletten",
+      "MA-No.": "60281.01.00"
+    },
+    {
+      "SAP_Material_Number": "0155800",
+      "MA_name": "Ambroxol 75 retard Heumann",
+      "MA-No.": "7863.00.00"
+    },
+    {
+      "SAP_Material_Number": "0156900",
+      "MA_name": "Ambroxol 75 retard Heumann",
+      "MA-No.": "7863.00.00"
+    },
+    {
+      "SAP_Material_Number": "0156900",
+      "MA_name": "Ambroxol 75 retard Heumann",
+      "MA-No.": "7863.00.00"
+    },
+    {
+      "SAP_Material_Number": "0157000",
+      "MA_name": "Ambroxol 75 retard Heumann",
+      "MA-No.": "7863.00.00"
+    },
+    {
+      "SAP_Material_Number": "0158300",
+      "MA_name": "Glimepirid Heumann 1 mg Tabletten",
+      "MA-No.": "72714.00.00"
+    },
+    {
+      "SAP_Material_Number": "0158300",
+      "MA_name": "Glimepirid Heumann 1 mg Tabletten",
+      "MA-No.": "72714.00.00"
+    },
+    {
+      "SAP_Material_Number": "0158300",
+      "MA_name": "Glimepirid Heumann 1 mg Tabletten",
+      "MA-No.": "72714.00.00"
+    },
+    {
+      "SAP_Material_Number": "0159400",
+      "MA_name": "Glimepirid Heumann 3 mg Tabletten",
+      "MA-No.": "72716.00.00"
+    },
+    {
+      "SAP_Material_Number": "0165100",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165100",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165100",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165200",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165200",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165200",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165300",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165300",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165300",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165300",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165300",
+      "MA_name": "Lamotrigin Heumann 50 mg Tabletten",
+      "MA-No.": "57031.01.00"
+    },
+    {
+      "SAP_Material_Number": "0165600",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165600",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165600",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165600",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165700",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165700",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165700",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165700",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0165800",
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": "0166200",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166200",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166200",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166200",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0166300",
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": "0280200",
+      "MA_name": "Atenolol 50 Heumann",
+      "MA-No.": "10735.01.00"
+    },
+    {
+      "SAP_Material_Number": "0538900",
+      "MA_name": "Metoprolol 50 Heumann",
+      "MA-No.": "11781.01.01"
+    },
+    {
+      "SAP_Material_Number": "0538900",
+      "MA_name": "Metoprolol 50 Heumann",
+      "MA-No.": "11781.01.01"
+    },
+    {
+      "SAP_Material_Number": "0617700",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0618800",
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": "0626800",
+      "MA_name": "Aciclovir 400 Heumann",
+      "MA-No.": "28453.01.00"
+    },
+    {
+      "SAP_Material_Number": "0626800",
+      "MA_name": "Aciclovir 400 Heumann",
+      "MA-No.": "28453.01.00"
+    },
+    {
+      "SAP_Material_Number": "0627900",
+      "MA_name": "Aciclovir 400 Heumann",
+      "MA-No.": "28453.01.00"
+    },
+    {
+      "SAP_Material_Number": "0627900",
+      "MA_name": "Aciclovir 400 Heumann",
+      "MA-No.": "28453.01.00"
+    },
+    {
+      "SAP_Material_Number": "0627900",
+      "MA_name": "Aciclovir 400 Heumann",
+      "MA-No.": "28453.01.00"
+    },
+    {
+      "SAP_Material_Number": "0627900",
+      "MA_name": "Aciclovir 400 Heumann",
+      "MA-No.": "28453.01.00"
+    },
+    {
+      "SAP_Material_Number": "0665500",
+      "MA_name": "Urso 250 Heumann",
+      "MA-No.": "8349.00.00"
+    },
+    {
+      "SAP_Material_Number": "0666600",
+      "MA_name": "Urso 250 Heumann",
+      "MA-No.": "8349.00.00"
+    },
+    {
+      "SAP_Material_Number": "0667700",
+      "MA_name": "Urso 250 Heumann",
+      "MA-No.": "8349.00.00"
+    },
+    {
+      "SAP_Material_Number": "0671300",
+      "MA_name": "Urso 400 Heumann",
+      "MA-No.": "8349.01.00"
+    },
+    {
+      "SAP_Material_Number": "0671300",
+      "MA_name": "Urso 400 Heumann",
+      "MA-No.": "8349.01.00"
+    },
+    {
+      "SAP_Material_Number": "0671300",
+      "MA_name": "Urso 400 Heumann",
+      "MA-No.": "8349.01.00"
+    },
+    {
+      "SAP_Material_Number": "0682600",
+      "MA_name": "Loperamid 2 Heumann",
+      "MA-No.": "14306.00.00"
+    },
+    {
+      "SAP_Material_Number": "0683700",
+      "MA_name": "Loperamid 2 Heumann",
+      "MA-No.": "14306.00.00"
+    },
+    {
+      "SAP_Material_Number": "0684800",
+      "MA_name": "Loperamid 2 Heumann",
+      "MA-No.": "14306.00.00"
+    },
+    {
+      "SAP_Material_Number": "0771600",
+      "MA_name": "Loperamid akut Heumann",
+      "MA-No.": "14306.00.01"
+    },
+    {
+      "SAP_Material_Number": "0815100",
+      "MA_name": "Aciclovir 800 Heumann",
+      "MA-No.": "33542.00.00"
+    },
+    {
+      "SAP_Material_Number": "0815100",
+      "MA_name": "Aciclovir 800 Heumann",
+      "MA-No.": "33542.00.00"
+    },
+    {
+      "SAP_Material_Number": "0815100",
+      "MA_name": "Aciclovir 800 Heumann",
+      "MA-No.": "33542.00.00"
+    },
+    {
+      "SAP_Material_Number": "0815100",
+      "MA_name": "Aciclovir 800 Heumann",
+      "MA-No.": "33542.00.00"
+    },
+    {
+      "SAP_Material_Number": "0815100",
+      "MA_name": "Aciclovir 800 Heumann",
+      "MA-No.": "33542.00.00"
+    },
+    {
+      "SAP_Material_Number": "0815100",
+      "MA_name": "Aciclovir 800 Heumann",
+      "MA-No.": "33542.00.00"
+    },
+    {
+      "SAP_Material_Number": "0815100",
+      "MA_name": "Aciclovir 800 Heumann",
+      "MA-No.": "33542.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500007,
+      "MA_name": "Mirtazapin Heumann 45 mg Filmtabletten",
+      "MA-No.": "60281.02.00"
+    },
+    {
+      "SAP_Material_Number": 5500008,
+      "MA_name": "Mirtazapin Heumann 45 mg Filmtabletten",
+      "MA-No.": "60281.02.00"
+    },
+    {
+      "SAP_Material_Number": 5500008,
+      "MA_name": "Mirtazapin Heumann 45 mg Filmtabletten",
+      "MA-No.": "60281.02.00"
+    },
+    {
+      "SAP_Material_Number": 5500008,
+      "MA_name": "Mirtazapin Heumann 45 mg Filmtabletten",
+      "MA-No.": "60281.02.00"
+    },
+    {
+      "SAP_Material_Number": 5500008,
+      "MA_name": "Mirtazapin Heumann 45 mg Filmtabletten",
+      "MA-No.": "60281.02.00"
+    },
+    {
+      "SAP_Material_Number": 5500011,
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500011,
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500011,
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500011,
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500091,
+      "MA_name": "Risperidon Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "64997.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500094,
+      "MA_name": "Risperidon Heumann 1 mg Filmtabletten",
+      "MA-No.": "64998.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500094,
+      "MA_name": "Risperidon Heumann 1 mg Filmtabletten",
+      "MA-No.": "64998.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500101,
+      "MA_name": "Risperidon Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "64997.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500101,
+      "MA_name": "Risperidon Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "64997.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500121,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500122,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500122,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500123,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500123,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500123,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500123,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500155,
+      "MA_name": "Itraconazol Heumann 100 mg Hartkapseln",
+      "MA-No.": "76776.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500165,
+      "MA_name": "Omeprazol Heumann 10 mg magensaftresistente Hartkapseln",
+      "MA-No.": "72547.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500176,
+      "MA_name": "Omeprazol Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "72549.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500177,
+      "MA_name": "Omeprazol Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "72549.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500179,
+      "MA_name": "Omeprazol Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "72549.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500179,
+      "MA_name": "Omeprazol Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "72549.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500179,
+      "MA_name": "Omeprazol Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "72549.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500186,
+      "MA_name": "Bicalutamid Heumann 150 mg Filmtabletten",
+      "MA-No.": "74029.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500186,
+      "MA_name": "Bicalutamid Heumann 150 mg Filmtabletten",
+      "MA-No.": "74029.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500188,
+      "MA_name": "Paracetamol HEUMANN 500 mg Tabletten bei Schmerzen und Fieber",
+      "MA-No.": "3599.99.98"
+    },
+    {
+      "SAP_Material_Number": 5500188,
+      "MA_name": "Paracetamol HEUMANN 500 mg Tabletten bei Schmerzen und Fieber",
+      "MA-No.": "3599.99.98"
+    },
+    {
+      "SAP_Material_Number": 5500188,
+      "MA_name": "Paracetamol HEUMANN 500 mg Tabletten bei Schmerzen und Fieber",
+      "MA-No.": "3599.99.98"
+    },
+    {
+      "SAP_Material_Number": 5500210,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500211,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500211,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500212,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500212,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500215,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500216,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500217,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500262,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500263,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500264,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500265,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500268,
+      "MA_name": "Pantoprazol Heumann 40 mg magensaftresistente Tabletten",
+      "MA-No.": "64962.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500318,
+      "MA_name": "Glimepirid Heumann 1 mg Tabletten",
+      "MA-No.": "72714.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500318,
+      "MA_name": "Glimepirid Heumann 1 mg Tabletten",
+      "MA-No.": "72714.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500318,
+      "MA_name": "Glimepirid Heumann 1 mg Tabletten",
+      "MA-No.": "72714.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500324,
+      "MA_name": "Lercanidipin Heumann 10 mg Filmtabletten",
+      "MA-No.": "74293.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500325,
+      "MA_name": "Lercanidipin Heumann 10 mg Filmtabletten",
+      "MA-No.": "74293.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500334,
+      "MA_name": "Losartan Heumann 50 mg Filmtabletten",
+      "MA-No.": "96069.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500334,
+      "MA_name": "Losartan Heumann 50 mg Filmtabletten",
+      "MA-No.": "96069.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500338,
+      "MA_name": "Losartan Heumann 100 mg Filmtabletten",
+      "MA-No.": "96070.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500338,
+      "MA_name": "Losartan Heumann 100 mg Filmtabletten",
+      "MA-No.": "96070.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500338,
+      "MA_name": "Losartan Heumann 100 mg Filmtabletten",
+      "MA-No.": "96070.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500469,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500470,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500471,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500471,
+      "MA_name": "Pantoprazol Heumann 20 mg magensaftresistente Tabletten",
+      "MA-No.": "64961.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500477,
+      "MA_name": "Pantoprazol Heumann 40 mg magensaftresistente Tabletten",
+      "MA-No.": "64962.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500477,
+      "MA_name": "Pantoprazol Heumann 40 mg magensaftresistente Tabletten",
+      "MA-No.": "64962.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500477,
+      "MA_name": "Pantoprazol Heumann 40 mg magensaftresistente Tabletten",
+      "MA-No.": "64962.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500477,
+      "MA_name": "Pantoprazol Heumann 40 mg magensaftresistente Tabletten",
+      "MA-No.": "64962.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500494,
+      "MA_name": "Amiodaron 200 Heumann",
+      "MA-No.": "40158.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500495,
+      "MA_name": "Amiodaron 200 Heumann",
+      "MA-No.": "40158.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500495,
+      "MA_name": "Amiodaron 200 Heumann",
+      "MA-No.": "40158.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500573,
+      "MA_name": "Felodipin 5 retard Heumann",
+      "MA-No.": "45633.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500573,
+      "MA_name": "Felodipin 5 retard Heumann",
+      "MA-No.": "45633.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500633,
+      "MA_name": "Mirtazapin Heumann 15 mg Filmtabletten",
+      "MA-No.": "60281.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500708,
+      "MA_name": "Azathioprin Heumann 50 mg Filmtabletten",
+      "MA-No.": "63079.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500709,
+      "MA_name": "Azathioprin Heumann 50 mg Filmtabletten",
+      "MA-No.": "63079.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500748,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500750,
+      "MA_name": "Tamsulosin Heumann 0,4 mg Hartkapseln, retardiert",
+      "MA-No.": "63917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500819,
+      "MA_name": "Losartan comp. Heumann 50 mg/12,5 mg Filmtabletten",
+      "MA-No.": "95892.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500822,
+      "MA_name": "Losartan comp. Heumann 100 mg/12,5 mg Filmtabletten",
+      "MA-No.": "72741.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500822,
+      "MA_name": "Losartan comp. Heumann 100 mg/12,5 mg Filmtabletten",
+      "MA-No.": "72741.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500825,
+      "MA_name": "Losartan comp. Heumann 100 mg/25 mg Filmtabletten",
+      "MA-No.": "72084.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500825,
+      "MA_name": "Losartan comp. Heumann 100 mg/25 mg Filmtabletten",
+      "MA-No.": "72084.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500825,
+      "MA_name": "Losartan comp. Heumann 100 mg/25 mg Filmtabletten",
+      "MA-No.": "72084.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500882,
+      "MA_name": "Exemestan Heumann 25 mg überzogene Tabletten",
+      "MA-No.": "78341.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500882,
+      "MA_name": "Exemestan Heumann 25 mg überzogene Tabletten",
+      "MA-No.": "78341.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500882,
+      "MA_name": "Exemestan Heumann 25 mg überzogene Tabletten",
+      "MA-No.": "78341.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500926,
+      "MA_name": "Rivastigmin Heumann 1,5 mg Hartkapseln",
+      "MA-No.": "76254.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500927,
+      "MA_name": "Rivastigmin Heumann 1,5 mg Hartkapseln",
+      "MA-No.": "76254.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500927,
+      "MA_name": "Rivastigmin Heumann 1,5 mg Hartkapseln",
+      "MA-No.": "76254.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500927,
+      "MA_name": "Rivastigmin Heumann 1,5 mg Hartkapseln",
+      "MA-No.": "76254.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500928,
+      "MA_name": "Rivastigmin Heumann 3 mg Hartkapseln",
+      "MA-No.": "76255.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500929,
+      "MA_name": "Rivastigmin Heumann 3 mg Hartkapseln",
+      "MA-No.": "76255.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500929,
+      "MA_name": "Rivastigmin Heumann 3 mg Hartkapseln",
+      "MA-No.": "76255.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500929,
+      "MA_name": "Rivastigmin Heumann 3 mg Hartkapseln",
+      "MA-No.": "76255.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500929,
+      "MA_name": "Rivastigmin Heumann 3 mg Hartkapseln",
+      "MA-No.": "76255.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500929,
+      "MA_name": "Rivastigmin Heumann 3 mg Hartkapseln",
+      "MA-No.": "76255.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500929,
+      "MA_name": "Rivastigmin Heumann 3 mg Hartkapseln",
+      "MA-No.": "76255.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500931,
+      "MA_name": "Rivastigmin Heumann 4,5 mg Hartkapseln",
+      "MA-No.": "76256.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500933,
+      "MA_name": "Rivastigmin Heumann 6 mg Hartkapseln",
+      "MA-No.": "76257.00.00"
+    },
+    {
+      "SAP_Material_Number": 5500955,
+      "MA_name": "Ibuprofen Heumann Schmerztabletten 400 mg Filmtabletten",
+      "MA-No.": "2129.97.99"
+    },
+    {
+      "SAP_Material_Number": 5501011,
+      "MA_name": "Quetiapin Heumann 25 mg Filmtabletten",
+      "MA-No.": "79950.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501013,
+      "MA_name": "Quetiapin Heumann 25 mg Filmtabletten",
+      "MA-No.": "79950.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501013,
+      "MA_name": "Quetiapin Heumann 25 mg Filmtabletten",
+      "MA-No.": "79950.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501013,
+      "MA_name": "Quetiapin Heumann 25 mg Filmtabletten",
+      "MA-No.": "79950.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501013,
+      "MA_name": "Quetiapin Heumann 25 mg Filmtabletten",
+      "MA-No.": "79950.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501013,
+      "MA_name": "Quetiapin Heumann 25 mg Filmtabletten",
+      "MA-No.": "79950.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501016,
+      "MA_name": "Quetiapin Heumann 100 mg Filmtabletten",
+      "MA-No.": "79952.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501184,
+      "MA_name": "Quetiapin Heumann retard 50 mg Retardtabletten",
+      "MA-No.": "2200855.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501186,
+      "MA_name": "Quetiapin Heumann retard 50 mg Retardtabletten",
+      "MA-No.": "2200855.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501186,
+      "MA_name": "Quetiapin Heumann retard 50 mg Retardtabletten",
+      "MA-No.": "2200855.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501186,
+      "MA_name": "Quetiapin Heumann retard 50 mg Retardtabletten",
+      "MA-No.": "2200855.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501188,
+      "MA_name": "Quetiapin Heumann retard 150 mg Retardtabletten",
+      "MA-No.": "2200856.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501215,
+      "MA_name": "Candesartan/HCT Heumann 8 mg/12,5 mg Tabletten",
+      "MA-No.": "82322.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501218,
+      "MA_name": "Candesartan/HCT Heumann 16 mg/12,5 mg Tabletten",
+      "MA-No.": "82323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501237,
+      "MA_name": "Candesartan Heumann 4 mg Tabletten",
+      "MA-No.": "82318.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501254,
+      "MA_name": "Venlafaxin Heumann 75 mg Tabletten",
+      "MA-No.": "65963.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501260,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501260,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501324,
+      "MA_name": "Galantamin Heumann 16 mg Hartkapseln, retardiert",
+      "MA-No.": "93162.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501341,
+      "MA_name": "Rivastigmin Heumann 4,6 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85682.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501342,
+      "MA_name": "Rivastigmin Heumann 4,6 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85682.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501343,
+      "MA_name": "Rivastigmin Heumann 4,6 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85682.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501344,
+      "MA_name": "Rivastigmin Heumann 9,5 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85683.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501345,
+      "MA_name": "Rivastigmin Heumann 9,5 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85683.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501346,
+      "MA_name": "Rivastigmin Heumann 9,5 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85683.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501346,
+      "MA_name": "Rivastigmin Heumann 9,5 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85683.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501350,
+      "MA_name": "Tacrolimus Heumann 0,5 mg Hartkapseln",
+      "MA-No.": "82612.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501371,
+      "MA_name": "Memantin Heumann 10 mg Filmtabletten",
+      "MA-No.": "87894.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501371,
+      "MA_name": "Memantin Heumann 10 mg Filmtabletten",
+      "MA-No.": "87894.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501371,
+      "MA_name": "Memantin Heumann 10 mg Filmtabletten",
+      "MA-No.": "87894.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501371,
+      "MA_name": "Memantin Heumann 10 mg Filmtabletten",
+      "MA-No.": "87894.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501373,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501374,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501374,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501374,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501374,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501374,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501374,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501374,
+      "MA_name": "Memantin Heumann 20 mg Filmtabletten",
+      "MA-No.": "87895.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501375,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501376,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501376,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501377,
+      "MA_name": "Escitalopram Heumann 10 mg Filmtabletten",
+      "MA-No.": "86753.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501380,
+      "MA_name": "Escitalopram Heumann 20 mg Filmtabletten",
+      "MA-No.": "86755.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501380,
+      "MA_name": "Escitalopram Heumann 20 mg Filmtabletten",
+      "MA-No.": "86755.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501380,
+      "MA_name": "Escitalopram Heumann 20 mg Filmtabletten",
+      "MA-No.": "86755.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501380,
+      "MA_name": "Escitalopram Heumann 20 mg Filmtabletten",
+      "MA-No.": "86755.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501380,
+      "MA_name": "Escitalopram Heumann 20 mg Filmtabletten",
+      "MA-No.": "86755.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501385,
+      "MA_name": "Sildenafil Heumann 100 mg Filmtabletten",
+      "MA-No.": "84885.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501386,
+      "MA_name": "Sildenafil Heumann 100 mg Filmtabletten",
+      "MA-No.": "84885.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501426,
+      "MA_name": "Quetiapin Heumann 50 mg Filmtabletten",
+      "MA-No.": "79951.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501427,
+      "MA_name": "Quetiapin Heumann 50 mg Filmtabletten",
+      "MA-No.": "79951.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501427,
+      "MA_name": "Quetiapin Heumann 50 mg Filmtabletten",
+      "MA-No.": "79951.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501427,
+      "MA_name": "Quetiapin Heumann 50 mg Filmtabletten",
+      "MA-No.": "79951.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501429,
+      "MA_name": "Quetiapin Heumann 150 mg Filmtabletten",
+      "MA-No.": "79953.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501430,
+      "MA_name": "Quetiapin Heumann 150 mg Filmtabletten",
+      "MA-No.": "79953.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501430,
+      "MA_name": "Quetiapin Heumann 150 mg Filmtabletten",
+      "MA-No.": "79953.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501430,
+      "MA_name": "Quetiapin Heumann 150 mg Filmtabletten",
+      "MA-No.": "79953.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501430,
+      "MA_name": "Quetiapin Heumann 150 mg Filmtabletten",
+      "MA-No.": "79953.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501430,
+      "MA_name": "Quetiapin Heumann 150 mg Filmtabletten",
+      "MA-No.": "79953.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501476,
+      "MA_name": "Ambroxol 75 retard Heumann",
+      "MA-No.": "7863.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501476,
+      "MA_name": "Ambroxol 75 retard Heumann",
+      "MA-No.": "7863.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501497,
+      "MA_name": "Diclofenac HEUMANN Gel",
+      "MA-No.": "19199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501508,
+      "MA_name": "Rivastigmin Heumann 4,6 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85682.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501509,
+      "MA_name": "Rivastigmin Heumann 4,6 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85682.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501510,
+      "MA_name": "Rivastigmin Heumann 9,5 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85683.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501511,
+      "MA_name": "Rivastigmin Heumann 9,5 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "85683.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501516,
+      "MA_name": "Levodopa/Carbidopa/Entacapon Heumann 50 mg/12,5 mg/200 mg Filmtabletten",
+      "MA-No.": "96633.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501517,
+      "MA_name": "Levodopa/Carbidopa/Entacapon Heumann 50 mg/12,5 mg/200 mg Filmtabletten",
+      "MA-No.": "96633.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501560,
+      "MA_name": "Hydromorphon-HCl Heumann 2 mg Hartkapseln, retardiert",
+      "MA-No.": "85914.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501560,
+      "MA_name": "Hydromorphon-HCl Heumann 2 mg Hartkapseln, retardiert",
+      "MA-No.": "85914.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501560,
+      "MA_name": "Hydromorphon-HCl Heumann 2 mg Hartkapseln, retardiert",
+      "MA-No.": "85914.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501565,
+      "MA_name": "Hydromorphon-HCl Heumann 8 mg Hartkapseln, retardiert",
+      "MA-No.": "85916.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501567,
+      "MA_name": "Hydromorphon-HCl Heumann 8 mg Hartkapseln, retardiert",
+      "MA-No.": "85916.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501567,
+      "MA_name": "Hydromorphon-HCl Heumann 8 mg Hartkapseln, retardiert",
+      "MA-No.": "85916.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501570,
+      "MA_name": "Hydromorphon-HCl Heumann 16 mg Hartkapseln, retardiert",
+      "MA-No.": "85917.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501572,
+      "MA_name": "Hydromorphon-HCl Heumann 24 mg Hartkapseln, retardiert",
+      "MA-No.": "85918.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501573,
+      "MA_name": "Hydromorphon-HCl Heumann 24 mg Hartkapseln, retardiert",
+      "MA-No.": "85918.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501574,
+      "MA_name": "Oxycodonhydrochlorid Heumann 5 mg Retardtabletten",
+      "MA-No.": "91464.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501576,
+      "MA_name": "Oxycodonhydrochlorid Heumann 5 mg Retardtabletten",
+      "MA-No.": "91464.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501577,
+      "MA_name": "Oxycodonhydrochlorid Heumann 10 mg Retardtabletten",
+      "MA-No.": "91465.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501584,
+      "MA_name": "Oxycodonhydrochlorid Heumann 20 mg Retardtabletten",
+      "MA-No.": "91467.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501590,
+      "MA_name": "Oxycodonhydrochlorid Heumann 40 mg Retardtabletten",
+      "MA-No.": "91469.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501591,
+      "MA_name": "Oxycodonhydrochlorid Heumann 40 mg Retardtabletten",
+      "MA-No.": "91469.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501591,
+      "MA_name": "Oxycodonhydrochlorid Heumann 40 mg Retardtabletten",
+      "MA-No.": "91469.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501597,
+      "MA_name": "Oxycodonhydrochlorid Heumann 80 mg Retardtabletten",
+      "MA-No.": "91471.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501603,
+      "MA_name": "Levetiracetam Heumann 100 mg/ml Lösung zum Einnehmen",
+      "MA-No.": "88654.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501603,
+      "MA_name": "Levetiracetam Heumann 100 mg/ml Lösung zum Einnehmen",
+      "MA-No.": "88654.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501603,
+      "MA_name": "Levetiracetam Heumann 100 mg/ml Lösung zum Einnehmen",
+      "MA-No.": "88654.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501614,
+      "MA_name": "Ropinirol Heumann retard 8 mg Retardtabletten",
+      "MA-No.": "90643.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501614,
+      "MA_name": "Ropinirol Heumann retard 8 mg Retardtabletten",
+      "MA-No.": "90643.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501615,
+      "MA_name": "Celecoxib Heumann 100 mg Hartkapseln",
+      "MA-No.": "92342.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501616,
+      "MA_name": "Celecoxib Heumann 100 mg Hartkapseln",
+      "MA-No.": "92342.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501617,
+      "MA_name": "Celecoxib Heumann 100 mg Hartkapseln",
+      "MA-No.": "92342.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501620,
+      "MA_name": "Celecoxib Heumann 200 mg Hartkapseln",
+      "MA-No.": "92343.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501624,
+      "MA_name": "Telmisartan/Hydrochlorothiazid Heumann 40 mg/12,5 mg Tabletten",
+      "MA-No.": "88245.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501632,
+      "MA_name": "Escitalopram Heumann 20 mg / ml Tropfen zum Einnehmen, Lösung",
+      "MA-No.": "86825.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501632,
+      "MA_name": "Escitalopram Heumann 20 mg / ml Tropfen zum Einnehmen, Lösung",
+      "MA-No.": "86825.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501632,
+      "MA_name": "Escitalopram Heumann 20 mg / ml Tropfen zum Einnehmen, Lösung",
+      "MA-No.": "86825.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501632,
+      "MA_name": "Escitalopram Heumann 20 mg / ml Tropfen zum Einnehmen, Lösung",
+      "MA-No.": "86825.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501632,
+      "MA_name": "Escitalopram Heumann 20 mg / ml Tropfen zum Einnehmen, Lösung",
+      "MA-No.": "86825.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501632,
+      "MA_name": "Escitalopram Heumann 20 mg / ml Tropfen zum Einnehmen, Lösung",
+      "MA-No.": "86825.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501632,
+      "MA_name": "Escitalopram Heumann 20 mg / ml Tropfen zum Einnehmen, Lösung",
+      "MA-No.": "86825.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501637,
+      "MA_name": "Doxazosin 1 Heumann",
+      "MA-No.": "41279.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501640,
+      "MA_name": "Moxifloxacin Heumann 400 mg Filmtabletten",
+      "MA-No.": "2200881.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501670,
+      "MA_name": "Almotriptan HEUMANN bei Migräne 12,5 mg Filmtabletten",
+      "MA-No.": "93644.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501670,
+      "MA_name": "Almotriptan HEUMANN bei Migräne 12,5 mg Filmtabletten",
+      "MA-No.": "93644.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501670,
+      "MA_name": "Almotriptan HEUMANN bei Migräne 12,5 mg Filmtabletten",
+      "MA-No.": "93644.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501670,
+      "MA_name": "Almotriptan HEUMANN bei Migräne 12,5 mg Filmtabletten",
+      "MA-No.": "93644.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501682,
+      "MA_name": "Arpoya 15 mg Tabletten",
+      "MA-No.": "92908.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501682,
+      "MA_name": "Arpoya 15 mg Tabletten",
+      "MA-No.": "92908.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501685,
+      "MA_name": "Duloxetin Heumann 20 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93595.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501686,
+      "MA_name": "Duloxetin Heumann 20 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93595.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501686,
+      "MA_name": "Duloxetin Heumann 20 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93595.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501686,
+      "MA_name": "Duloxetin Heumann 20 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93595.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501687,
+      "MA_name": "Duloxetin Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93596.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501688,
+      "MA_name": "Duloxetin Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93596.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501688,
+      "MA_name": "Duloxetin Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93596.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501688,
+      "MA_name": "Duloxetin Heumann 40 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93596.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501689,
+      "MA_name": "Duloxetin Heumann 30 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93560.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501690,
+      "MA_name": "Duloxetin Heumann 30 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93560.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501690,
+      "MA_name": "Duloxetin Heumann 30 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93560.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501690,
+      "MA_name": "Duloxetin Heumann 30 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93560.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501690,
+      "MA_name": "Duloxetin Heumann 30 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93560.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501690,
+      "MA_name": "Duloxetin Heumann 30 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93560.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501691,
+      "MA_name": "Duloxetin Heumann 60 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93561.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501692,
+      "MA_name": "Duloxetin Heumann 60 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93561.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501692,
+      "MA_name": "Duloxetin Heumann 60 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93561.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501692,
+      "MA_name": "Duloxetin Heumann 60 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93561.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501692,
+      "MA_name": "Duloxetin Heumann 60 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93561.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501692,
+      "MA_name": "Duloxetin Heumann 60 mg magensaftresistente Hartkapseln",
+      "MA-No.": "93561.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501700,
+      "MA_name": "Pregabin 25 mg Hartkapseln",
+      "MA-No.": "92776.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501711,
+      "MA_name": "Pregabin 200 mg Hartkapseln",
+      "MA-No.": "92781.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501724,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501724,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501724,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501724,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501734,
+      "MA_name": "Lamotrigin Heumann 25 mg Tabletten",
+      "MA-No.": "57031.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501739,
+      "MA_name": "Lamotrigin Heumann 200 mg Tabletten",
+      "MA-No.": "57031.03.00"
+    },
+    {
+      "SAP_Material_Number": 5501757,
+      "MA_name": "Escitalopram Heumann 5 mg Filmtabletten",
+      "MA-No.": "86752.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501757,
+      "MA_name": "Escitalopram Heumann 5 mg Filmtabletten",
+      "MA-No.": "86752.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501757,
+      "MA_name": "Escitalopram Heumann 5 mg Filmtabletten",
+      "MA-No.": "86752.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501760,
+      "MA_name": "Escitalopram Heumann 15 mg Filmtabletten",
+      "MA-No.": "86754.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501760,
+      "MA_name": "Escitalopram Heumann 15 mg Filmtabletten",
+      "MA-No.": "86754.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501760,
+      "MA_name": "Escitalopram Heumann 15 mg Filmtabletten",
+      "MA-No.": "86754.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501764,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501766,
+      "MA_name": "Arpoya 30 mg Tabletten",
+      "MA-No.": "92909.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501912,
+      "MA_name": "Rivastigmin Heumann 13,3 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "93709.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501914,
+      "MA_name": "Rivastigmin Heumann 13,3 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "93709.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501914,
+      "MA_name": "Rivastigmin Heumann 13,3 mg/24 Stunden transdermales Pflaster",
+      "MA-No.": "93709.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501941,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501941,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501942,
+      "MA_name": "Venlafaxin Heumann 225 mg Hartkapseln, retardiert",
+      "MA-No.": "93933.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501968,
+      "MA_name": "Emulus 25 mg/g + 25 mg/g Creme",
+      "MA-No.": "94455.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501968,
+      "MA_name": "Emulus 25 mg/g + 25 mg/g Creme",
+      "MA-No.": "94455.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501971,
+      "MA_name": "Venlafaxin Heumann 75 mg Hartkapseln, retardiert",
+      "MA-No.": "73199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5501972,
+      "MA_name": "Venlafaxin Heumann 150 mg Hartkapseln, retardiert",
+      "MA-No.": "73200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502028,
+      "MA_name": "Rizatriptan Heumann 10 mg Schmelztabletten",
+      "MA-No.": "98854.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502029,
+      "MA_name": "Rizatriptan Heumann 10 mg Schmelztabletten",
+      "MA-No.": "98854.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502030,
+      "MA_name": "Rizatriptan Heumann 10 mg Schmelztabletten",
+      "MA-No.": "98854.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502030,
+      "MA_name": "Rizatriptan Heumann 10 mg Schmelztabletten",
+      "MA-No.": "98854.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502031,
+      "MA_name": "Rizatriptan Heumann 10 mg Schmelztabletten",
+      "MA-No.": "98854.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502031,
+      "MA_name": "Rizatriptan Heumann 10 mg Schmelztabletten",
+      "MA-No.": "98854.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502031,
+      "MA_name": "Rizatriptan Heumann 10 mg Schmelztabletten",
+      "MA-No.": "98854.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502036,
+      "MA_name": "Rizatriptan Heumann 10 mg Tabletten",
+      "MA-No.": "98856.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502037,
+      "MA_name": "Rizatriptan Heumann 10 mg Tabletten",
+      "MA-No.": "98856.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502038,
+      "MA_name": "Rizatriptan Heumann 10 mg Tabletten",
+      "MA-No.": "98856.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502075,
+      "MA_name": "Fenofibrat Heumann 160 mg Filmtabletten",
+      "MA-No.": "95889.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502083,
+      "MA_name": "Clopidogrel Heumann 75 mg Filmtabletten",
+      "MA-No.": "93600.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502100,
+      "MA_name": "Rosuvastatin Heumann 10 mg Filmtabletten",
+      "MA-No.": "89322.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502100,
+      "MA_name": "Rosuvastatin Heumann 10 mg Filmtabletten",
+      "MA-No.": "89322.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502100,
+      "MA_name": "Rosuvastatin Heumann 10 mg Filmtabletten",
+      "MA-No.": "89322.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502100,
+      "MA_name": "Rosuvastatin Heumann 10 mg Filmtabletten",
+      "MA-No.": "89322.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502100,
+      "MA_name": "Rosuvastatin Heumann 10 mg Filmtabletten",
+      "MA-No.": "89322.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502100,
+      "MA_name": "Rosuvastatin Heumann 10 mg Filmtabletten",
+      "MA-No.": "89322.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502103,
+      "MA_name": "Rosuvastatin Heumann 20 mg Filmtabletten",
+      "MA-No.": "89323.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502104,
+      "MA_name": "Rosuvastatin Heumann 40 mg Filmtabletten",
+      "MA-No.": "89324.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502106,
+      "MA_name": "Rosuvastatin Heumann 40 mg Filmtabletten",
+      "MA-No.": "89324.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502106,
+      "MA_name": "Rosuvastatin Heumann 40 mg Filmtabletten",
+      "MA-No.": "89324.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502113,
+      "MA_name": "Entecavir Heumann 1 mg Filmtabletten",
+      "MA-No.": "98146.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502117,
+      "MA_name": "Valganciclovir Heumann 450 mg Filmtabletten",
+      "MA-No.": "98272.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502122,
+      "MA_name": "Etoricoxib Heumann 60 mg Filmtabletten",
+      "MA-No.": "93515.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502124,
+      "MA_name": "Etoricoxib Heumann 60 mg Filmtabletten",
+      "MA-No.": "93515.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502177,
+      "MA_name": "Prasugrel Heumann 10 mg Filmtabletten",
+      "MA-No.": "7008124.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502189,
+      "MA_name": "Leflunomid Heumann 10 mg Filmtabletten",
+      "MA-No.": "95663.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502189,
+      "MA_name": "Leflunomid Heumann 10 mg Filmtabletten",
+      "MA-No.": "95663.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502193,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502207,
+      "MA_name": "Pregabin 200 mg Hartkapseln",
+      "MA-No.": "92781.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502217,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502218,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502218,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502218,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502219,
+      "MA_name": "Eplerenon Heumann 25 mg Filmtabletten",
+      "MA-No.": "93869.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502222,
+      "MA_name": "Eplerenon Heumann 50 mg Filmtabletten",
+      "MA-No.": "93870.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502222,
+      "MA_name": "Eplerenon Heumann 50 mg Filmtabletten",
+      "MA-No.": "93870.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502222,
+      "MA_name": "Eplerenon Heumann 50 mg Filmtabletten",
+      "MA-No.": "93870.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502222,
+      "MA_name": "Eplerenon Heumann 50 mg Filmtabletten",
+      "MA-No.": "93870.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502230,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502230,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502235,
+      "MA_name": "Arpoya 10 mg Tabletten",
+      "MA-No.": "92907.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502235,
+      "MA_name": "Arpoya 10 mg Tabletten",
+      "MA-No.": "92907.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502235,
+      "MA_name": "Arpoya 10 mg Tabletten",
+      "MA-No.": "92907.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502240,
+      "MA_name": "Arpoya 15 mg Tabletten",
+      "MA-No.": "92908.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502240,
+      "MA_name": "Arpoya 15 mg Tabletten",
+      "MA-No.": "92908.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502240,
+      "MA_name": "Arpoya 15 mg Tabletten",
+      "MA-No.": "92908.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502244,
+      "MA_name": "Arpoya 30 mg Tabletten",
+      "MA-No.": "92909.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502245,
+      "MA_name": "Arpoya 30 mg Tabletten",
+      "MA-No.": "92909.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502245,
+      "MA_name": "Arpoya 30 mg Tabletten",
+      "MA-No.": "92909.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502246,
+      "MA_name": "Urso 400 Heumann",
+      "MA-No.": "8349.01.00"
+    },
+    {
+      "SAP_Material_Number": 5502246,
+      "MA_name": "Urso 400 Heumann",
+      "MA-No.": "8349.01.00"
+    },
+    {
+      "SAP_Material_Number": 5502249,
+      "MA_name": "Lercanidipin Heumann 10 mg Filmtabletten",
+      "MA-No.": "74293.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502274,
+      "MA_name": "Nevirapin Heumann 400 mg Retardtabletten",
+      "MA-No.": "95659.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502299,
+      "MA_name": "Travoprost/Timolol Heumann 40 Mikrogramm/ml + 5 mg/ml Augentropfen, Lösung",
+      "MA-No.": "2201818.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502300,
+      "MA_name": "Travoprost/Timolol Heumann 40 Mikrogramm/ml + 5 mg/ml Augentropfen, Lösung",
+      "MA-No.": "2201818.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502355,
+      "MA_name": "Aprepitant Heumann 125 mg Hartkapseln\nAprepitant Heumann 80 mg Hartkapseln",
+      "MA-No.": "2201792.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502368,
+      "MA_name": "Pregabin 25 mg Hartkapseln",
+      "MA-No.": "92776.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502368,
+      "MA_name": "Pregabin 25 mg Hartkapseln",
+      "MA-No.": "92776.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502370,
+      "MA_name": "Pregabin 50 mg Hartkapseln",
+      "MA-No.": "92777.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502379,
+      "MA_name": "Candesartan Heumann 4 mg Tabletten",
+      "MA-No.": "82318.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502380,
+      "MA_name": "Candesartan Heumann 4 mg Tabletten",
+      "MA-No.": "82318.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502382,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82276.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502383,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82276.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502383,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82276.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502383,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82276.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502383,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82276.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502385,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82277.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502386,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82277.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502386,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82277.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502386,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82277.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502386,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82277.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502386,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82277.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502386,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82277.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502392,
+      "MA_name": "Telmisartan Heumann 20 mg Tabletten",
+      "MA-No.": "77739.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502392,
+      "MA_name": "Telmisartan Heumann 20 mg Tabletten",
+      "MA-No.": "77739.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502392,
+      "MA_name": "Telmisartan Heumann 20 mg Tabletten",
+      "MA-No.": "77739.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502415,
+      "MA_name": "Amlodipin/Valsartan Heumann 5 mg/160 mg Filmtabletten",
+      "MA-No.": "99898.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502417,
+      "MA_name": "Amlodipin/Valsartan Heumann 5 mg/160 mg Filmtabletten",
+      "MA-No.": "99898.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502417,
+      "MA_name": "Amlodipin/Valsartan Heumann 5 mg/160 mg Filmtabletten",
+      "MA-No.": "99898.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502417,
+      "MA_name": "Amlodipin/Valsartan Heumann 5 mg/160 mg Filmtabletten",
+      "MA-No.": "99898.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502423,
+      "MA_name": "Amlodipin/Valsartan Heumann 10 mg/160 mg Filmtabletten",
+      "MA-No.": "99899.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502423,
+      "MA_name": "Amlodipin/Valsartan Heumann 10 mg/160 mg Filmtabletten",
+      "MA-No.": "99899.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502423,
+      "MA_name": "Amlodipin/Valsartan Heumann 10 mg/160 mg Filmtabletten",
+      "MA-No.": "99899.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502423,
+      "MA_name": "Amlodipin/Valsartan Heumann 10 mg/160 mg Filmtabletten",
+      "MA-No.": "99899.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502423,
+      "MA_name": "Amlodipin/Valsartan Heumann 10 mg/160 mg Filmtabletten",
+      "MA-No.": "99899.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502444,
+      "MA_name": "Olmesartan/Amlodipin Heumann 40 mg/10 mg Filmtabletten",
+      "MA-No.": "2203764.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502444,
+      "MA_name": "Olmesartan/Amlodipin Heumann 40 mg/10 mg Filmtabletten",
+      "MA-No.": "2203764.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502444,
+      "MA_name": "Olmesartan/Amlodipin Heumann 40 mg/10 mg Filmtabletten",
+      "MA-No.": "2203764.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502444,
+      "MA_name": "Olmesartan/Amlodipin Heumann 40 mg/10 mg Filmtabletten",
+      "MA-No.": "2203764.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502450,
+      "MA_name": "Emtricitabin/Tenofovirdisoproxil Heumann 200 mg/245 mg Filmtabletten",
+      "MA-No.": "2200703.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502450,
+      "MA_name": "Emtricitabin/Tenofovirdisoproxil Heumann 200 mg/245 mg Filmtabletten",
+      "MA-No.": "2200703.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502451,
+      "MA_name": "Emtricitabin/Tenofovirdisoproxil Heumann 200 mg/245 mg Filmtabletten",
+      "MA-No.": "2200703.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502451,
+      "MA_name": "Emtricitabin/Tenofovirdisoproxil Heumann 200 mg/245 mg Filmtabletten",
+      "MA-No.": "2200703.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502451,
+      "MA_name": "Emtricitabin/Tenofovirdisoproxil Heumann 200 mg/245 mg Filmtabletten",
+      "MA-No.": "2200703.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502451,
+      "MA_name": "Emtricitabin/Tenofovirdisoproxil Heumann 200 mg/245 mg Filmtabletten",
+      "MA-No.": "2200703.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502457,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202198.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502464,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/25 mg Filmtabletten",
+      "MA-No.": "2202199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502464,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/25 mg Filmtabletten",
+      "MA-No.": "2202199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502464,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 5 mg/160 mg/25 mg Filmtabletten",
+      "MA-No.": "2202199.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502473,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502473,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/160 mg/12,5 mg Filmtabletten",
+      "MA-No.": "2202200.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502486,
+      "MA_name": "Amlodipin/Valsartan/Hydrochlorothiazid Heumann 10 mg/320 mg/25 mg Filmtabletten",
+      "MA-No.": "2202202.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502495,
+      "MA_name": "Hydroxychloroquin Heumann 200 mg Filmtabletten",
+      "MA-No.": "2202690.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502495,
+      "MA_name": "Hydroxychloroquin Heumann 200 mg Filmtabletten",
+      "MA-No.": "2202690.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502496,
+      "MA_name": "Hydroxychloroquin Heumann 200 mg Filmtabletten",
+      "MA-No.": "2202690.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502496,
+      "MA_name": "Hydroxychloroquin Heumann 200 mg Filmtabletten",
+      "MA-No.": "2202690.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502496,
+      "MA_name": "Hydroxychloroquin Heumann 200 mg Filmtabletten",
+      "MA-No.": "2202690.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502580,
+      "MA_name": "Bicalutamid Heumann 50 mg Filmtabletten",
+      "MA-No.": "67926.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502582,
+      "MA_name": "Bicalutamid Heumann 50 mg Filmtabletten",
+      "MA-No.": "67926.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502582,
+      "MA_name": "Bicalutamid Heumann 50 mg Filmtabletten",
+      "MA-No.": "67926.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502604,
+      "MA_name": "Roflumilast Heumann 500 Mikrogramm Filmtabletten",
+      "MA-No.": "2203311.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502604,
+      "MA_name": "Roflumilast Heumann 500 Mikrogramm Filmtabletten",
+      "MA-No.": "2203311.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502605,
+      "MA_name": "Roflumilast Heumann 500 Mikrogramm Filmtabletten",
+      "MA-No.": "2203311.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502605,
+      "MA_name": "Roflumilast Heumann 500 Mikrogramm Filmtabletten",
+      "MA-No.": "2203311.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502605,
+      "MA_name": "Roflumilast Heumann 500 Mikrogramm Filmtabletten",
+      "MA-No.": "2203311.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502605,
+      "MA_name": "Roflumilast Heumann 500 Mikrogramm Filmtabletten",
+      "MA-No.": "2203311.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502607,
+      "MA_name": "Roflumilast Heumann 500 Mikrogramm Filmtabletten",
+      "MA-No.": "2203311.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502608,
+      "MA_name": "Montelukast Heumann 4 mg Granulat",
+      "MA-No.": "2203038.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502624,
+      "MA_name": "Azathioprin Heumann 25 mg Filmtabletten",
+      "MA-No.": "93348.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502638,
+      "MA_name": "Lamotrigin Heumann 100 mg Tabletten",
+      "MA-No.": "57031.02.00"
+    },
+    {
+      "SAP_Material_Number": 5502643,
+      "MA_name": "Pregabin 25 mg Hartkapseln",
+      "MA-No.": "92776.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502646,
+      "MA_name": "Pregabin 50 mg Hartkapseln",
+      "MA-No.": "92777.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502647,
+      "MA_name": "Pregabin 50 mg Hartkapseln",
+      "MA-No.": "92777.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502676,
+      "MA_name": "Dutasterid/Tamsulosin Heumann 0,5 mg/0,4 mg Hartkapseln",
+      "MA-No.": "2202356.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502676,
+      "MA_name": "Dutasterid/Tamsulosin Heumann 0,5 mg/0,4 mg Hartkapseln",
+      "MA-No.": "2202356.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502694,
+      "MA_name": "Dorzolamid/Timolol Heumann 20 mg/ml + 5 mg/ml Augentropfen, Lösung",
+      "MA-No.": "2203914.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502694,
+      "MA_name": "Dorzolamid/Timolol Heumann 20 mg/ml + 5 mg/ml Augentropfen, Lösung",
+      "MA-No.": "2203914.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502697,
+      "MA_name": "Dorzolamid/Timolol Heumann 20 mg/ml + 5 mg/ml Augentropfen, Lösung",
+      "MA-No.": "2203914.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502761,
+      "MA_name": "Ambrisentan Heumann 10 mg Filmtabletten",
+      "MA-No.": "2202376.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502825,
+      "MA_name": "Telmisartan Heumann 20 mg Tabletten",
+      "MA-No.": "85600.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502826,
+      "MA_name": "Telmisartan Heumann 20 mg Tabletten",
+      "MA-No.": "85600.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502827,
+      "MA_name": "Telmisartan Heumann 20 mg Tabletten",
+      "MA-No.": "85600.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502827,
+      "MA_name": "Telmisartan Heumann 20 mg Tabletten",
+      "MA-No.": "85600.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502833,
+      "MA_name": "Telmisartan Heumann 80 mg Tabletten",
+      "MA-No.": "85602.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502836,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502837,
+      "MA_name": "Candesartan Heumann 8 mg Tabletten",
+      "MA-No.": "82319.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502839,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82320.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502840,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82320.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502840,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82320.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502840,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82320.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502840,
+      "MA_name": "Candesartan Heumann 16 mg Tabletten",
+      "MA-No.": "82320.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502843,
+      "MA_name": "Candesartan Heumann 32 mg Tabletten",
+      "MA-No.": "82321.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502843,
+      "MA_name": "Candesartan Heumann 32 mg Tabletten",
+      "MA-No.": "82321.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502843,
+      "MA_name": "Candesartan Heumann 32 mg Tabletten",
+      "MA-No.": "82321.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502843,
+      "MA_name": "Candesartan Heumann 32 mg Tabletten",
+      "MA-No.": "82321.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502930,
+      "MA_name": "Levetiracetam Heumann 250 mg Filmtabletten",
+      "MA-No.": "86885.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502932,
+      "MA_name": "Levetiracetam Heumann 250 mg Filmtabletten",
+      "MA-No.": "86885.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502938,
+      "MA_name": "Levetiracetam Heumann 750 mg Filmtabletten",
+      "MA-No.": "86887.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502944,
+      "MA_name": "Levetiracetam Heumann 250 mg Filmtabletten",
+      "MA-No.": "86885.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502945,
+      "MA_name": "Levetiracetam Heumann 250 mg Filmtabletten",
+      "MA-No.": "86885.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502946,
+      "MA_name": "Levetiracetam Heumann 500 mg Filmtabletten",
+      "MA-No.": "86886.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502947,
+      "MA_name": "Levetiracetam Heumann 500 mg Filmtabletten",
+      "MA-No.": "86886.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502948,
+      "MA_name": "Levetiracetam Heumann 500 mg Filmtabletten",
+      "MA-No.": "86886.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502948,
+      "MA_name": "Levetiracetam Heumann 500 mg Filmtabletten",
+      "MA-No.": "86886.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502948,
+      "MA_name": "Levetiracetam Heumann 500 mg Filmtabletten",
+      "MA-No.": "86886.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502950,
+      "MA_name": "Levetiracetam Heumann 750 mg Filmtabletten",
+      "MA-No.": "86887.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502951,
+      "MA_name": "Levetiracetam Heumann 750 mg Filmtabletten",
+      "MA-No.": "86887.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502951,
+      "MA_name": "Levetiracetam Heumann 750 mg Filmtabletten",
+      "MA-No.": "86887.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502951,
+      "MA_name": "Levetiracetam Heumann 750 mg Filmtabletten",
+      "MA-No.": "86887.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502951,
+      "MA_name": "Levetiracetam Heumann 750 mg Filmtabletten",
+      "MA-No.": "86887.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502951,
+      "MA_name": "Levetiracetam Heumann 750 mg Filmtabletten",
+      "MA-No.": "86887.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502957,
+      "MA_name": "Leflunomid Heumann 10 mg Filmtabletten",
+      "MA-No.": "95663.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502960,
+      "MA_name": "Leflunomid Heumann 10 mg Filmtabletten",
+      "MA-No.": "95663.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502960,
+      "MA_name": "Leflunomid Heumann 10 mg Filmtabletten",
+      "MA-No.": "95663.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502962,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502963,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502964,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502965,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502965,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502965,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502965,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502965,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502965,
+      "MA_name": "Leflunomid Heumann 20 mg Filmtabletten",
+      "MA-No.": "95664.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502974,
+      "MA_name": "Moxifloxacin Heumann 400 mg Filmtabletten",
+      "MA-No.": "2200881.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502974,
+      "MA_name": "Moxifloxacin Heumann 400 mg Filmtabletten",
+      "MA-No.": "2200881.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502978,
+      "MA_name": "Arpoya 5 mg Tabletten",
+      "MA-No.": "92906.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502984,
+      "MA_name": "Arpoya 15 mg Tabletten",
+      "MA-No.": "92908.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502991,
+      "MA_name": "Ropinirol Heumann retard 2 mg Retardtabletten",
+      "MA-No.": "90641.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502991,
+      "MA_name": "Ropinirol Heumann retard 2 mg Retardtabletten",
+      "MA-No.": "90641.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502997,
+      "MA_name": "Ropinirol Heumann retard 8 mg Retardtabletten",
+      "MA-No.": "90643.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502997,
+      "MA_name": "Ropinirol Heumann retard 8 mg Retardtabletten",
+      "MA-No.": "90643.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502997,
+      "MA_name": "Ropinirol Heumann retard 8 mg Retardtabletten",
+      "MA-No.": "90643.00.00"
+    },
+    {
+      "SAP_Material_Number": 5502997,
+      "MA_name": "Ropinirol Heumann retard 8 mg Retardtabletten",
+      "MA-No.": "90643.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503016,
+      "MA_name": "Oxycodonhydrochlorid Heumann 60 mg Retardtabletten",
+      "MA-No.": "91470.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503109,
+      "MA_name": "nikofrenon 7 mg/24 Stunden Pflaster",
+      "MA-No.": "15637.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503110,
+      "MA_name": "nikofrenon 14 mg/24 Stunden Pflaster",
+      "MA-No.": "15637.01.00"
+    },
+    {
+      "SAP_Material_Number": 5503115,
+      "MA_name": "nikofrenon 21 mg/24 Stunden Pflaster",
+      "MA-No.": "15637.02.00"
+    },
+    {
+      "SAP_Material_Number": 5503119,
+      "MA_name": "Fulvestrant Heumann 250 mg Injektionslösung in einer Fertigspritze",
+      "MA-No.": "2205980.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503119,
+      "MA_name": "Fulvestrant Heumann 250 mg Injektionslösung in einer Fertigspritze",
+      "MA-No.": "2205980.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503119,
+      "MA_name": "Fulvestrant Heumann 250 mg Injektionslösung in einer Fertigspritze",
+      "MA-No.": "2205980.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503129,
+      "MA_name": "Teriparatid Heumann 20 Mikrogramm/80 Mikroliter Injektionslösung im Fertigpen",
+      "MA-No.": "2205795.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503133,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503134,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503135,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503135,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503135,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503135,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503135,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503135,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503135,
+      "MA_name": "Indapamid Heumann 1,5 mg Retardtabletten",
+      "MA-No.": "65033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503139,
+      "MA_name": "Indapamid Heumann 2,5 mg Filmtabletten",
+      "MA-No.": "35625.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503172,
+      "MA_name": "Abirateron Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205347.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503172,
+      "MA_name": "Abirateron Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205347.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503172,
+      "MA_name": "Abirateron Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205347.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503172,
+      "MA_name": "Abirateron Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205347.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503172,
+      "MA_name": "Abirateron Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205347.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503172,
+      "MA_name": "Abirateron Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205347.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503214,
+      "MA_name": "Leflon 15 mg Filmtabletten",
+      "MA-No.": "7001884.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503215,
+      "MA_name": "Leflon 15 mg Filmtabletten",
+      "MA-No.": "7001884.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503216,
+      "MA_name": "Leflon 15 mg Filmtabletten",
+      "MA-No.": "7001884.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503217,
+      "MA_name": "Leflon 15 mg Filmtabletten",
+      "MA-No.": "7001884.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503217,
+      "MA_name": "Leflon 15 mg Filmtabletten",
+      "MA-No.": "7001884.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503217,
+      "MA_name": "Leflon 15 mg Filmtabletten",
+      "MA-No.": "7001884.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503217,
+      "MA_name": "Leflon 15 mg Filmtabletten",
+      "MA-No.": "7001884.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503218,
+      "MA_name": "Sevelamercarbonat Heumann 800 mg Filmtabletten",
+      "MA-No.": "7006805.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503218,
+      "MA_name": "Sevelamercarbonat Heumann 800 mg Filmtabletten",
+      "MA-No.": "7006805.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503218,
+      "MA_name": "Sevelamercarbonat Heumann 800 mg Filmtabletten",
+      "MA-No.": "7006805.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503218,
+      "MA_name": "Sevelamercarbonat Heumann 800 mg Filmtabletten",
+      "MA-No.": "7006805.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503230,
+      "MA_name": "Oxycodonhydrochlorid Heumann akut 5 mg Hartkapseln",
+      "MA-No.": "92107.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503231,
+      "MA_name": "Oxycodonhydrochlorid Heumann akut 5 mg Hartkapseln",
+      "MA-No.": "92107.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503232,
+      "MA_name": "Oxycodonhydrochlorid Heumann akut 5 mg Hartkapseln",
+      "MA-No.": "92107.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503232,
+      "MA_name": "Oxycodonhydrochlorid Heumann akut 5 mg Hartkapseln",
+      "MA-No.": "92107.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503233,
+      "MA_name": "Oxycodonhydrochlorid Heumann akut 10 mg Hartkapseln",
+      "MA-No.": "92108.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503234,
+      "MA_name": "Oxycodonhydrochlorid Heumann akut 10 mg Hartkapseln",
+      "MA-No.": "92108.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503247,
+      "MA_name": "Ezetimib/Simvastatin Heumann 10 mg/40 mg Tabletten",
+      "MA-No.": "7004749.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503253,
+      "MA_name": "Sitagliptin/Metformin Heumann 50 mg/1000 mg Filmtabletten",
+      "MA-No.": "2203034.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503253,
+      "MA_name": "Sitagliptin/Metformin Heumann 50 mg/1000 mg Filmtabletten",
+      "MA-No.": "2203034.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503253,
+      "MA_name": "Sitagliptin/Metformin Heumann 50 mg/1000 mg Filmtabletten",
+      "MA-No.": "2203034.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503253,
+      "MA_name": "Sitagliptin/Metformin Heumann 50 mg/1000 mg Filmtabletten",
+      "MA-No.": "2203034.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503288,
+      "MA_name": "Sitagliptin/Metformin Heumann 50 mg/850 mg Filmtabletten",
+      "MA-No.": "2203033.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503365,
+      "MA_name": "Dasatinib Heumann 20 mg Filmtabletten",
+      "MA-No.": "2205987.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503367,
+      "MA_name": "Dasatinib Heumann 70 mg Filmtabletten",
+      "MA-No.": "2205989.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503369,
+      "MA_name": "Dasatinib Heumann 100 mg Filmtabletten",
+      "MA-No.": "2205991.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503396,
+      "MA_name": "Solifenacin/Tamsulosin Heumann 6 mg/0,4 mg Tabletten mit veränderter Wirksto/abbrev",
+      "MA-No.": "7007757.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503398,
+      "MA_name": "Solifenacin/Tamsulosin Heumann 6 mg/0,4 mg Tabletten mit veränderter Wirksto/abbrev",
+      "MA-No.": "7007757.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503409,
+      "MA_name": "Entecavir Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "98145.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503411,
+      "MA_name": "Entecavir Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "98145.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503411,
+      "MA_name": "Entecavir Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "98145.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503411,
+      "MA_name": "Entecavir Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "98145.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503411,
+      "MA_name": "Entecavir Heumann 0,5 mg Filmtabletten",
+      "MA-No.": "98145.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503412,
+      "MA_name": "Entecavir Heumann 1 mg Filmtabletten",
+      "MA-No.": "98146.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503435,
+      "MA_name": "Tamoxifen Heumann 20 mg Tabletten",
+      "MA-No.": "11210.01.00"
+    },
+    {
+      "SAP_Material_Number": 5503435,
+      "MA_name": "Tamoxifen Heumann 20 mg Tabletten",
+      "MA-No.": "11210.01.00"
+    },
+    {
+      "SAP_Material_Number": 5503452,
+      "MA_name": "Metformin Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205056.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503453,
+      "MA_name": "Metformin Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205056.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503456,
+      "MA_name": "Metformin Heumann 850 mg Filmtabletten",
+      "MA-No.": "2205057.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503459,
+      "MA_name": "Metformin Heumann 1000 mg Filmtabletten",
+      "MA-No.": "2205058.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503459,
+      "MA_name": "Metformin Heumann 1000 mg Filmtabletten",
+      "MA-No.": "2205058.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503459,
+      "MA_name": "Metformin Heumann 1000 mg Filmtabletten",
+      "MA-No.": "2205058.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503459,
+      "MA_name": "Metformin Heumann 1000 mg Filmtabletten",
+      "MA-No.": "2205058.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503459,
+      "MA_name": "Metformin Heumann 1000 mg Filmtabletten",
+      "MA-No.": "2205058.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503459,
+      "MA_name": "Metformin Heumann 1000 mg Filmtabletten",
+      "MA-No.": "2205058.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503472,
+      "MA_name": "Anagrelid Heumann 0,5 mg Hartkapseln",
+      "MA-No.": "98985.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503502,
+      "MA_name": "Cefuroxim Heumann 250 mg Filmtabletten",
+      "MA-No.": "2205106.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503503,
+      "MA_name": "Cefuroxim Heumann 250 mg Filmtabletten",
+      "MA-No.": "2205106.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503504,
+      "MA_name": "Cefuroxim Heumann 250 mg Filmtabletten",
+      "MA-No.": "2205106.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503505,
+      "MA_name": "Cefuroxim Heumann 250 mg Filmtabletten",
+      "MA-No.": "2205106.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503506,
+      "MA_name": "Cefuroxim Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205107.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503507,
+      "MA_name": "Cefuroxim Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205107.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503508,
+      "MA_name": "Cefuroxim Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205107.00.00"
+    },
+    {
+      "SAP_Material_Number": 5503509,
+      "MA_name": "Cefuroxim Heumann 500 mg Filmtabletten",
+      "MA-No.": "2205107.00.00"
+    }
+  ]

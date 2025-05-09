@@ -3,6 +3,7 @@ import { RouterOutlet, Router } from '@angular/router';
 import { MaterialModule } from './material.module';
 import { MessageService } from './services/messageService';
 import { DataService } from './services/dataService';
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, MaterialModule],
@@ -14,12 +15,12 @@ export class AppComponent implements OnInit {
   i = "1";
   entries: string = "";
   batchrelease: any = [];
+
   constructor( 
     private router: Router,
     private messageService: MessageService,
     private dataService: DataService
   ) {
-  
   }
   
   ngOnInit() {
