@@ -1,5 +1,5 @@
-<div *ngIf="isPassed==false" class="password">
-  
+<h1 style="color: red; margin-left: 10em; margin-top: 10em;">Please renew your Microsoft Azure subscription.</h1>
+<div *ngIf="isPassed==false" class="password" style="display: none;">
   <div style="display: flex; flex-direction: column; width: 16em;">
     <label style="margin-left: 16px; margin-top: 16px;">Heumann ExBatch+</label>
       <mat-form-field style="width: 90%; margin-top: 16px; margin-left: 16px;">
@@ -8,7 +8,7 @@
       </mat-form-field>
       <mat-form-field style="width: 90%; margin-top: 16px; margin-left: 16px;">
         <mat-label>Enter password</mat-label>
-        <input matInput type="password" [(ngModel)]="password"/>
+        <input matInput type="password" (keydown.enter)="checkPw()" [(ngModel)]="password"/>
     </mat-form-field>
   </div>
   <br>
@@ -111,9 +111,15 @@
     </div>
   </div>
   <div style="display: flex;">
-    
     <div class="card" (click)="cardClick(14)">
       <div>Article Masters<br>to Batches<br>by SAP Material No.</div>
+      <div><img 
+          class="img2424"
+        src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>
+        <div><label style="font-size:11px;">313 entries</label></div>
+    </div>
+     <div class="card" (click)="cardClick(15)">
+      <div>Plans and Concepts</div>
       <div><img 
           class="img2424"
         src="https://cdn3.iconfinder.com/data/icons/databases-2/512/tables-64.png" /></div>

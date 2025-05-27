@@ -1,4 +1,10 @@
-<h2 mat-dialog-title>Settings - Status</h2>
+<div style="display: flex; margin-left: 0.5em; margin-top: 1em;">
+  <h2 mat-dialog-title>Settings ({{entries}} entries) </h2>
+  <mat-form-field  style="width: 40%;" > 
+        <mat-label >Filter</mat-label>
+        <input [(ngModel)]="filterVal" (keydown.enter)="filterSettings()" matInput />  
+    </mat-form-field> 
+  </div>
 <mat-dialog-content>
     <mat-form-field *ngIf="data.index==1" style="width: 20%;"> 
         <mat-label >Shortcut</mat-label>
@@ -60,6 +66,32 @@
           <tr mat-row *matRowDef="let row; columns: displayedColumnsRbsites; " ></tr>
         </table> 
     </div>
+     <div *ngIf="data.index==3" style="height: 15em; overflow-y: scroll;">
+      <table  mat-table [dataSource]="settingspriorities" class="batchtable mat-elevation-z8" style="width: 24em;">
+          <ng-container matColumnDef="shortcut" sticky>
+            <th mat-header-cell *matHeaderCellDef  >Shortcut</th>
+            <td 
+              (click)="showSetting(element)"
+              class="pointer"
+              mat-cell 
+              *matCellDef="let element" 
+              > {{element.shortcut}} 
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="priority" sticky>
+            <th mat-header-cell *matHeaderCellDef  >Priority</th>
+            <td 
+              class="pointer"
+              (click)="showSetting(element)"
+              mat-cell 
+              *matCellDef="let element" 
+              > {{element.priority}} 
+            </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumnsPriorities; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumnsPriorities; " ></tr>
+        </table> 
+      </div>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-raised-button  (click)="onClose()" >Close</button>

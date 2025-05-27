@@ -8,7 +8,7 @@
     <div style="display: flex; margin-left: 0.5em;">
         <mat-form-field  style="width: 80%;" > 
             <mat-label >Filter</mat-label>
-            <input [(ngModel)]="filterVal" matInput />  
+            <input [(ngModel)]="filterVal" (keydown.enter)="filterMaster()" matInput />  
         </mat-form-field> 
         <div (click)="filterMaster()"><img class="img2424" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-64.png" /></div>
         <div (click)="unfilterMaster()"><img class="img2424" src="https://cdn1.iconfinder.com/data/icons/trycons/32/undo-64.png" /> </div>
@@ -51,13 +51,19 @@
               <mat-label>MA No.</mat-label>
               <input [(ngModel)]="currentEntry.MA_No" matInput/>
             </mat-form-field>
-            <mat-form-field style="width: 25%; margin-left: 2px;">
+            <!--<mat-form-field style="width: 25%; margin-left: 2px;">
               <mat-label>Company</mat-label>
               <mat-select [(ngModel)]="currentEntry.Company.Company">
                 @for (c of companies; track c) {
                     <mat-option [value]="c.Company">{{c.Company}}</mat-option>
                 }
               </mat-select>
+            </mat-form-field>-->
+            <mat-form-field style="width: 25%; margin-left: 2px;">
+            <mat-label>Company</mat-label>
+            <select [(ngModel)]="currentEntry.Company.Company" matNativeControl >
+                  <option *ngFor="let c of companies" [ngValue]="c.Company">{{c.Company}}</option>
+              </select>
             </mat-form-field>
             <mat-form-field style="width: 25%; margin-left: 2px;">
               <mat-label>Pack size</mat-label>
@@ -211,65 +217,101 @@
                 </div>
               </div>
               <div style="display: flex">
-                <mat-form-field style="width: 40.5%;">
+                <!--<mat-form-field style="width: 40.5%;">
                     <mat-label>Release Blocking Site</mat-label>
                     <mat-select [(ngModel)]="currentBatchEntry.RB_Site_Id">
                     @for (r of rbsites; track r) {
                         <mat-option [value]="r.id">{{r.RB_Site}}</mat-option>
                     }
                     </mat-select>
+                </mat-form-field>-->
+                <mat-form-field style="width: 40.5%;">
+                  <mat-label>Release Blocking Site</mat-label>
+                  <select [(ngModel)]="currentBatchEntry.RB_Site_Id" matNativeControl >
+                        <option *ngFor="let r of rbsites" [ngValue]="r.id">{{r.RB_Site}}</option>
+                    </select>
                 </mat-form-field>
-                <mat-form-field style="width: 9.5%; margin-left: 2px;">
+                <!--<mat-form-field style="width: 9.5%; margin-left: 2px;">
                   <mat-label>Status</mat-label>
                   <mat-select [(ngModel)]="currentBatchEntry.Status_Id" (ngModelChange)="changeSelect($event, 1)">
                   @for (s of status; track s) {
                       <mat-option [value]="s.id" >{{s.shortcut}} </mat-option>
                   }
                   </mat-select>
+                </mat-form-field>-->
+                <mat-form-field style="width: 10.5%; margin-left: 2px;">
+                  <mat-label>Status</mat-label>
+                    <select [(ngModel)]="currentBatchEntry.Status_Id" matNativeControl (ngModelChange)="changeSelect($event, 1)">
+                        <option *ngFor="let s of status" [ngValue]="s.id">{{s.shortcut}}</option>
+                    </select>
                 </mat-form-field>
-              <div class="date" >
-                <label style="font-size: 12px;">Release / Block for Marketing Date</label><br>
-                <input class="inputDate" type="date" [(ngModel)]="rbmdate" (change)="changeDate($event, 2)">
-              </div>
-              <div class="date">
-                <label style="font-size: 12px;">Release / Block for Sale Date</label>
-                <input class="inputDate" type="date" [(ngModel)]="rbsdate" (change)="changeDate($event, 3)">
-              </div>
-            </div>  
+                <div class="date" >
+                  <label style="font-size: 12px;">Release / Block for Marketing Date</label><br>
+                  <input class="inputDate" type="date" [(ngModel)]="rbmdate" (change)="changeDate($event, 2)">
+                </div>
+                <div class="date">
+                  <label style="font-size: 12px;">Release / Block for Sale Date</label>
+                  <input class="inputDate" type="date" [(ngModel)]="rbsdate" (change)="changeDate($event, 3)">
+                </div>
+              </div>  
             </mat-tab>
             <mat-tab label="BRR Process" >
               <div style="margin-top: 8px; display: flex;">
-                <mat-form-field style="width: 20%; margin-left: 2px;">
+                <!--<mat-form-field style="width: 20%; margin-left: 2px;">
                   <mat-label>BRRor Resp.</mat-label>
                   <mat-select [(ngModel)]="currentBatchEntry.BRRor_Resp_Id" (ngModelChange)="changeSelect($event, 2)">
                   @for (r of responsibles; track r) {
                       <mat-option [value]="r.id" >{{r.shortcut}} / {{r.responsible}} </mat-option>
                   }
                   </mat-select>
+                </mat-form-field>-->
+                 <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>BRRor Resp.</mat-label>
+                    <select [(ngModel)]="currentBatchEntry.BRRor_Resp_Id" matNativeControl (ngModelChange)="changeSelect($event, 2)">
+                        <option *ngFor="let r of responsibles" [ngValue]="r.id">{{r.shortcut}} / {{r.responsible}}</option>
+                    </select>
                 </mat-form-field>
-                <mat-form-field style="width: 20%; margin-left: 2px;">
+                <!--<mat-form-field style="width: 20%; margin-left: 2px;">
                   <mat-label>QAPM Resp.</mat-label>
                   <mat-select [(ngModel)]="currentBatchEntry.QAPM_Resp_Id" (ngModelChange)="changeSelect($event, 3)">
                   @for (r of responsibles; track r) {
                       <mat-option [value]="r.id" >{{r.shortcut}} / {{r.responsible}} </mat-option>
                   }
                   </mat-select>
+                </mat-form-field>-->
+                 <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>QAPM Resp.</mat-label>
+                    <select [(ngModel)]="currentBatchEntry.QAPM_Resp_Id" matNativeControl (ngModelChange)="changeSelect($event, 3)">
+                        <option *ngFor="let r of responsibles" [ngValue]="r.id">{{r.shortcut}} / {{r.responsible}}</option>
+                    </select>
                 </mat-form-field>
-                <mat-form-field style="width: 20%; margin-left: 2px;">
+                <!--<mat-form-field style="width: 20%; margin-left: 2px;">
                   <mat-label>QP Resp.</mat-label>
                   <mat-select [(ngModel)]="currentBatchEntry.QP_Resp_Id" (ngModelChange)="changeSelect($event, 4)">
                   @for (r of responsibles; track r) {
                       <mat-option [value]="r.id" >{{r.shortcut}} / {{r.responsible}} </mat-option>
                   }
                   </mat-select>
+                </mat-form-field>-->
+                 <mat-form-field style="width: 20%; margin-left: 2px;">
+                  <mat-label>QP Resp.</mat-label>
+                    <select [(ngModel)]="currentBatchEntry.QP_Resp_Id" matNativeControl (ngModelChange)="changeSelect($event, 4)">
+                        <option *ngFor="let r of responsibles" [ngValue]="r.id">{{r.shortcut}} / {{r.responsible}}</option>
+                    </select>
                 </mat-form-field>
-                <mat-form-field style="width: 10%; margin-left: 2px;">
+                <!--<mat-form-field style="width: 10%; margin-left: 2px;">
                   <mat-label>Priority</mat-label>
                   <mat-select [(ngModel)]="currentBatchEntry.Priority_Id" (ngModelChange)="changeSelect($event, 5)">
                   @for (p of priorities; track p) {
                       <mat-option [value]="p.id" >{{p.shortcut}}</mat-option>
                   }
                   </mat-select>
+                </mat-form-field>-->
+                 <mat-form-field style="width: 10%; margin-left: 2px;">
+                  <mat-label>Priority</mat-label>
+                    <select [(ngModel)]="currentBatchEntry.Priority_Id" matNativeControl (ngModelChange)="changeSelect($event, 5)">
+                        <option *ngFor="let p of priorities" [ngValue]="p.id">{{p.shortcut}}</option>
+                    </select>
                 </mat-form-field>
                 <div class="date" style="width: 15%">
                   <label style="font-size: 12px;">Prio Meeting</label>

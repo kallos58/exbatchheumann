@@ -19,8 +19,8 @@ const EXCEL_EXTENSION = '.xlsx';
 })
 
 export class DataService  {
-    endpoint = "https://schruefer.documents.azure.com:443/";
-    key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
+    endpoint = import.meta.env.NG_APP_PUBLIC_ENDPOINT;
+    key = import.meta.env.NG_APP_PUBLIC_KEY;
     client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
     database = "Heumann";
     db = this.client.database(this.database);
@@ -40,7 +40,7 @@ export class DataService  {
     articlemaster: any = [];
     batches: any = [];
     isPassed = false;
-    isNotAllowedUser = true;
+    isNotAllowedUser = false;
     responsibles: any = responsibles;
     priorities: any = priorities;
     batchReleaseOverview: any = batch_release_overview;

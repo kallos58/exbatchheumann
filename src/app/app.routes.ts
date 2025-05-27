@@ -7,6 +7,7 @@ import { DatamigrationComponent } from './datamigration/datamigration.component'
 import { CurrentStatusMpvComponent } from './current-status-mpv/current-status-mpv.component';
 import { CapaFollowupComponent } from './capa-followup/capa-followup.component';
 import { MasterBySapnoComponent } from './master-by-sapno/master-by-sapno.component';
+import { PlansAndConceptsComponent } from './plans-and-concepts/plans-and-concepts.component';
 
 export const routes: Routes = [
     {
@@ -44,5 +45,9 @@ export const routes: Routes = [
     {
         path: 'masterbysapno',
         component: MasterBySapnoComponent
+    },
+    {
+        path: 'plansandconcepts',
+        component: PlansAndConceptsComponent
     }
 ];

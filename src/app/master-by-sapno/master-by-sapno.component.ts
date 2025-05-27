@@ -1,4 +1,4 @@
-import { Component, Directive, inject, model, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Directive, inject, model, OnInit, signal } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
 import { MaterialModule } from '../material.module';
 import { DataService } from '../services/dataService';
@@ -24,7 +24,6 @@ import { MatButtonModule } from '@angular/material/button';
 const moment = _rollupMoment || _moment;
 
 export interface DialogData {
-  animal: string;
   index: number;
 }
 
@@ -43,7 +42,6 @@ export const MY_FORMATS = {
 };
 
 export interface DialogData {
-  animal: string;
   name: string;
 }
 
@@ -63,6 +61,7 @@ export interface DialogData {
     // of our example generation script.
     provideMomentDateAdapter(MY_FORMATS),
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './master-by-sapno.component.html',
   styleUrl: './master-by-sapno.component.css'
 })
@@ -118,12 +117,10 @@ export class MasterBySapnoComponent implements OnInit {
   coarecdate: string = "";
   coaadddate: string = "";
   baseindex: number = 0;
-  settings = ["- Select base table -", "Status", "Release Blocking Sites"];
-  readonly animal = signal('');
+  settings = ["- Select base table -", "Status", "Release Blocking Sites", "Priorities"];
   readonly index = model('');
   readonly dialog = inject(MatDialog);  
   setting: string = "- Select base table -";
-
   ngOnInit(): void {
       this.selectMaterial(this.dataService.concept_master_sapno[0].SAP_Mat_No);
   }
@@ -131,7 +128,7 @@ export class MasterBySapnoComponent implements OnInit {
   openDialog(index: number): void {
     this.baseindex = index;
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-      data: {index: index, animal: this.animal()},
+      data: {index: index},
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -155,6 +152,7 @@ export class MasterBySapnoComponent implements OnInit {
   onChangeSelect() {
     if (this.setting === "Status") this.openDialog(1);
     if (this.setting === "Release Blocking Sites") this.openDialog(2);
+    if (this.setting === "Priorities") this.openDialog(3);
   }
 
   setMonthAndYear(normalizedMonthAndYear: Moment, datepicker: MatDatepicker<Moment>, index: number) {
@@ -383,19 +381,27 @@ export class DialogOverviewExampleDialog {
 ) {  
   this.settingsstatus =  new MatTableDataSource(this.dataService.concept_status);
   this.settingsrbsites =  new MatTableDataSource(this.dataService.concept_rbsites);
+  this.settingspriorities =  new MatTableDataSource(this.dataService.concept_priorities);
+  if (this.data.index === 1) this.entries = this.settingsstatus.data.length;
+  if (this.data.index === 2) this.entries = this.settingsrbsites.data.length;
+  if (this.data.index === 3) this.entries = this.settingspriorities.data.length;
 }
   readonly dialogRef = inject(MatDialogRef<DialogOverviewExampleDialog>);
   readonly data = inject<DialogData>(MAT_DIALOG_DATA);
   displayedColumnsStatus: string[] = ['shortcut','status'];
   displayedColumnsRbsites: string[] = ['rbsite'];
+  displayedColumnsPriorities: string[] = ['shortcut','priority'];
   settingsstatus: any = [];
   settingsrbsites: any = [];
+  settingspriorities: any = [];
   disabled: boolean = true;
   value1: string = "";
   value2: string = "";
   currentEntry: any = [];
   result: any = [];
   mode: number = 0;
+  entries: number = 0;
+  filterVal: string = "";
 
   onClose(): void {
     this.dialogRef.close(this.result);
@@ -418,7 +424,7 @@ export class DialogOverviewExampleDialog {
   }
 
   saveStatus() {
-    let data =this.settingsstatus.data;
+    let data = this.settingsstatus.data;
     let entry = {
       id: this.mode === 1 ? this.currentEntry.id : this.dataService.createId(),
       shortcut: this.value1,
@@ -467,5 +473,32 @@ export class DialogOverviewExampleDialog {
     this.disabled = false;
     this.value1 = "(new)";
     this.value2 = "(new)";
+  }
+
+  filterSettings() {
+       
+    if (this.data.index === 1) {
+      this.settingsstatus.filter = this.filterVal;
+      this.settingsstatus.filterPredicate = (data: any, searchText: string) => {
+          return data.shortcut.toUpperCase().includes(searchText.toUpperCase()) ||
+          data.status.toUpperCase().includes(searchText.toUpperCase());
+        };
+      this.entries = this.settingsstatus.filteredData.length;
+    }
+    if (this.data.index === 2) {
+      this.settingsrbsites.filter = this.filterVal;
+      this.settingsrbsites.filterPredicate = (data: any, searchText: string) => {
+          return data.RB_Site.toUpperCase().includes(searchText.toUpperCase());
+        };
+      this.entries = this.settingsrbsites.filteredData.length;
+    }
+     if (this.data.index === 3) {
+      this.settingspriorities.filter = this.filterVal;
+      this.settingspriorities.filterPredicate = (data: any, searchText: string) => {
+          return data.shortcut.toUpperCase().includes(searchText.toUpperCase()) ||
+          data.priority.toUpperCase().includes(searchText.toUpperCase());
+        };
+      this.entries = this.settingspriorities.filteredData.length;
+    }
   }
 }

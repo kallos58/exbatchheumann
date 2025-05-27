@@ -49,8 +49,8 @@ export class ArticleMasterComponent implements OnInit {
       this.isNotAllowedUser = this.dataService.isNotAllowedUser;
     }
 
-    endpoint = "https://schruefer.documents.azure.com:443/";
-    key = "ZE8r1ZNlJuL7o1F10F5NuPlJgJiC2TElldQycH2QCxIaZzkGcnxA5Za3URdElQM8ef66ctGmLNz1ACDbc9JuIA";
+     endpoint = import.meta.env.NG_APP_PUBLIC_ENDPOINT;
+    key = import.meta.env.NG_APP_PUBLIC_KEY;
     client = new Cosmos.CosmosClient({endpoint: this.endpoint, key: this.key});
     database = "Heumann";
     db = this.client.database(this.database);
