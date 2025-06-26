@@ -39,7 +39,7 @@ export class DataService  {
     creators: any = [];
     articlemaster: any = [];
     batches: any = [];
-    isPassed = false;
+    isPassed = true;
     isNotAllowedUser = false;
     responsibles: any = responsibles;
     priorities: any = priorities;

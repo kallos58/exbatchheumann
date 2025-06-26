@@ -60,8 +60,7 @@ export class PlansAndConceptsComponent {
       }
     }
     this.materialMasterSoure = new MatTableDataSource(this.materialMaster);
-    alert ("gfunne:   " + found);
-    alert ("nädd gfunne:   " + notFound);
+    
   }
 
 }
