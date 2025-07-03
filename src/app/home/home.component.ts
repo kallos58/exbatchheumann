@@ -27,7 +27,9 @@ export class HomeComponent implements OnInit{
   }
 
   ngOnInit(): void {
+        
       this.isPassed = this.dataService.isPassed;
+      this.isPassed = false;
   }
 
   cardClick(i: number) {
